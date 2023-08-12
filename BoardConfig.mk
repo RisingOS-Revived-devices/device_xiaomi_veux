@@ -80,6 +80,7 @@ BOARD_KERNEL_CMDLINE := \
     cgroup.memory=nokmem,nosocket \
     iptable_raw.raw_before_defrag=1 \
     ip6table_raw.raw_before_defrag=1 \
+    kpti=off \
     firmware_class.path=/vendor/firmware
 
 TARGET_KERNEL_CONFIG := vendor/veux-qgki_defconfig
