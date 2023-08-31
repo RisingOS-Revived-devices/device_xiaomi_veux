@@ -258,6 +258,7 @@ PRODUCT_PACKAGES += \
     NcmTetheringOverlay \
     SettingsOverlayVEUX \
     SystemUIOverlayVEUX \
+    NfcOverlayVeux \
     WifiOverlayVEUX
 
 PRODUCT_PACKAGES += \
@@ -268,7 +269,7 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlay2201116SR \
     SettingsProviderOverlay2201116PG \
     SettingsProviderOverlay2201116PI \
-    SettingsOverlay2201116SR
+    SettingsOverlay2201116SR  
 
 PRODUCT_PACKAGES += \
     EuiccOverlay2201116SR
