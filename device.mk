@@ -276,7 +276,11 @@ PRODUCT_COPY_FILES += \
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
-    
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio-service.compat
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
