@@ -396,6 +396,10 @@ PRODUCT_BOOT_JARS += \
     telephony-ext \
     xiaomi-telephony-stub
 
+# APN configuration - Jio (India) data + IMS APNs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/apns-conf.xml
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
