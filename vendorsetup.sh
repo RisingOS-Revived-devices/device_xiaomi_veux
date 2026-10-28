@@ -1,15 +1,39 @@
-git clone https://github.com/Project-Astraverse/vendor_xiaomi_veux.git vendor/xiaomi/veux
-git clone https://github.com/Starrykernel/kernel_xiaomi_veux.git -b 16-Q2-KSU kernel/xiaomi/sm6375 --depth=1
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi
+if [ ! -d "vendor/xiaomi/veux" ]; then
+    git clone https://github.com/acerhizmq/vendor_xiaomi_veux.git -b 17 vendor/xiaomi/veux
+fi
+
+if [ ! -d "kernel/xiaomi/veux" ]; then
+    git clone https://github.com/acerhizmq/kernel_xiaomi_veux.git -b 17 kernel/xiaomi/veux --depth=1
+fi
+
+if [ ! -d "hardware/xiaomi" ]; then
+    git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi
+fi
 
 # Viper4Android
-git clone https://github.com/AxionAOSP/android_packages_apps_ViPER4AndroidFX.git -b v4a packages/apps/ViPER4AndroidFX
+if [ ! -d "packages/apps/ViPER4AndroidFX" ]; then
+    git clone https://github.com/AxionAOSP/android_packages_apps_ViPER4AndroidFX.git -b v4a packages/apps/ViPER4AndroidFX
+fi
 
-# MiuiCamera
-git clone https://github.com/frost-testzone/vendor_xiaomi_miuicamera-veux.git vendor/xiaomi/miuicamera-veux
+# Xiaomi Camera (MIUI Camera)
+if [ ! -d "device/xiaomi/camera" ]; then
+    git clone https://github.com/acerhizmq/device_xiaomi_camera.git device/xiaomi/camera
+fi
 
-# Sign keys
-git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys vendor/infinity-priv/keys
+if [ ! -d "vendor/xiaomi/camera" ]; then
+    git clone https://github.com/acerhizmq/vendor_xiaomi_camera.git vendor/xiaomi/camera
+fi
 
 # Dolby
-git clone https://github.com/oscaro-resources/hardware_dolby.git hardware/dolby
+if [ ! -d "hardware/dolby" ]; then
+    git clone https://github.com/acerhizmq/hardware_dolby.git hardware/dolby
+fi
+
+# Bluetooth
+if [ ! -d "hardware/qcom-caf/bt" ]; then
+    git clone https://github.com/acerhizmq/hardware_qcom_bt.git -b lineage-23.2-caf hardware/qcom-caf/bt
+fi
+
+# Framework patches (leica: MIUI camera, torch: torch strength, whatsapp: third-party
+# camera apps); skips what the ROM has. Pick some with e.g. VEUX_PATCHES="leica torch".
+bash device/xiaomi/veux/tools/apply-patches.sh --quiet || echo "veux: framework patches need attention, see above"

@@ -263,6 +263,7 @@ PRODUCT_PACKAGES += \
     NcmTetheringOverlay \
     SettingsOverlayVEUX \
     SystemUIOverlayVEUX \
+    UpdaterOverlayVEUX \
     NfcOverlayVeux \
     WifiOverlayVEUX
 
@@ -474,5 +475,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbt-vendor \
+    libbluetooth_qti_symlink
+
 # Inherit from proprietary targets
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
+
+# Leica Camera (HolyBear)
+$(call inherit-product, device/xiaomi/camera/miuicamera.mk)
