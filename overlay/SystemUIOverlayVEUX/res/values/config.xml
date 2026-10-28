@@ -25,7 +25,10 @@
     </string>
 
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
-    <integer name="config_keyguardMaxRefreshRate">60</integer>
+    <integer name="config_keyguardMaxRefreshRate">120</integer>
+
+    <!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
+    <integer name="config_aodMaxRefreshRate">60</integer>
 
     <!--  ID for the camera that needs extra protection -->
     <string name="config_protectedCameraId" translatable="false">1</string>

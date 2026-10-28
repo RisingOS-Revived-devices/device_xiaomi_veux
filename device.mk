@@ -207,6 +207,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay-service.sdm
 
 $(call soong_config_set_bool,livedisplay_sdm,enable_dm,false)
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 
 # Permissions & Media
 PRODUCT_COPY_FILES += \

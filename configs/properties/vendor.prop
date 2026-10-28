@@ -144,7 +144,6 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
-persist.vendor.camera.logInfoMask=false
 vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
@@ -183,7 +182,7 @@ persist.vendor.fingerprint.sensor_location=1080|922|0|local:4630947081618265473
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Graphics
-debug.sf.auto_latch_unsignaled=0
+debug.graphics.game_default_frame_rate.disabled=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=0
 debug.sf.enable_transaction_tracing=false
@@ -217,12 +216,14 @@ persist.log.tag.FrameTracker=S
 
 # Media
 debug.stagefright.c2inputsurface=-1
+vendor.media.omx=0
 vendor.media.target_variant=_blair
 ro.media.xml_variant.profiles=_blair
 vendor.netflix.bsp_rev=Q4350-32962-1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+vendor.perf.framepacing.enable=1
 
 # RIL
 persist.radio.multisim.config=dsds
@@ -281,3 +282,7 @@ vendor.usb.uvc.payload_transfer_size=1024
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+# Scroll Optimization
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1

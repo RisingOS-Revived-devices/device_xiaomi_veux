@@ -126,8 +126,8 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">500</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">2000</integer>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
       in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
@@ -509,11 +509,33 @@
     <bool name="skip_restoring_network_selection">true</bool>
 
     <!-- Pocket Lock -->
-    <bool name="config_pocketModeSupported">false</bool>
+    <bool name="config_pocketModeSupported">true</bool>
 
     <!-- Whether WM DisplayContent supports high performance transitions
          (lower-end devices may want to disable) -->
-    <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
+    <bool name="config_deviceSupportsHighPerfTransitions">true</bool>
+
+    <!-- Whether High Brightness Mode (HBM) / Sunlight Enhancement is enabled -->
+    <bool name="config_hbmEnabled">true</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
+
+    <!-- Sistem Bilgisi için İşlemci Sıcaklık Çarpanı -->
+    <integer name="config_sysCPUTempMultiplier">1000</integer>
+
+    <!-- AOD (Doze) Parlaklık Seviyesi (Nothing/Pixel standardı) -->
+    <integer name="config_screenBrightnessDoze">12</integer>
+
+    <!-- Hızlı ve yavaş parlaklık geçiş hızları (Akıcılık için) -->
+    <integer translatable="false" name="config_brightness_ramp_rate_fast">246</integer>
+    <integer translatable="false" name="config_brightness_ramp_rate_slow">123</integer>
+
+
+    <string-array name="config_ignoredCameraIds" translatable="false">
+        <item>4</item>
+        <item>6</item>
+    </string-array>
     
     <!-- Needed for custom rom CPU temp paths -->
     <string name="config_cpu_temp_path">/sys/class/thermal/thermal_zone28/temp</string>

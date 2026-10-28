@@ -8,6 +8,9 @@ ro.af.client_heap_size_kbyte=7168
 # eBPF
 ro.bpf.kver_override=5.10.239
 
+# Logs
+persist.log.tag.euicc=S
+
 # LMKD
 ro.lmk.kill_heaviest_task=true
 ro.lmk.thrashing_limit=50
@@ -17,3 +20,6 @@ ro.lmk.psi_partial_stall_ms=50
 
 # Disable RescueParty due to high risk of data loss
 persist.sys.disable_rescue=true
+
+# Disable Package Manager parse cache during boot
+pm.boot.disable_package_cache=true
