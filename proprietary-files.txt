@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from OS1.0.12.0.TKCMIXM (VEUXGlobal)
+# All unpinned blobs below are extracted from OS1.0.13.0.TKCEUXM (VEUXEEAGlobal)
 # ruby: OS2.0.9.0.UMOMIXM (ruby_global)
 # sunstone: OS1.0.2.0.UMQMIXM (SUNSTONEGlobal)
 # veux_cn: V14.0.5.0.TKCCNXM (VEUX)
@@ -124,6 +124,8 @@ vendor/lib/libspkrprot.so
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
+vendor/lib/soundfx/libmisoundfx.so
+vendor/lib64/soundfx/libmisoundfx.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -300,12 +302,6 @@ vendor/lib64/libqll10.so
 vendor/lib64/libqllengine.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsns_fastRPC_util.so
-vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libsns_registry_skel.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
@@ -331,6 +327,7 @@ vendor/lib64/libarcsoft_portrait_lighting_c.so
 vendor/lib64/libarcsoft_super_night_raw.so
 
 # Camera camerax
+system_ext/framework/camerax-vendor-extensions.jar
 vendor/lib/libcamxexternalformatutils.so
 vendor/lib/libcamxfacialfeatures.so
 vendor/lib/libcamxfdalgo.so
@@ -508,9 +505,6 @@ vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
-
-# CameraX extensions
-system_ext/framework/camerax-vendor-extensions.jar
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -698,7 +692,7 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so|8716f793f12ac3d3a5444ddaa056d6150
 vendor/lib64/vendor.qti.esepowermanager@1.1.so|759973ec41a5a9d0f0c4bc941a4e513704ecfc2c
 
 # EUICC - from veux_jp
-product/priv-app/EuiccGoogle/EuiccGoogle.apk|2d238bfe14473b8f578bf0d4ea61246f61d0f618
+product/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogleVeux.apk|2d238bfe14473b8f578bf0d4ea61246f61d0f618
 
 # Felica - from veux_jp
 product/app/MobileFeliCaClient/MobileFeliCaClient.apk;PRESIGNED|3ca65781ce1e89d88a169ab5885f04d6b331e14a
@@ -954,9 +948,16 @@ vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
 vendor/lib/libqcodec2_core.so
 vendor/lib/libqcodec2_hooks.so
+vendor/lib/libqcodec2_mockfilter.so
 vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
+vendor/lib64/libqcodec2_base.so
+vendor/lib64/libqcodec2_basecodec.so
+vendor/lib64/libqcodec2_mockfilter.so
+vendor/lib64/libqcodec2_platform.so
+vendor/lib64/libqcodec2_utils.so
+vendor/lib64/libqcodec2_v4l2codec.so
 
 # Mlipay
 vendor/bin/mlipayd@1.1
@@ -1059,6 +1060,8 @@ vendor/etc/qcril_database/upgrade/config/20.0_config.sql
 vendor/etc/qcril_database/upgrade/config/21.0_config.sql
 vendor/etc/qcril_database/upgrade/config/22.0_config.sql
 vendor/etc/qcril_database/upgrade/config/23.0_config.sql
+vendor/etc/qcril_database/upgrade/config/24.0_config.sql
+vendor/etc/qcril_database/upgrade/config/25.0_config.sql
 vendor/etc/qcril_database/upgrade/config/6.0_config.sql
 vendor/etc/qcril_database/upgrade/config/7.0_config.sql
 vendor/etc/qcril_database/upgrade/config/8.0_config.sql
@@ -1079,6 +1082,8 @@ vendor/etc/qcril_database/upgrade/other/20_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/21_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/22_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/23_version_update_ecc_table.sql
+vendor/etc/qcril_database/upgrade/other/24_version_update_ecc_table.sql
+vendor/etc/qcril_database/upgrade/other/25_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/4_version_update_ecc_table_qcrilnr.sql

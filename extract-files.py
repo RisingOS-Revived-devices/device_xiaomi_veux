@@ -98,8 +98,10 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'(?m)^.*marketname.*\n?', '')
         .regex_replace(r'(?m)cert', 'model'),
     'vendor/etc/camera/camxoverridesettings.txt': blob_fixup()
-        .regex_replace('0x10080', '0')
-        .regex_replace('0x1F', '0x0'),
+        .regex_replace('logInfoMask=0x10080', 'logInfoMask=0x0')
+        .regex_replace('overrideLogLevels=0x1F', 'overrideLogLevels=0x0'),
+    'vendor/etc/lowi.conf': blob_fixup()
+        .regex_replace('LOWI_LOG_LEVEL = 4', 'LOWI_LOG_LEVEL = 2'),
     'vendor/lib64/android.hardware.secure_element@1.0-impl.so': blob_fixup()
         .remove_needed('android.hidl.base@1.0.so'),
     ('vendor/lib64/camera/components/com.qti.node.dewarp.so', 'vendor/lib64/camera/components/com.vidhance.node.processing.so'): blob_fixup()
@@ -109,6 +111,18 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/libnfc-pn557.conf': blob_fixup()
         .call(blob_fixup_merge_files, 'vendor/libnfc-nxp_RF.conf', 'NXP RF', need_tmp_dir=False)
         .regex_replace('pn553', 'nq-nci'),
+    'vendor/lib64/hw/com.qti.chi.override.so': blob_fixup()
+        .binary_regex_replace(
+            b'persist.vendor.camera.clientname',
+            b'persist.vendor.camera.pkgname\x00\x00\x00'),
+    'vendor/lib64/hw/camera.qcom.so': blob_fixup()
+        .binary_regex_replace(
+            b'persist.vendor.camera.clientname',
+            b'persist.vendor.camera.pkgname\x00\x00\x00'),
+    'vendor/lib64/com.qti.feature2.rt.so': blob_fixup()
+        .binary_regex_replace(
+            b'persist.vendor.camera.clientname',
+            b'persist.vendor.camera.pkgname\x00\x00\x00'),
     ('vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
