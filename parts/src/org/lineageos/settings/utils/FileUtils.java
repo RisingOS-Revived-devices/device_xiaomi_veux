@@ -30,7 +30,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import org.lineageos.settings.hbm.HBMFragment;
+import org.lineageos.settings.hbm.HbmUtils;
 import org.lineageos.settings.hbm.AutoHBMService;
 
 public final class FileUtils {
@@ -191,9 +191,9 @@ public final class FileUtils {
                 UserHandle.CURRENT);
     }
     public static void enableService(Context context) {
-        if (HBMFragment.isAUTOHBMEnabled(context) && !mServiceEnabled) {
+        if (HbmUtils.isAutoHbmEnabled(context) && !mServiceEnabled) {
             startService(context);
-        } else if (!HBMFragment.isAUTOHBMEnabled(context) && mServiceEnabled) {
+        } else if (!HbmUtils.isAutoHbmEnabled(context) && mServiceEnabled) {
             stopService(context);
         }
     }

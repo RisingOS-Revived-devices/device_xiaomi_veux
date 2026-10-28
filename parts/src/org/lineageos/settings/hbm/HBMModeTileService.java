@@ -18,32 +18,23 @@
 
 package org.lineageos.settings.hbm;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.content.BroadcastReceiver;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import androidx.preference.PreferenceManager;
-import android.provider.Settings;
 
-import org.lineageos.settings.utils.FileUtils;
-import org.lineageos.settings.display.*;
 
 public class HBMModeTileService extends TileService {
 
-    private static final String HBM = "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm_enabled";
-    private static final String HBM_KEY = "hbm";
-    private static final String BACKLIGHT = "/sys/class/backlight/panel0-backlight/brightness";
-
-    private BroadcastReceiver screenStateReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver screenStateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
-                SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-                sharedPrefs.edit().putBoolean(HBM_KEY, false).commit();
+            if (Intent.ACTION_SCREEN_OFF.equals(intent.getAction())) {
+                PreferenceManager.getDefaultSharedPreferences(context).edit()
+                        .putBoolean(HbmUtils.KEY_HBM_SWITCH, false).commit();
                 updateUI(false);
             }
         }
@@ -51,6 +42,7 @@ public class HBMModeTileService extends TileService {
 
     private void updateUI(boolean enabled) {
         final Tile tile = getQsTile();
+        if (tile == null) return;
         tile.setState(enabled ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
         tile.updateTile();
     }
@@ -58,9 +50,7 @@ public class HBMModeTileService extends TileService {
     @Override
     public void onCreate() {
         super.onCreate();
-        IntentFilter filter = new IntentFilter();
-        filter.addAction(Intent.ACTION_SCREEN_OFF);
-        registerReceiver(screenStateReceiver, filter);
+        registerReceiver(screenStateReceiver, new IntentFilter(Intent.ACTION_SCREEN_OFF));
     }
 
     @Override
@@ -72,42 +62,15 @@ public class HBMModeTileService extends TileService {
     @Override
     public void onStartListening() {
         super.onStartListening();
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-        updateUI(sharedPrefs.getBoolean(HBM_KEY, false));
-    }
-
-    @Override
-    public void onStopListening() {
-        super.onStopListening();
+        updateUI(HbmUtils.isHbmEnabled(this));
     }
 
     @Override
     public void onClick() {
         super.onClick();
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-        final boolean dcDimmingEnabled = sharedPrefs.getBoolean(DcDimmingTileService.DC_DIMMING_ENABLE_KEY, false);
-        if (dcDimmingEnabled) {
-            return;
+        final boolean enabled = !HbmUtils.isHbmEnabled(this);
+        if (HbmUtils.setHbmEnabled(this, enabled)) {
+            updateUI(enabled);
         }
-
-        final boolean enabled = !(sharedPrefs.getBoolean(HBM_KEY, false));
-        if (enabled) {
-            // Save current brightness level
-            int currentBrightness = Settings.System.getInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 128);
-            sharedPrefs.edit().putInt("last_brightness", currentBrightness).apply();
-
-            FileUtils.writeLine(HBM, "1");
-            FileUtils.writeLine(BACKLIGHT, "2047");
-            Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 255);
-        } else {
-            FileUtils.writeLine(HBM, "0");
-
-            // Restore last brightness level
-            int lastBrightness = sharedPrefs.getInt("last_brightness", 128);
-            Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, lastBrightness);
-        }
-
-        sharedPrefs.edit().putBoolean(HBM_KEY, enabled).commit();
-        updateUI(enabled);
     }
 }

@@ -17,77 +17,44 @@
 */
 package org.lineageos.settings.display;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 import android.content.BroadcastReceiver;
 import android.content.IntentFilter;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import androidx.preference.PreferenceManager;
-import android.provider.Settings;
 
-import org.lineageos.settings.utils.FileUtils;
 
-import java.io.File;
 
 public class DcDimmingTileService extends TileService {
 
-    public static final String DC_DIMMING_ENABLE_KEY = "dc_dimming_enable";
-    private static final String DC_DIMMING_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure";
-    private static final String HBM = "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm";
-    private static final String HBM_KEY = "hbm";
+    public static final String DC_DIMMING_ENABLE_KEY = DcDimmingUtils.DC_DIMMING_ENABLE_KEY;
 
-    private File hbmFile;
-
-    private BroadcastReceiver screenStateReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver screenStateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
-                SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-                Editor editor = sharedPrefs.edit();
-                editor.putBoolean(DC_DIMMING_ENABLE_KEY, false);
-                editor.apply();
+            if (Intent.ACTION_SCREEN_OFF.equals(intent.getAction())) {
+                PreferenceManager.getDefaultSharedPreferences(context).edit()
+                        .putBoolean(DC_DIMMING_ENABLE_KEY, false).apply();
                 updateUI(false);
-                disableHBM();
+                DcDimmingUtils.disableHbm(context);
             }
         }
     };
 
     private void updateUI(boolean enabled) {
         final Tile tile = getQsTile();
+        if (tile == null) return;
         tile.setState(enabled ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
         tile.updateTile();
-    }
-
-    private void disableHBM() {
-        // Disable HBM mode
-        FileUtils.writeLine(HBM, "0");
-        // Make HBM mode path read-only
-        hbmFile.setReadOnly();
-        // Update HBM mode UI tile
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-        Editor editor = sharedPrefs.edit();
-        editor.putBoolean(HBM_KEY, false);
-        editor.apply();
-        updateHBMUI(false);
-    }
-
-    private void updateHBMUI(boolean enabled) {
-        Intent intent = new Intent("org.lineageos.settings.hbm.UPDATE_TILE");
-        intent.putExtra("enabled", enabled);
-        sendBroadcast(intent);
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
-        IntentFilter filter = new IntentFilter();
-        filter.addAction(Intent.ACTION_SCREEN_OFF);
-        registerReceiver(screenStateReceiver, filter);
-        hbmFile = new File(HBM);
+        registerReceiver(screenStateReceiver, new IntentFilter(Intent.ACTION_SCREEN_OFF));
     }
 
     @Override
@@ -99,27 +66,14 @@ public class DcDimmingTileService extends TileService {
     @Override
     public void onStartListening() {
         super.onStartListening();
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-        updateUI(sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false));
-    }
-
-    @Override
-    public void onStopListening() {
-        super.onStopListening();
+        updateUI(DcDimmingUtils.isEnabled(this));
     }
 
     @Override
     public void onClick() {
         super.onClick();
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-        final boolean enabled = !(sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false));
-        FileUtils.writeLine(DC_DIMMING_NODE, enabled ? "1" : "0");
-        if (enabled) {
-            disableHBM();
-        } else {
-            hbmFile.setWritable(true);
-        }
-        sharedPrefs.edit().putBoolean(DC_DIMMING_ENABLE_KEY, enabled).apply();
+        final boolean enabled = !DcDimmingUtils.isEnabled(this);
+        DcDimmingUtils.setEnabled(this, enabled);
         updateUI(enabled);
     }
 }

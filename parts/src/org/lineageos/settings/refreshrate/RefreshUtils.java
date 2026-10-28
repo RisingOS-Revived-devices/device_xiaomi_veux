@@ -58,7 +58,7 @@ public final class RefreshUtils {
     private OrientationEventListener orientationListener;
     private boolean isLandscape = false;
 
-    protected RefreshUtils(Context context) {
+    public RefreshUtils(Context context) {
         mSharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         mContext = context;
     }
@@ -66,6 +66,13 @@ public final class RefreshUtils {
     public static void startService(Context context) {
         context.startServiceAsUser(new Intent(context, RefreshService.class),
                 UserHandle.CURRENT);
+    }
+
+    protected void cleanup() {
+        if (orientationListener != null) {
+            orientationListener.disable();
+            orientationListener = null;
+        }
     }
 
     private void writeValue(String profiles) {
@@ -171,7 +178,7 @@ public final class RefreshUtils {
         return value;
     }
 
-    protected void writePackage(String packageName, int mode) {
+    public void writePackage(String packageName, int mode) {
         String value = getValue();
         value = value.replace(packageName + ",", "");
         String[] modes = value.split(":");
@@ -195,7 +202,7 @@ public final class RefreshUtils {
         writeValue(finalString);
     }
 
-    protected int getStateForPackage(String packageName) {
+    public int getStateForPackage(String packageName) {
         String value = getValue();
         String[] modes = value.split(":");
         int state = STATE_DEFAULT;

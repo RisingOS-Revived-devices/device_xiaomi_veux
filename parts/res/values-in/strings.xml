@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 acerhizmq
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_title">Setelan Xiaomi</string>
+    <string name="settings_entry_summary">Pengaturan layar, performa, baterai, dan audio</string>
+    <string name="device_details">perangkat: <xliff:g id="codename">%1$s</xliff:g> · Android <xliff:g id="android">%2$s</xliff:g> · kernel <xliff:g id="kernel">%3$s</xliff:g></string>
+    <string name="made_for_veux">Dibuat untuk veux oleh acerhizmq</string>
+    <string name="navigate_up">Kembali</string>
+
+    <string name="state_on">Aktif</string>
+    <string name="state_off">Nonaktif</string>
+    <string name="state_not_supported">Tidak didukung</string>
+    <string name="value_unknown">Tidak diketahui</string>
+    <string name="action_apply">Terapkan</string>
+    <string name="action_reset">Setel ulang</string>
+    <string name="settings_applied">Setelan diterapkan</string>
+    <string name="settings_reset">Setelan dikembalikan ke default</string>
+    <string name="write_failed">Setelan tidak dapat diterapkan</string>
+    <string name="percent_value"><xliff:g id="value">%1$d</xliff:g>%%</string>
+    <string name="lux_value"><xliff:g id="value">%1$s</xliff:g> lux</string>
+    <string name="seconds_value"><xliff:g id="value">%1$d</xliff:g> dtk</string>
+    <string name="celsius_value"><xliff:g id="value">%1$s</xliff:g> °C</string>
+    <string name="slider_decrease">Kurangi</string>
+    <string name="slider_increase">Tambah</string>
+    <string name="slider_reset">Setel ulang ke <xliff:g id="value">%1$s</xliff:g></string>
+    <string name="search_apps">Cari aplikasi</string>
+    <string name="search_clear">Hapus pencarian</string>
+    <string name="search_no_results">Tidak ada aplikasi yang cocok</string>
+
+    <string name="section_display">Layar</string>
+    <string name="section_performance">Performa</string>
+    <string name="section_battery_memory">Baterai dan memori</string>
+    <string name="section_audio">Audio</string>
+    <string name="section_extras">Ekstra</string>
+    <string name="section_about">Tentang</string>
+    <string name="quick_dc_dimming">DC dimming</string>
+    <string name="quick_hbm">HBM</string>
+    <string name="quick_fps">FPS</string>
+    <string name="quick_dirac">Dirac</string>
+    <string name="refresh_card_summary">60 / 120 Hz per aplikasi</string>
+    <string name="resolution_card_summary">Skala per aplikasi</string>
+    <string name="thermal_card_summary">Profil per aplikasi</string>
+    <string name="core_card_summary"><xliff:g id="online">%1$d</xliff:g> dari <xliff:g id="total">%2$d</xliff:g> aktif</string>
+    <string name="zram_card_summary"><xliff:g id="algorithm">%1$s</xliff:g>, swappiness <xliff:g id="swappiness">%2$d</xliff:g></string>
+    <string name="hbm_card_auto">HBM otomatis aktif</string>
+    <string name="clear_speaker_card_summary">Pengeluaran air dan debu</string>
+    <string name="appearance_card_summary">Tema dan bahasa</string>
+    <string name="credits_card_summary">Orang-orang di baliknya</string>
+
+    <string name="refresh_title">Kecepatan refresh</string>
+    <string name="refresh_note">Pilih kecepatan refresh untuk setiap aplikasi. Berubah otomatis saat aplikasi dibuka.</string>
+    <string name="refresh_default">Default</string>
+    <string name="refresh_standard">60 Hz</string>
+    <string name="refresh_extreme">120 Hz</string>
+    <string name="refresh_land">60 Hz saat lanskap</string>
+
+    <string name="resolution_title">Resolusi</string>
+    <string name="resolution_note">Pilih resolusi untuk setiap aplikasi. Diterapkan saat aplikasi berada di latar depan.</string>
+    <string name="resolution_default">Default</string>
+    <string name="resolution_480p">480p</string>
+    <string name="resolution_540p">540p</string>
+    <string name="resolution_720p">720p</string>
+    <string name="system_resolution_title">Resolusi sistem</string>
+    <string name="system_resolution_current">Resolusi saat ini</string>
+    <string name="system_resolution_mode">Resolusi</string>
+    <string name="system_resolution_note">Berlaku untuk seluruh sistem. Aplikasi dengan resolusi sendiri tetap memakainya. Resolusi lebih rendah menghemat daya.</string>
+
+    <string name="saturation_title">Saturasi</string>
+    <string name="saturation_note">Menyesuaikan saturasi warna di seluruh layar. Dipulihkan setiap kali perangkat dimulai ulang.</string>
+    <string name="image_preview_content_description">Gambar pratinjau saturasi</string>
+    <string name="preview_previous">Gambar sebelumnya</string>
+    <string name="preview_next">Gambar berikutnya</string>
+    <string name="tile_add">Tambahkan ke setelan cepat</string>
+    <string name="tile_added">Kotak ditambahkan</string>
+    <string name="tile_not_added">Kotak tidak ditambahkan</string>
+    <string name="tile_already_added">Kotak sudah ditambahkan</string>
+
+    <string name="dc_dimming_title">DC dimming</string>
+    <string name="dc_dimming_switch">Gunakan DC dimming</string>
+    <string name="dc_dimming_note">Mengurangi kedipan dan kelelahan mata pada kecerahan rendah. Mode kecerahan tinggi dimatikan selama aktif.</string>
+    <string name="dc_dimming_not_supported">DC dimming tidak didukung oleh kernel yang berjalan.</string>
+
+    <string name="hbm_title">Kecerahan tinggi</string>
+    <string name="hbm_mode_title">Mode kecerahan tinggi</string>
+    <string name="hbm_switch">Mode kecerahan tinggi</string>
+    <string name="hbm_switch_summary">Kecerahan panel maksimum untuk sinar matahari langsung</string>
+    <string name="hbm_blocked_by_dc">Matikan DC dimming untuk menggunakannya</string>
+    <string name="hbm_not_supported">Tidak didukung oleh kernel yang berjalan</string>
+    <string name="auto_hbm_switch">HBM otomatis</string>
+    <string name="auto_hbm_summary">Menyalakan kecerahan tinggi di cahaya terang dan mematikannya lagi di dalam ruangan</string>
+    <string name="auto_hbm_threshold">Ambang cahaya</string>
+    <string name="auto_hbm_disable_time">Matikan setelah</string>
+    <string name="hbm_warning">Menggunakan mode kecerahan tinggi dalam waktu lama dapat merusak layar.</string>
+
+    <string name="thermal_title">Mesin termal</string>
+    <string name="thermal_note">Pilih profil termal untuk setiap aplikasi. Berubah otomatis saat aplikasi dibuka.</string>
+    <string name="thermal_default">Tanpa optimasi</string>
+    <string name="thermal_benchmark">Performa</string>
+    <string name="thermal_browser">Browser</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Telepon</string>
+    <string name="thermal_gaming">Game</string>
+    <string name="thermal_navigation">Navigasi</string>
+    <string name="thermal_streaming">Streaming</string>
+    <string name="thermal_video">Video</string>
+
+    <string name="kernel_manager_title">Pengelola kernel</string>
+    <string name="cpu_governor">Governor CPU</string>
+    <string name="efficiency_cluster">Inti efisiensi</string>
+    <string name="performance_cluster">Inti performa</string>
+    <string name="min_frequency">Frekuensi minimum</string>
+    <string name="max_frequency">Frekuensi maksimum</string>
+    <string name="frequencies_unavailable">Frekuensi CPU tidak dapat dibaca pada kernel ini.</string>
+    <string name="kernel_manager_note">Perubahan diterapkan saat Anda mengetuk Terapkan dan berlaku hingga mulai ulang berikutnya.</string>
+
+    <string name="gpu_manager_title">Pengelola GPU</string>
+    <string name="gpu_model">GPU</string>
+    <string name="gpu_current_freq">Frekuensi</string>
+    <string name="gpu_busy">Beban</string>
+    <string name="gpu_temperature">Suhu</string>
+    <string name="gpu_thermal_level">Level termal</string>
+    <string name="gpu_level_value">Level <xliff:g id="level">%1$s</xliff:g></string>
+    <string name="gpu_governor">Governor GPU</string>
+    <string name="gpu_power">Daya</string>
+    <string name="gpu_force_clk_on">Paksa clock aktif</string>
+    <string name="gpu_force_clk_on_summary">Biarkan clock GPU tetap berjalan saat diam</string>
+    <string name="gpu_force_bus_on">Paksa bus aktif</string>
+    <string name="gpu_force_bus_on_summary">Biarkan bus memori GPU tetap aktif</string>
+    <string name="gpu_force_rail_on">Paksa rail aktif</string>
+    <string name="gpu_force_rail_on_summary">Biarkan jalur daya GPU tetap menyala</string>
+    <string name="gpu_force_no_nap">Tanpa tidur singkat</string>
+    <string name="gpu_force_no_nap_summary">Cegah GPU tidur singkat di antara frame</string>
+    <string name="gpu_bus_split">Pemisahan bus</string>
+    <string name="gpu_bus_split_summary">Skalakan bus memori terpisah dari clock GPU</string>
+    <string name="gpu_manager_note">Sakelar daya langsung diterapkan. Governor dan frekuensi diterapkan saat Anda mengetuk Terapkan. Semuanya kembali setelah mulai ulang.</string>
+
+    <string name="core_control_title">Kontrol inti</string>
+    <string name="core_label">CPU <xliff:g id="core">%1$d</xliff:g></string>
+    <string name="core_control_min_online">Minimal dua inti efisiensi harus tetap aktif</string>
+    <string name="core_control_note">Ketuk inti untuk menonaktifkan atau mengaktifkannya kembali. Minimal dua dari inti 0 hingga 5 selalu aktif. Inti kembali aktif setelah mulai ulang.</string>
+
+    <string name="fastcharge_title">Pengisian cepat</string>
+    <string name="fastcharge_mode_title">Daya pengisian</string>
+    <string name="fastcharge_mode_normal">Normal</string>
+    <string name="fastcharge_mode_18w">18W</string>
+    <string name="fastcharge_mode_33w">33W</string>
+    <string name="fastcharge_mode_67w">67W</string>
+    <string name="fastcharge_mode_note">Normal mematikan charge pump (5V, hingga 15W). 18W dan 33W membatasi arus pengisian. 67W adalah perilaku bawaan. Perlindungan termal selalu berlaku.</string>
+    <string name="fastcharge_mode_unavailable">Tidak didukung oleh kernel yang berjalan.</string>
+    <string name="fastcharge_usb_title">Pengisian cepat USB</string>
+    <string name="fastcharge_usb_summary">Isi daya 900 mA, bukan 500 mA, dari port USB komputer</string>
+    <string name="fastcharge_usb_unavailable">Tidak didukung oleh kernel yang berjalan</string>
+
+    <string name="zram_title">ZRAM</string>
+    <string name="zram_size_title">Ukuran</string>
+    <string name="zram_disabled">Nonaktif</string>
+    <string name="zram_size_2gb">2 GB</string>
+    <string name="zram_size_4gb">4 GB</string>
+    <string name="zram_size_8gb">8 GB</string>
+    <string name="zram_size_dynamic">Otomatis</string>
+    <string name="zram_compression_title">Kompresi</string>
+    <string name="swappiness_title">Swappiness</string>
+    <string name="zram_note">Ukuran dan kompresi berlaku setelah mulai ulang. Swappiness langsung berlaku.</string>
+    <string name="zram_change_applied">Setelan ZRAM disimpan</string>
+    <string name="zram_reboot_recommended">Mulai ulang perangkat agar perubahan ini berlaku.</string>
+
+    <string name="dirac_title">Suara Dirac</string>
+    <string name="dirac_enable">Gunakan Dirac</string>
+    <string name="dirac_scenario">Skenario</string>
+    <string name="dirac_headset_title">Jenis headphone</string>
+    <string name="dirac_preset_title">Preset</string>
+    <string name="dirac_eq_enable_title">Equalizer</string>
+    <string name="dirac_eq_enable_summary">Terapkan preset yang dipilih; jika nonaktif, semua band datar</string>
+    <string name="dirac_pause_calls_title">Jeda saat panggilan</string>
+    <string name="dirac_pause_calls_summary">Lewati efek selama panggilan telepon dan VoIP</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_enable_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Lebih sedikit derau dan distorsi untuk kualitas audio lebih baik</string>
+    <string name="music_headset_scenario_intelligent">Cerdas</string>
+    <string name="music_headset_scenario_music">Musik</string>
+    <string name="music_headset_scenario_video">Video</string>
+    <string name="music_headset_scenario_vocal">Suara</string>
+    <string name="dirac_preset_default">Default</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Klasik</string>
+    <string name="dirac_preset_hiphop">Hip hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Elektronik</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dansa</string>
+    <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_bass_booster">Penguat bass</string>
+    <string name="dirac_preset_balanced">Seimbang</string>
+    <string name="dirac_preset_live">Langsung</string>
+    <string name="dirac_preset_bass_reduction">Pengurangan bass</string>
+    <string name="dirac_preset_treble_reduction">Pengurangan treble</string>
+    <string name="dirac_preset_soft_bass">Bass lembut</string>
+    <string name="dirac_preset_soft_treble">Treble lembut</string>
+
+    <string name="clear_speaker_title">Bersihkan speaker</string>
+    <string name="clear_speaker_start">Mulai membersihkan</string>
+    <string name="clear_speaker_running">Membersihkan, sisa <xliff:g id="seconds">%1$d</xliff:g> dtk</string>
+    <string name="clear_speaker_description">Memutar nada rendah selama 30 detik untuk mendorong air dan debu keluar dari speaker. Naikkan volume media ke maksimum dan lepas headphone terlebih dahulu. Jika speaker sangat tersumbat, jalankan 2 hingga 5 kali dengan speaker menghadap ke bawah.</string>
+
+    <string name="fps_overlay_title">Overlay FPS</string>
+    <string name="fps_info_tile_label">Overlay FPS</string>
+    <string name="fps_overlay_switch">Tampilkan frame rate</string>
+    <string name="fps_overlay_note">Menampilkan frame rate layar di sudut atas, diperbarui setiap detik. Juga tersedia sebagai kotak setelan cepat.</string>
+    <string name="fps_overlay_not_supported">Penghitung frame tidak tersedia pada kernel yang berjalan.</string>
+
+    <string name="useless_mode_title">Mode tak berguna</string>
+    <string name="useless_mode_switch">Aktifkan mode tak berguna</string>
+    <string name="useless_mode_enabled_summary">Mode tak berguna aktif. Bersiaplah untuk getaran dan kedipan acak.</string>
+    <string name="useless_mode_disabled_summary">Mode tak berguna nonaktif. Perangkat Anda tetap normal dan membosankan.</string>
+    <string name="useless_mode_warning">Getaran acak, layar berkedip, dan suara. Sesuai janji, sama sekali tidak berguna.</string>
+    <string name="useless_mode_warning_title">Peringatan mode tak berguna</string>
+    <string name="useless_mode_status_title">Status mode tak berguna</string>
+    <string name="useless_mode_accept">Saya menerima ketidakbergunaan ini</string>
+    <string name="useless_mode_cancel">Batal</string>
+    <string name="useless_mode_amazing">Luar biasa</string>
+
+    <string name="appearance_title">Tampilan</string>
+    <string name="appearance_colors">Warna</string>
+    <string name="colors_material_you">Material You</string>
+    <string name="colors_signature">Signature</string>
+    <string name="colors_material_you_summary">Warna mengikuti wallpaper Anda.</string>
+    <string name="colors_signature_summary">Grafit dengan aksen amber, sama di setiap wallpaper.</string>
+    <string name="appearance_language">Bahasa</string>
+    <string name="language_system">Default sistem</string>
+
+    <string name="credits_title">Kredit</string>
+    <string name="credits_developed_by">Dikembangkan dan dikelola oleh</string>
+    <string name="credits_developer_summary">Pengembang veux. Membuat dasbor ini dan mengerjakan ulang sebagian besar XiaomiParts untuk veux.</string>
+    <string name="credits_built_by">Dibuat dan dikerjakan ulang oleh acerhizmq</string>
+    <string name="credits_work_dashboard">Dasbor XiaomiParts, desain, dan ke-13 terjemahan</string>
+    <string name="credits_work_fastcharge">Pengisian cepat untuk veux: profil daya 67W dan pengisian USB di kernel</string>
+    <string name="credits_work_dirac">Pembaruan Dirac: jeda saat panggilan, equalizer, pemulihan server audio, dan perbaikan EQ</string>
+    <string name="credits_work_fps">Port overlay FPS dengan jalur layar veux dan aturan SELinux</string>
+    <string name="credits_work_hbm">HBM otomatis yang lebih tangguh serta perbaikan HBM dan DC dimming</string>
+    <string name="credits_work_fixes">Perbaikan pengelola GPU, penyesuaian ZRAM, dan perbaikan kebocoran memori di seluruh parts</string>
+    <string name="credits_work_integration">Integrasi KamisStuff dan setiap fitur disesuaikan untuk veux</string>
+    <string name="credits_original_code">Kode asli dari</string>
+    <string name="credits_source_kami">KamisStuff: kontrol inti, ZRAM, pengelola kernel dan GPU, resolusi, pengisian cepat, dan mode tak berguna</string>
+    <string name="credits_source_pocof3">Logika pemulihan MiSound dan preferensi bilah geser</string>
+    <string name="credits_source_guidixx">Sumber overlay FPS</string>
+    <string name="credits_source_fastcharge">Antarmuka kernel pengisian cepat</string>
+    <string name="credits_projects">Proyek</string>
+    <string name="credits_contributors">Kontributor</string>
+
+    <string-array name="useless_warnings">
+        <item>Yakin ingin mengaktifkan fitur yang sama sekali tidak berguna ini?</item>
+        <item>Peringatan: tindakan ini sama sekali tidak berpengaruh pada perangkat Anda.</item>
+        <item>Perhatian: jika dilanjutkan, tidak akan terjadi apa-apa.</item>
+        <item>Pemberitahuan: sakelar ini ada semata-mata untuk hiburan.</item>
+        <item>Catatan: tidak ada elektron yang dirugikan dalam pembuatan sakelar ini.</item>
+        <item>Penafian: setelan ini disertifikasi para ahli 100% tidak berguna.</item>
+        <item>Peringatan: dapat memicu keinginan mendadak untuk menyalakan setelan tak berguna lainnya.</item>
+        <item>Pemberitahuan: dapat menyebabkan getaran acak dan layar berkedip.</item>
+        <item>Perhatian: efek samping termasuk dengungan dan kedipan tanpa arti.</item>
+    </string-array>
+
+    <string-array name="useless_messages">
+        <item>Selamat! Anda berhasil mencapai sama sekali tidak ada.</item>
+        <item>Sakelar ini sama bergunanya dengan teko dari cokelat.</item>
+        <item>Anda baru saja membuang 0,003 detik hidup Anda. Apakah sepadan?</item>
+        <item>Fakta menarik: tombol ini sudah ditekan 42 kali oleh pengguna yang bingung.</item>
+        <item>Peringatan: penggunaan berlebihan dapat menyebabkan sedikit kebingungan.</item>
+        <item>Setelan ini dipersembahkan oleh Departemen Departemen Berlebihan.</item>
+        <item>Pencapaian terbuka: Ahli Tindakan Sia-sia.</item>
+        <item>Error 404: fungsi tidak ditemukan.</item>
+        <item>Sakelar ini bekerja persis seperti yang dimaksud, yaitu tidak sama sekali.</item>
+        <item>Bip bop! Suara robot membuat semuanya terasa lebih penting.</item>
+        <item>Pencapaian terbuka: Pembuang Waktu Profesional.</item>
+        <item>Fitur ini sama efeknya dengan berteriak pada awan.</item>
+        <item>Selamat! Tingkat ketidakbergunaan Anda naik 0%.</item>
+        <item>BZZZT! Ponsel Anda sekarang bergetar tanpa alasan.</item>
+        <item>Layar berkedip diaktifkan, kenapa tidak?</item>
+        <item>Perangkat Anda sedang mengalami sedikit krisis eksistensial.</item>
+    </string-array>
+</resources>

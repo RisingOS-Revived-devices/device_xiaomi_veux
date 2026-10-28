@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 acerhizmq
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_title">Xiaomi-Einstellungen</string>
+    <string name="settings_entry_summary">Display-, Leistungs-, Akku- und Audio-Optimierungen</string>
+    <string name="device_details">Gerät: <xliff:g id="codename">%1$s</xliff:g> · Android <xliff:g id="android">%2$s</xliff:g> · Kernel <xliff:g id="kernel">%3$s</xliff:g></string>
+    <string name="made_for_veux">Für veux erstellt von acerhizmq</string>
+    <string name="navigate_up">Zurück</string>
+
+    <string name="state_on">An</string>
+    <string name="state_off">Aus</string>
+    <string name="state_not_supported">Nicht unterstützt</string>
+    <string name="value_unknown">Unbekannt</string>
+    <string name="action_apply">Anwenden</string>
+    <string name="action_reset">Zurücksetzen</string>
+    <string name="settings_applied">Einstellungen angewendet</string>
+    <string name="settings_reset">Einstellungen auf Standard zurückgesetzt</string>
+    <string name="write_failed">Einstellung konnte nicht angewendet werden</string>
+    <string name="percent_value"><xliff:g id="value">%1$d</xliff:g> %%</string>
+    <string name="lux_value"><xliff:g id="value">%1$s</xliff:g> Lux</string>
+    <string name="seconds_value"><xliff:g id="value">%1$d</xliff:g> s</string>
+    <string name="celsius_value"><xliff:g id="value">%1$s</xliff:g> °C</string>
+    <string name="slider_decrease">Verringern</string>
+    <string name="slider_increase">Erhöhen</string>
+    <string name="slider_reset">Auf <xliff:g id="value">%1$s</xliff:g> zurücksetzen</string>
+    <string name="search_apps">Apps suchen</string>
+    <string name="search_clear">Suche löschen</string>
+    <string name="search_no_results">Keine Apps passen zu deiner Suche</string>
+
+    <string name="section_display">Display</string>
+    <string name="section_performance">Leistung</string>
+    <string name="section_battery_memory">Akku und Speicher</string>
+    <string name="section_audio">Audio</string>
+    <string name="section_extras">Extras</string>
+    <string name="section_about">Info</string>
+    <string name="quick_dc_dimming">DC-Dimmen</string>
+    <string name="quick_hbm">HBM</string>
+    <string name="quick_fps">FPS</string>
+    <string name="quick_dirac">Dirac</string>
+    <string name="refresh_card_summary">60 / 120 Hz pro App</string>
+    <string name="resolution_card_summary">Skalierung pro App</string>
+    <string name="thermal_card_summary">Profile pro App</string>
+    <string name="core_card_summary"><xliff:g id="online">%1$d</xliff:g> von <xliff:g id="total">%2$d</xliff:g> aktiv</string>
+    <string name="zram_card_summary"><xliff:g id="algorithm">%1$s</xliff:g>, Swappiness <xliff:g id="swappiness">%2$d</xliff:g></string>
+    <string name="hbm_card_auto">Auto-HBM an</string>
+    <string name="clear_speaker_card_summary">Wasser- und Staubauswurf</string>
+    <string name="appearance_card_summary">Design und Sprache</string>
+    <string name="credits_card_summary">Die Menschen dahinter</string>
+
+    <string name="refresh_title">Bildwiederholrate</string>
+    <string name="refresh_note">Wähle eine Bildwiederholrate für jede App. Sie wechselt automatisch, wenn die App geöffnet wird.</string>
+    <string name="refresh_default">Standard</string>
+    <string name="refresh_standard">60 Hz</string>
+    <string name="refresh_extreme">120 Hz</string>
+    <string name="refresh_land">60 Hz im Querformat</string>
+
+    <string name="resolution_title">Auflösung</string>
+    <string name="resolution_note">Wähle eine Auflösung für jede App. Sie wird angewendet, wenn die App in den Vordergrund kommt.</string>
+    <string name="resolution_default">Standard</string>
+    <string name="resolution_480p">480p</string>
+    <string name="resolution_540p">540p</string>
+    <string name="resolution_720p">720p</string>
+    <string name="system_resolution_title">Systemauflösung</string>
+    <string name="system_resolution_current">Aktuelle Auflösung</string>
+    <string name="system_resolution_mode">Auflösung</string>
+    <string name="system_resolution_note">Gilt für das gesamte System. Apps mit eigener Auflösung behalten diese. Niedrigere Auflösungen sparen Energie.</string>
+
+    <string name="saturation_title">Sättigung</string>
+    <string name="saturation_note">Passt die Farbsättigung des gesamten Displays an. Sie wird nach jedem Neustart wiederhergestellt.</string>
+    <string name="image_preview_content_description">Vorschaubild der Sättigung</string>
+    <string name="preview_previous">Vorheriges Bild</string>
+    <string name="preview_next">Nächstes Bild</string>
+    <string name="tile_add">Zu Schnelleinstellungen hinzufügen</string>
+    <string name="tile_added">Kachel hinzugefügt</string>
+    <string name="tile_not_added">Kachel nicht hinzugefügt</string>
+    <string name="tile_already_added">Kachel bereits hinzugefügt</string>
+
+    <string name="dc_dimming_title">DC-Dimmen</string>
+    <string name="dc_dimming_switch">DC-Dimmen verwenden</string>
+    <string name="dc_dimming_note">Reduziert Flimmern und Augenbelastung bei geringer Helligkeit. Der Hochhelligkeitsmodus wird dabei ausgeschaltet.</string>
+    <string name="dc_dimming_not_supported">DC-Dimmen wird vom laufenden Kernel nicht unterstützt.</string>
+
+    <string name="hbm_title">Hohe Helligkeit</string>
+    <string name="hbm_mode_title">Hochhelligkeitsmodus</string>
+    <string name="hbm_switch">Hochhelligkeitsmodus</string>
+    <string name="hbm_switch_summary">Maximale Displayhelligkeit für direktes Sonnenlicht</string>
+    <string name="hbm_blocked_by_dc">Schalte DC-Dimmen aus, um ihn zu nutzen</string>
+    <string name="hbm_not_supported">Vom laufenden Kernel nicht unterstützt</string>
+    <string name="auto_hbm_switch">Auto-HBM</string>
+    <string name="auto_hbm_summary">Schaltet hohe Helligkeit bei hellem Licht ein und drinnen wieder aus</string>
+    <string name="auto_hbm_threshold">Lichtschwelle</string>
+    <string name="auto_hbm_disable_time">Ausschalten nach</string>
+    <string name="hbm_warning">Längere Nutzung des Hochhelligkeitsmodus kann das Display beschädigen.</string>
+
+    <string name="thermal_title">Thermik-Engine</string>
+    <string name="thermal_note">Wähle ein Thermikprofil für jede App. Es wechselt automatisch, wenn die App geöffnet wird.</string>
+    <string name="thermal_default">Keine Optimierung</string>
+    <string name="thermal_benchmark">Leistung</string>
+    <string name="thermal_browser">Browser</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Telefon</string>
+    <string name="thermal_gaming">Gaming</string>
+    <string name="thermal_navigation">Navigation</string>
+    <string name="thermal_streaming">Streaming</string>
+    <string name="thermal_video">Video</string>
+
+    <string name="kernel_manager_title">Kernel-Manager</string>
+    <string name="cpu_governor">CPU-Governor</string>
+    <string name="efficiency_cluster">Effizienzkerne</string>
+    <string name="performance_cluster">Leistungskerne</string>
+    <string name="min_frequency">Minimale Frequenz</string>
+    <string name="max_frequency">Maximale Frequenz</string>
+    <string name="frequencies_unavailable">CPU-Frequenzen können auf diesem Kernel nicht gelesen werden.</string>
+    <string name="kernel_manager_note">Änderungen werden beim Tippen auf Anwenden übernommen und gelten bis zum nächsten Neustart.</string>
+
+    <string name="gpu_manager_title">GPU-Manager</string>
+    <string name="gpu_model">GPU</string>
+    <string name="gpu_current_freq">Frequenz</string>
+    <string name="gpu_busy">Auslastung</string>
+    <string name="gpu_temperature">Temperatur</string>
+    <string name="gpu_thermal_level">Thermikstufe</string>
+    <string name="gpu_level_value">Stufe <xliff:g id="level">%1$s</xliff:g></string>
+    <string name="gpu_governor">GPU-Governor</string>
+    <string name="gpu_power">Energie</string>
+    <string name="gpu_force_clk_on">Takt erzwingen</string>
+    <string name="gpu_force_clk_on_summary">GPU-Takt auch im Leerlauf laufen lassen</string>
+    <string name="gpu_force_bus_on">Bus erzwingen</string>
+    <string name="gpu_force_bus_on_summary">GPU-Speicherbus aktiv halten</string>
+    <string name="gpu_force_rail_on">Spannungsschiene erzwingen</string>
+    <string name="gpu_force_rail_on_summary">GPU-Stromversorgung eingeschaltet lassen</string>
+    <string name="gpu_force_no_nap">Kein Nap</string>
+    <string name="gpu_force_no_nap_summary">Verhindert, dass die GPU zwischen Frames ruht</string>
+    <string name="gpu_bus_split">Bus-Split</string>
+    <string name="gpu_bus_split_summary">Speicherbus getrennt vom GPU-Takt skalieren</string>
+    <string name="gpu_manager_note">Energieschalter wirken sofort. Governor und Frequenzen werden beim Tippen auf Anwenden übernommen. Nach einem Neustart wird alles zurückgesetzt.</string>
+
+    <string name="core_control_title">Kernsteuerung</string>
+    <string name="core_label">CPU <xliff:g id="core">%1$d</xliff:g></string>
+    <string name="core_control_min_online">Mindestens zwei Effizienzkerne müssen aktiv bleiben</string>
+    <string name="core_control_note">Tippe auf einen Kern, um ihn zu deaktivieren oder wieder zu aktivieren. Mindestens zwei der Kerne 0 bis 5 bleiben immer aktiv. Nach einem Neustart sind alle Kerne wieder aktiv.</string>
+
+    <string name="fastcharge_title">Schnellladen</string>
+    <string name="fastcharge_mode_title">Ladeleistung</string>
+    <string name="fastcharge_mode_normal">Normal</string>
+    <string name="fastcharge_mode_18w">18W</string>
+    <string name="fastcharge_mode_33w">33W</string>
+    <string name="fastcharge_mode_67w">67W</string>
+    <string name="fastcharge_mode_note">Normal lässt die Ladungspumpe aus (5V, bis zu 15W). 18W und 33W begrenzen den Ladestrom. 67W ist das Standardverhalten. Der Überhitzungsschutz gilt immer.</string>
+    <string name="fastcharge_mode_unavailable">Vom laufenden Kernel nicht unterstützt.</string>
+    <string name="fastcharge_usb_title">USB-Schnellladen</string>
+    <string name="fastcharge_usb_summary">An Computer-USB-Anschlüssen mit 900 mA statt 500 mA laden</string>
+    <string name="fastcharge_usb_unavailable">Vom laufenden Kernel nicht unterstützt</string>
+
+    <string name="zram_title">ZRAM</string>
+    <string name="zram_size_title">Größe</string>
+    <string name="zram_disabled">Aus</string>
+    <string name="zram_size_2gb">2 GB</string>
+    <string name="zram_size_4gb">4 GB</string>
+    <string name="zram_size_8gb">8 GB</string>
+    <string name="zram_size_dynamic">Automatisch</string>
+    <string name="zram_compression_title">Komprimierung</string>
+    <string name="swappiness_title">Swappiness</string>
+    <string name="zram_note">Größe und Komprimierung gelten nach einem Neustart. Swappiness gilt sofort.</string>
+    <string name="zram_change_applied">ZRAM-Einstellung gespeichert</string>
+    <string name="zram_reboot_recommended">Starte dein Gerät neu, damit diese Änderung wirksam wird.</string>
+
+    <string name="dirac_title">Dirac Sound</string>
+    <string name="dirac_enable">Dirac verwenden</string>
+    <string name="dirac_scenario">Szenario</string>
+    <string name="dirac_headset_title">Kopfhörertyp</string>
+    <string name="dirac_preset_title">Voreinstellung</string>
+    <string name="dirac_eq_enable_title">Equalizer</string>
+    <string name="dirac_eq_enable_summary">Gewählte Voreinstellung anwenden; aus bedeutet alle Bänder flach</string>
+    <string name="dirac_pause_calls_title">Bei Anrufen pausieren</string>
+    <string name="dirac_pause_calls_summary">Effekt bei Telefon- und VoIP-Anrufen umgehen</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_enable_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Weniger Rauschen und Verzerrung für bessere Klangqualität</string>
+    <string name="music_headset_scenario_intelligent">Intelligent</string>
+    <string name="music_headset_scenario_music">Musik</string>
+    <string name="music_headset_scenario_video">Video</string>
+    <string name="music_headset_scenario_vocal">Sprache</string>
+    <string name="dirac_preset_default">Standard</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Klassik</string>
+    <string name="dirac_preset_hiphop">Hip-Hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Elektronisch</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dance</string>
+    <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_bass_booster">Bass-Booster</string>
+    <string name="dirac_preset_balanced">Ausgewogen</string>
+    <string name="dirac_preset_live">Live</string>
+    <string name="dirac_preset_bass_reduction">Bassreduzierung</string>
+    <string name="dirac_preset_treble_reduction">Höhenreduzierung</string>
+    <string name="dirac_preset_soft_bass">Sanfter Bass</string>
+    <string name="dirac_preset_soft_treble">Sanfte Höhen</string>
+
+    <string name="clear_speaker_title">Lautsprecher reinigen</string>
+    <string name="clear_speaker_start">Reinigung starten</string>
+    <string name="clear_speaker_running">Reinigung läuft, noch <xliff:g id="seconds">%1$d</xliff:g> s</string>
+    <string name="clear_speaker_description">Spielt 30 Sekunden lang einen tiefen Ton ab, um Wasser und Staub aus dem Lautsprecher zu drücken. Stelle die Medienlautstärke vorher auf Maximum und entferne Kopfhörer. Ist der Lautsprecher stark verstopft, führe es 2 bis 5 Mal mit dem Lautsprecher nach unten aus.</string>
+
+    <string name="fps_overlay_title">FPS-Overlay</string>
+    <string name="fps_info_tile_label">FPS-Overlay</string>
+    <string name="fps_overlay_switch">Bildrate anzeigen</string>
+    <string name="fps_overlay_note">Zeigt die Bildrate des Displays in der oberen Ecke, jede Sekunde aktualisiert. Auch als Schnelleinstellungskachel verfügbar.</string>
+    <string name="fps_overlay_not_supported">Der Bildzähler ist auf dem laufenden Kernel nicht verfügbar.</string>
+
+    <string name="useless_mode_title">Nutzloser Modus</string>
+    <string name="useless_mode_switch">Nutzlosen Modus aktivieren</string>
+    <string name="useless_mode_enabled_summary">Der nutzlose Modus ist an. Rechne mit zufälligem Brummen und Flackern.</string>
+    <string name="useless_mode_disabled_summary">Der nutzlose Modus ist aus. Dein Gerät bleibt langweilig normal.</string>
+    <string name="useless_mode_warning">Zufällige Vibrationen, Bildschirmflackern und Töne. Wie versprochen völlig nutzlos.</string>
+    <string name="useless_mode_warning_title">Warnung zum nutzlosen Modus</string>
+    <string name="useless_mode_status_title">Status des nutzlosen Modus</string>
+    <string name="useless_mode_accept">Ich akzeptiere die Nutzlosigkeit</string>
+    <string name="useless_mode_cancel">Abbrechen</string>
+    <string name="useless_mode_amazing">Großartig</string>
+
+    <string name="appearance_title">Darstellung</string>
+    <string name="appearance_colors">Farben</string>
+    <string name="colors_material_you">Material You</string>
+    <string name="colors_signature">Signature</string>
+    <string name="colors_material_you_summary">Die Farben passen sich deinem Hintergrund an.</string>
+    <string name="colors_signature_summary">Graphit mit Bernstein-Akzent, auf jedem Hintergrund gleich.</string>
+    <string name="appearance_language">Sprache</string>
+    <string name="language_system">Systemstandard</string>
+
+    <string name="credits_title">Mitwirkende</string>
+    <string name="credits_developed_by">Entwickelt und gepflegt von</string>
+    <string name="credits_developer_summary">veux-Entwickler. Hat dieses Dashboard gebaut und den Großteil von XiaomiParts für veux überarbeitet.</string>
+    <string name="credits_built_by">Von acerhizmq gebaut und überarbeitet</string>
+    <string name="credits_work_dashboard">XiaomiParts-Dashboard, Design und alle 13 Übersetzungen</string>
+    <string name="credits_work_fastcharge">Schnellladen für veux: 67W-Leistungsprofile und USB-Laden im Kernel</string>
+    <string name="credits_work_dirac">Dirac-Überarbeitung: Pause bei Anrufen, Equalizer, Audioserver-Wiederherstellung und EQ-Fix</string>
+    <string name="credits_work_fps">FPS-Overlay-Portierung mit veux-Displaypfaden und SELinux-Regeln</string>
+    <string name="credits_work_hbm">Robusteres Auto-HBM sowie Fixes für HBM und DC-Dimmen</string>
+    <string name="credits_work_fixes">GPU-Manager-Fixes, ZRAM-Abstimmung und Speicherleck-Fixes in allen Teilen</string>
+    <string name="credits_work_integration">KamisStuff-Integration und jede Funktion an veux angepasst</string>
+    <string name="credits_original_code">Originalcode von</string>
+    <string name="credits_source_kami">KamisStuff: Kernsteuerung, ZRAM, Kernel- und GPU-Manager, Auflösung, Schnellladen und nutzloser Modus</string>
+    <string name="credits_source_pocof3">MiSound-Wiederherstellungslogik und Schieberegler-Einstellung</string>
+    <string name="credits_source_guidixx">Quelle des FPS-Overlays</string>
+    <string name="credits_source_fastcharge">Kernel-Schnittstelle für Schnellladen</string>
+    <string name="credits_projects">Projekte</string>
+    <string name="credits_contributors">Mitwirkende</string>
+
+    <string-array name="useless_warnings">
+        <item>Möchtest du diese völlig nutzlose Funktion wirklich aktivieren?</item>
+        <item>Warnung: Diese Aktion hat absolut keine Wirkung auf dein Gerät.</item>
+        <item>Vorsicht: Wenn du fortfährst, passiert rein gar nichts.</item>
+        <item>Hinweis: Dieser Schalter dient ausschließlich der Unterhaltung.</item>
+        <item>Hinweis: Bei der Herstellung dieses Schalters kam kein Elektron zu Schaden.</item>
+        <item>Haftungsausschluss: Diese Einstellung ist von Experten als 100% nutzlos zertifiziert.</item>
+        <item>Warnung: Kann plötzlichen Drang auslösen, weitere nutzlose Einstellungen umzuschalten.</item>
+        <item>Hinweis: Kann zufällige Vibrationen und Bildschirmflackern verursachen.</item>
+        <item>Vorsicht: Zu den Nebenwirkungen gehören sinnloses Summen und Blinken.</item>
+    </string-array>
+
+    <string-array name="useless_messages">
+        <item>Glückwunsch! Du hast erfolgreich absolut nichts erreicht.</item>
+        <item>Dieser Schalter ist so nützlich wie eine Teekanne aus Schokolade.</item>
+        <item>Du hast gerade 0,003 Sekunden deines Lebens verschwendet. Hat es sich gelohnt?</item>
+        <item>Fun Fact: Dieser Knopf wurde 42 Mal von verwirrten Nutzern gedrückt.</item>
+        <item>Warnung: Übermäßige Nutzung dieses Schalters kann leichte Verwirrung verursachen.</item>
+        <item>Diese Einstellung wird präsentiert von der Abteilung für Redundanzabteilungen.</item>
+        <item>Erfolg freigeschaltet: Meister der sinnlosen Aktionen.</item>
+        <item>Fehler 404: Funktion nicht gefunden.</item>
+        <item>Dieser Schalter funktioniert genau wie vorgesehen, also gar nicht.</item>
+        <item>Piep piep! Robotergeräusche lassen alles wichtiger wirken.</item>
+        <item>Erfolg freigeschaltet: Professioneller Zeitverschwender.</item>
+        <item>Diese Funktion hat dieselbe Wirkung wie Wolken anzuschreien.</item>
+        <item>Glückwunsch! Dein Nutzlosigkeitslevel ist um 0% gestiegen.</item>
+        <item>BZZZT! Dein Handy vibriert jetzt ohne Grund.</item>
+        <item>Bildschirmflackern aktiviert, warum auch nicht?</item>
+        <item>Dein Gerät durchlebt gerade eine leichte Existenzkrise.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 acerhizmq
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_title">Xiaomi सेटिंग</string>
+    <string name="settings_entry_summary">डिस्प्ले, परफ़ॉर्मेंस, बैटरी और ऑडियो सेटिंग</string>
+    <string name="device_details">डिवाइस: <xliff:g id="codename">%1$s</xliff:g> · Android <xliff:g id="android">%2$s</xliff:g> · कर्नेल <xliff:g id="kernel">%3$s</xliff:g></string>
+    <string name="made_for_veux">acerhizmq द्वारा veux के लिए बनाया गया</string>
+    <string name="navigate_up">वापस जाएं</string>
+
+    <string name="state_on">चालू</string>
+    <string name="state_off">बंद</string>
+    <string name="state_not_supported">समर्थित नहीं</string>
+    <string name="value_unknown">अज्ञात</string>
+    <string name="action_apply">लागू करें</string>
+    <string name="action_reset">रीसेट करें</string>
+    <string name="settings_applied">सेटिंग लागू हो गईं</string>
+    <string name="settings_reset">सेटिंग डिफ़ॉल्ट पर रीसेट हो गईं</string>
+    <string name="write_failed">सेटिंग लागू नहीं हो सकी</string>
+    <string name="percent_value"><xliff:g id="value">%1$d</xliff:g>%%</string>
+    <string name="lux_value"><xliff:g id="value">%1$s</xliff:g> लक्स</string>
+    <string name="seconds_value"><xliff:g id="value">%1$d</xliff:g> से.</string>
+    <string name="celsius_value"><xliff:g id="value">%1$s</xliff:g> °C</string>
+    <string name="slider_decrease">घटाएं</string>
+    <string name="slider_increase">बढ़ाएं</string>
+    <string name="slider_reset"><xliff:g id="value">%1$s</xliff:g> पर रीसेट करें</string>
+    <string name="search_apps">ऐप खोजें</string>
+    <string name="search_clear">खोज साफ़ करें</string>
+    <string name="search_no_results">आपकी खोज से कोई ऐप मेल नहीं खाता</string>
+
+    <string name="section_display">डिस्प्ले</string>
+    <string name="section_performance">परफ़ॉर्मेंस</string>
+    <string name="section_battery_memory">बैटरी और मेमोरी</string>
+    <string name="section_audio">ऑडियो</string>
+    <string name="section_extras">अतिरिक्त</string>
+    <string name="section_about">जानकारी</string>
+    <string name="quick_dc_dimming">DC डिमिंग</string>
+    <string name="quick_hbm">HBM</string>
+    <string name="quick_fps">FPS</string>
+    <string name="quick_dirac">Dirac</string>
+    <string name="refresh_card_summary">हर ऐप के लिए 60 / 120 Hz</string>
+    <string name="resolution_card_summary">हर ऐप के लिए स्केलिंग</string>
+    <string name="thermal_card_summary">हर ऐप के लिए प्रोफ़ाइल</string>
+    <string name="core_card_summary"><xliff:g id="total">%2$d</xliff:g> में से <xliff:g id="online">%1$d</xliff:g> चालू</string>
+    <string name="zram_card_summary"><xliff:g id="algorithm">%1$s</xliff:g>, स्वैपिनेस <xliff:g id="swappiness">%2$d</xliff:g></string>
+    <string name="hbm_card_auto">ऑटो HBM चालू</string>
+    <string name="clear_speaker_card_summary">पानी और धूल निकालना</string>
+    <string name="appearance_card_summary">थीम और भाषा</string>
+    <string name="credits_card_summary">इसके पीछे के लोग</string>
+
+    <string name="refresh_title">रिफ़्रेश रेट</string>
+    <string name="refresh_note">हर ऐप के लिए एक रिफ़्रेश रेट चुनें। ऐप खुलने पर यह अपने-आप बदल जाता है।</string>
+    <string name="refresh_default">डिफ़ॉल्ट</string>
+    <string name="refresh_standard">60 Hz</string>
+    <string name="refresh_extreme">120 Hz</string>
+    <string name="refresh_land">लैंडस्केप में 60 Hz</string>
+
+    <string name="resolution_title">रिज़ॉल्यूशन</string>
+    <string name="resolution_note">हर ऐप के लिए एक रिज़ॉल्यूशन चुनें। ऐप के सामने आने पर यह लागू होता है।</string>
+    <string name="resolution_default">डिफ़ॉल्ट</string>
+    <string name="resolution_480p">480p</string>
+    <string name="resolution_540p">540p</string>
+    <string name="resolution_720p">720p</string>
+    <string name="system_resolution_title">सिस्टम रिज़ॉल्यूशन</string>
+    <string name="system_resolution_current">मौजूदा रिज़ॉल्यूशन</string>
+    <string name="system_resolution_mode">रिज़ॉल्यूशन</string>
+    <string name="system_resolution_note">पूरे सिस्टम पर लागू होता है। जिन ऐप का अपना रिज़ॉल्यूशन सेट है, वे उसे रखते हैं। कम रिज़ॉल्यूशन से बिजली बचती है।</string>
+
+    <string name="saturation_title">सैचुरेशन</string>
+    <string name="saturation_note">पूरे डिस्प्ले का कलर सैचुरेशन बदलता है। हर रीबूट के बाद यह वापस लागू होता है।</string>
+    <string name="image_preview_content_description">सैचुरेशन की झलक वाली इमेज</string>
+    <string name="preview_previous">पिछली इमेज</string>
+    <string name="preview_next">अगली इमेज</string>
+    <string name="tile_add">क्विक सेटिंग में जोड़ें</string>
+    <string name="tile_added">टाइल जोड़ी गई</string>
+    <string name="tile_not_added">टाइल नहीं जोड़ी गई</string>
+    <string name="tile_already_added">टाइल पहले से जुड़ी है</string>
+
+    <string name="dc_dimming_title">DC डिमिंग</string>
+    <string name="dc_dimming_switch">DC डिमिंग इस्तेमाल करें</string>
+    <string name="dc_dimming_note">कम ब्राइटनेस पर झिलमिलाहट और आंखों पर ज़ोर कम करता है। इसके चालू रहने पर हाई ब्राइटनेस मोड बंद रहता है।</string>
+    <string name="dc_dimming_not_supported">चल रहा कर्नेल DC डिमिंग का समर्थन नहीं करता।</string>
+
+    <string name="hbm_title">हाई ब्राइटनेस</string>
+    <string name="hbm_mode_title">हाई ब्राइटनेस मोड</string>
+    <string name="hbm_switch">हाई ब्राइटनेस मोड</string>
+    <string name="hbm_switch_summary">तेज़ धूप के लिए पैनल की अधिकतम ब्राइटनेस</string>
+    <string name="hbm_blocked_by_dc">इसे इस्तेमाल करने के लिए DC डिमिंग बंद करें</string>
+    <string name="hbm_not_supported">चल रहा कर्नेल इसका समर्थन नहीं करता</string>
+    <string name="auto_hbm_switch">ऑटो HBM</string>
+    <string name="auto_hbm_summary">तेज़ रोशनी में हाई ब्राइटनेस चालू करता है और घर के अंदर फिर बंद कर देता है</string>
+    <string name="auto_hbm_threshold">रोशनी की सीमा</string>
+    <string name="auto_hbm_disable_time">इतनी देर बाद बंद करें</string>
+    <string name="hbm_warning">हाई ब्राइटनेस मोड का लंबे समय तक इस्तेमाल डिस्प्ले को नुकसान पहुंचा सकता है।</string>
+
+    <string name="thermal_title">थर्मल इंजन</string>
+    <string name="thermal_note">हर ऐप के लिए एक थर्मल प्रोफ़ाइल चुनें। ऐप खुलने पर यह अपने-आप बदल जाती है।</string>
+    <string name="thermal_default">कोई ऑप्टिमाइज़ेशन नहीं</string>
+    <string name="thermal_benchmark">परफ़ॉर्मेंस</string>
+    <string name="thermal_browser">ब्राउज़र</string>
+    <string name="thermal_camera">कैमरा</string>
+    <string name="thermal_dialer">फ़ोन</string>
+    <string name="thermal_gaming">गेमिंग</string>
+    <string name="thermal_navigation">नेविगेशन</string>
+    <string name="thermal_streaming">स्ट्रीमिंग</string>
+    <string name="thermal_video">वीडियो</string>
+
+    <string name="kernel_manager_title">कर्नेल मैनेजर</string>
+    <string name="cpu_governor">CPU गवर्नर</string>
+    <string name="efficiency_cluster">एफ़िशिएंसी कोर</string>
+    <string name="performance_cluster">परफ़ॉर्मेंस कोर</string>
+    <string name="min_frequency">न्यूनतम फ़्रीक्वेंसी</string>
+    <string name="max_frequency">अधिकतम फ़्रीक्वेंसी</string>
+    <string name="frequencies_unavailable">इस कर्नेल पर CPU फ़्रीक्वेंसी नहीं पढ़ी जा सकतीं।</string>
+    <string name="kernel_manager_note">बदलाव \"लागू करें\" पर टैप करने पर लागू होते हैं और अगले रीबूट तक रहते हैं।</string>
+
+    <string name="gpu_manager_title">GPU मैनेजर</string>
+    <string name="gpu_model">GPU</string>
+    <string name="gpu_current_freq">फ़्रीक्वेंसी</string>
+    <string name="gpu_busy">लोड</string>
+    <string name="gpu_temperature">तापमान</string>
+    <string name="gpu_thermal_level">थर्मल लेवल</string>
+    <string name="gpu_level_value">लेवल <xliff:g id="level">%1$s</xliff:g></string>
+    <string name="gpu_governor">GPU गवर्नर</string>
+    <string name="gpu_power">पावर</string>
+    <string name="gpu_force_clk_on">क्लॉक चालू रखें</string>
+    <string name="gpu_force_clk_on_summary">खाली होने पर भी GPU क्लॉक चलती रहे</string>
+    <string name="gpu_force_bus_on">बस चालू रखें</string>
+    <string name="gpu_force_bus_on_summary">GPU मेमोरी बस सक्रिय रखें</string>
+    <string name="gpu_force_rail_on">पावर रेल चालू रखें</string>
+    <string name="gpu_force_rail_on_summary">GPU पावर रेल चालू रखें</string>
+    <string name="gpu_force_no_nap">नैप बंद</string>
+    <string name="gpu_force_no_nap_summary">फ़्रेम के बीच GPU को आराम करने से रोकें</string>
+    <string name="gpu_bus_split">बस स्प्लिट</string>
+    <string name="gpu_bus_split_summary">मेमोरी बस को GPU क्लॉक से अलग स्केल करें</string>
+    <string name="gpu_manager_note">पावर स्विच तुरंत लागू होते हैं। गवर्नर और फ़्रीक्वेंसी \"लागू करें\" पर टैप करने पर लागू होती हैं। रीबूट के बाद सब रीसेट हो जाता है।</string>
+
+    <string name="core_control_title">कोर कंट्रोल</string>
+    <string name="core_label">CPU <xliff:g id="core">%1$d</xliff:g></string>
+    <string name="core_control_min_online">कम से कम दो एफ़िशिएंसी कोर चालू रहने चाहिए</string>
+    <string name="core_control_note">किसी कोर को बंद या फिर से चालू करने के लिए उस पर टैप करें। कोर 0 से 5 में से कम से कम दो हमेशा चालू रहते हैं। रीबूट के बाद कोर वापस चालू हो जाते हैं।</string>
+
+    <string name="fastcharge_title">फ़ास्ट चार्जिंग</string>
+    <string name="fastcharge_mode_title">चार्जिंग पावर</string>
+    <string name="fastcharge_mode_normal">सामान्य</string>
+    <string name="fastcharge_mode_18w">18W</string>
+    <string name="fastcharge_mode_33w">33W</string>
+    <string name="fastcharge_mode_67w">67W</string>
+    <string name="fastcharge_mode_note">सामान्य मोड में चार्ज पंप बंद रहता है (5V, अधिकतम 15W)। 18W और 33W चार्जिंग करंट को सीमित करते हैं। 67W स्टॉक व्यवहार है। थर्मल सुरक्षा हमेशा लागू रहती है।</string>
+    <string name="fastcharge_mode_unavailable">चल रहा कर्नेल इसका समर्थन नहीं करता।</string>
+    <string name="fastcharge_usb_title">USB फ़ास्ट चार्जिंग</string>
+    <string name="fastcharge_usb_summary">कंप्यूटर के USB पोर्ट से 500 mA की जगह 900 mA पर चार्ज करें</string>
+    <string name="fastcharge_usb_unavailable">चल रहा कर्नेल इसका समर्थन नहीं करता</string>
+
+    <string name="zram_title">ZRAM</string>
+    <string name="zram_size_title">साइज़</string>
+    <string name="zram_disabled">बंद</string>
+    <string name="zram_size_2gb">2 GB</string>
+    <string name="zram_size_4gb">4 GB</string>
+    <string name="zram_size_8gb">8 GB</string>
+    <string name="zram_size_dynamic">ऑटो</string>
+    <string name="zram_compression_title">कंप्रेशन</string>
+    <string name="swappiness_title">स्वैपिनेस</string>
+    <string name="zram_note">साइज़ और कंप्रेशन रीबूट के बाद लागू होते हैं। स्वैपिनेस तुरंत लागू होती है।</string>
+    <string name="zram_change_applied">ZRAM सेटिंग सेव हो गई</string>
+    <string name="zram_reboot_recommended">यह बदलाव लागू करने के लिए डिवाइस रीबूट करें।</string>
+
+    <string name="dirac_title">Dirac साउंड</string>
+    <string name="dirac_enable">Dirac इस्तेमाल करें</string>
+    <string name="dirac_scenario">स्थिति</string>
+    <string name="dirac_headset_title">हेडफ़ोन का प्रकार</string>
+    <string name="dirac_preset_title">प्रीसेट</string>
+    <string name="dirac_eq_enable_title">इक्वलाइज़र</string>
+    <string name="dirac_eq_enable_summary">चुना गया प्रीसेट लागू करें; बंद होने पर सभी बैंड सपाट रहते हैं</string>
+    <string name="dirac_pause_calls_title">कॉल के दौरान रोकें</string>
+    <string name="dirac_pause_calls_summary">फ़ोन और VoIP कॉल के दौरान इफ़ेक्ट बंद रखें</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_enable_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">बेहतर ऑडियो के लिए कम शोर और विकृति</string>
+    <string name="music_headset_scenario_intelligent">स्मार्ट</string>
+    <string name="music_headset_scenario_music">संगीत</string>
+    <string name="music_headset_scenario_video">वीडियो</string>
+    <string name="music_headset_scenario_vocal">आवाज़</string>
+    <string name="dirac_preset_default">डिफ़ॉल्ट</string>
+    <string name="dirac_preset_rock">रॉक</string>
+    <string name="dirac_preset_jazz">जैज़</string>
+    <string name="dirac_preset_pop">पॉप</string>
+    <string name="dirac_preset_classical">क्लासिकल</string>
+    <string name="dirac_preset_hiphop">हिप हॉप</string>
+    <string name="dirac_preset_blues">ब्लूज़</string>
+    <string name="dirac_preset_electronic">इलेक्ट्रॉनिक</string>
+    <string name="dirac_preset_country">कंट्री</string>
+    <string name="dirac_preset_dance">डांस</string>
+    <string name="dirac_preset_metal">मेटल</string>
+    <string name="dirac_preset_bass_booster">बेस बूस्टर</string>
+    <string name="dirac_preset_balanced">संतुलित</string>
+    <string name="dirac_preset_live">लाइव</string>
+    <string name="dirac_preset_bass_reduction">बेस कम</string>
+    <string name="dirac_preset_treble_reduction">ट्रेबल कम</string>
+    <string name="dirac_preset_soft_bass">हल्का बेस</string>
+    <string name="dirac_preset_soft_treble">हल्का ट्रेबल</string>
+
+    <string name="clear_speaker_title">स्पीकर साफ़ करें</string>
+    <string name="clear_speaker_start">सफ़ाई शुरू करें</string>
+    <string name="clear_speaker_running">सफ़ाई जारी है, <xliff:g id="seconds">%1$d</xliff:g> से. बाकी</string>
+    <string name="clear_speaker_description">स्पीकर से पानी और धूल बाहर निकालने के लिए 30 सेकंड तक धीमी आवाज़ बजाता है। पहले मीडिया वॉल्यूम पूरा करें और हेडफ़ोन निकाल दें। अगर स्पीकर बहुत ज़्यादा बंद है, तो स्पीकर को नीचे की ओर रखकर इसे 2 से 5 बार चलाएं।</string>
+
+    <string name="fps_overlay_title">FPS ओवरले</string>
+    <string name="fps_info_tile_label">FPS ओवरले</string>
+    <string name="fps_overlay_switch">फ़्रेम रेट दिखाएं</string>
+    <string name="fps_overlay_note">ऊपरी कोने में डिस्प्ले का फ़्रेम रेट दिखाता है, जो हर सेकंड अपडेट होता है। यह क्विक सेटिंग टाइल के रूप में भी उपलब्ध है।</string>
+    <string name="fps_overlay_not_supported">चल रहे कर्नेल पर फ़्रेम काउंटर उपलब्ध नहीं है।</string>
+
+    <string name="useless_mode_title">बेकार मोड</string>
+    <string name="useless_mode_switch">बेकार मोड चालू करें</string>
+    <string name="useless_mode_enabled_summary">बेकार मोड चालू है। अचानक कंपन और झिलमिलाहट के लिए तैयार रहें।</string>
+    <string name="useless_mode_disabled_summary">बेकार मोड बंद है। आपका डिवाइस उबाऊ रूप से सामान्य बना हुआ है।</string>
+    <string name="useless_mode_warning">अचानक कंपन, स्क्रीन की झिलमिलाहट और आवाज़ें। जैसा वादा किया था, यह किसी काम का नहीं।</string>
+    <string name="useless_mode_warning_title">बेकार मोड चेतावनी</string>
+    <string name="useless_mode_status_title">बेकार मोड स्थिति</string>
+    <string name="useless_mode_accept">मैं बेकारपन स्वीकार करता हूं</string>
+    <string name="useless_mode_cancel">रद्द करें</string>
+    <string name="useless_mode_amazing">शानदार</string>
+
+    <string name="appearance_title">रूप-रंग</string>
+    <string name="appearance_colors">रंग</string>
+    <string name="colors_material_you">Material You</string>
+    <string name="colors_signature">Signature</string>
+    <string name="colors_material_you_summary">रंग आपके वॉलपेपर के हिसाब से बदलते हैं।</string>
+    <string name="colors_signature_summary">एम्बर रंग के साथ ग्रेफ़ाइट, हर वॉलपेपर पर एक जैसा।</string>
+    <string name="appearance_language">भाषा</string>
+    <string name="language_system">सिस्टम डिफ़ॉल्ट</string>
+
+    <string name="credits_title">आभार</string>
+    <string name="credits_developed_by">विकसित और रखरखाव</string>
+    <string name="credits_developer_summary">veux डेवलपर। इस डैशबोर्ड को बनाया और veux के लिए XiaomiParts के ज़्यादातर हिस्से को फिर से तैयार किया।</string>
+    <string name="credits_built_by">acerhizmq द्वारा बनाया और फिर से तैयार किया गया</string>
+    <string name="credits_work_dashboard">XiaomiParts डैशबोर्ड, डिज़ाइन और सभी 13 अनुवाद</string>
+    <string name="credits_work_fastcharge">veux के लिए फ़ास्ट चार्जिंग: कर्नेल में 67W पावर प्रोफ़ाइल और USB चार्जिंग</string>
+    <string name="credits_work_dirac">Dirac में सुधार: कॉल के दौरान रोकना, इक्वलाइज़र, ऑडियो सर्वर रिकवरी और EQ सुधार</string>
+    <string name="credits_work_fps">veux डिस्प्ले पाथ और SELinux नियमों के साथ FPS ओवरले पोर्ट</string>
+    <string name="credits_work_hbm">ज़्यादा भरोसेमंद ऑटो HBM और HBM / DC डिमिंग सुधार</string>
+    <string name="credits_work_fixes">GPU मैनेजर सुधार, ZRAM ट्यूनिंग और पूरे parts में मेमोरी लीक सुधार</string>
+    <string name="credits_work_integration">KamisStuff इंटीग्रेशन और हर फ़ीचर को veux के लिए ढालना</string>
+    <string name="credits_original_code">मूल कोड</string>
+    <string name="credits_source_kami">KamisStuff: कोर कंट्रोल, ZRAM, कर्नेल और GPU मैनेजर, रिज़ॉल्यूशन, फ़ास्ट चार्जिंग और बेकार मोड</string>
+    <string name="credits_source_pocof3">MiSound रिकवरी लॉजिक और सीक बार प्रेफ़रेंस</string>
+    <string name="credits_source_guidixx">FPS ओवरले का स्रोत</string>
+    <string name="credits_source_fastcharge">फ़ास्ट चार्जिंग कर्नेल इंटरफ़ेस</string>
+    <string name="credits_projects">प्रोजेक्ट</string>
+    <string name="credits_contributors">योगदानकर्ता</string>
+
+    <string-array name="useless_warnings">
+        <item>क्या आप सच में यह पूरी तरह बेकार फ़ीचर चालू करना चाहते हैं?</item>
+        <item>चेतावनी: इस कार्रवाई का आपके डिवाइस पर बिल्कुल कोई असर नहीं होगा।</item>
+        <item>सावधान: आगे बढ़ने पर कुछ भी नहीं होगा।</item>
+        <item>सूचना: यह टॉगल सिर्फ़ मनोरंजन के लिए है।</item>
+        <item>नोट: इस टॉगल को बनाते समय किसी इलेक्ट्रॉन को नुकसान नहीं पहुंचा।</item>
+        <item>अस्वीकरण: विशेषज्ञों ने इस सेटिंग को 100% बेकार प्रमाणित किया है।</item>
+        <item>चेतावनी: इससे और बेकार सेटिंग चालू करने की अचानक इच्छा हो सकती है।</item>
+        <item>सूचना: इससे अचानक कंपन और स्क्रीन झिलमिला सकती है।</item>
+        <item>सावधान: दुष्प्रभावों में बेमतलब की भिनभिनाहट और टिमटिमाहट शामिल है।</item>
+    </string-array>
+
+    <string-array name="useless_messages">
+        <item>बधाई हो! आपने सफलतापूर्वक बिल्कुल कुछ नहीं किया।</item>
+        <item>यह टॉगल चॉकलेट की चायदानी जितना ही काम का है।</item>
+        <item>आपने अभी अपनी ज़िंदगी के 0.003 सेकंड बर्बाद किए। क्या यह इसके लायक था?</item>
+        <item>मज़ेदार तथ्य: उलझे हुए यूज़र इस बटन को 42 बार दबा चुके हैं।</item>
+        <item>चेतावनी: इस टॉगल का ज़्यादा इस्तेमाल हल्की उलझन पैदा कर सकता है।</item>
+        <item>यह सेटिंग आपके लिए अनावश्यक विभाग विभाग की ओर से है।</item>
+        <item>उपलब्धि अनलॉक: बेमतलब कामों के उस्ताद।</item>
+        <item>त्रुटि 404: फ़ंक्शन नहीं मिला।</item>
+        <item>यह टॉगल ठीक वैसे ही काम कर रहा है जैसा सोचा गया था, यानी बिल्कुल नहीं।</item>
+        <item>बीप बूप! रोबोट की आवाज़ें हर चीज़ को ज़्यादा ज़रूरी बना देती हैं।</item>
+        <item>उपलब्धि अनलॉक: पेशेवर समय बर्बाद करने वाला।</item>
+        <item>इस फ़ीचर का असर बादलों पर चिल्लाने जैसा ही है।</item>
+        <item>बधाई हो! आपका बेकारपन 0% बढ़ गया है।</item>
+        <item>भिर्र्र! आपका फ़ोन अब बिना वजह वाइब्रेट कर रहा है।</item>
+        <item>स्क्रीन झिलमिलाहट चालू, क्यों नहीं?</item>
+        <item>आपका डिवाइस इस समय हल्के अस्तित्व संकट से गुज़र रहा है।</item>
+    </string-array>
+</resources>

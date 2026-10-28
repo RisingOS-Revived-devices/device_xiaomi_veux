@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 The LineageOS Project
+     Copyright (C) 2015-2016 The CyanogenMod Project
+                   2017-2023 The LineageOS Project
+                   2026 acerhizmq
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,11 +16,113 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Thermal profiles -->
-    <string name="thermal_title">Thermal profiles</string>
-    <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance</string>
+    <!-- App -->
+    <string name="app_name" translatable="false">XiaomiParts</string>
+    <string name="app_title">Xiaomi Settings</string>
+    <string name="settings_entry_summary">Display, performance, battery, and audio tweaks</string>
+    <string name="device_family" translatable="false">Redmi Note 11 Pro 5G / Note 11E Pro / POCO X4 Pro 5G</string>
+    <string name="device_prompt" translatable="false">root@<xliff:g id="codename">%1$s</xliff:g>:~#</string>
+    <string name="device_details">device: <xliff:g id="codename">%1$s</xliff:g> · Android <xliff:g id="android">%2$s</xliff:g> · kernel <xliff:g id="kernel">%3$s</xliff:g></string>
+    <string name="made_for_veux">Made for veux by acerhizmq</string>
+    <string name="navigate_up">Back</string>
+
+    <!-- Common -->
+    <string name="state_on">On</string>
+    <string name="state_off">Off</string>
+    <string name="state_not_supported">Not supported</string>
+    <string name="value_unknown">Unknown</string>
+    <string name="action_apply">Apply</string>
+    <string name="action_reset">Reset</string>
+    <string name="settings_applied">Settings applied</string>
+    <string name="settings_reset">Settings reset to defaults</string>
+    <string name="write_failed">Couldn\'t apply the setting</string>
+    <string name="percent_value"><xliff:g id="value">%1$d</xliff:g> %%</string>
+    <string name="lux_value"><xliff:g id="value">%1$s</xliff:g> lux</string>
+    <string name="seconds_value"><xliff:g id="value">%1$d</xliff:g> s</string>
+    <string name="celsius_value"><xliff:g id="value">%1$s</xliff:g> °C</string>
+    <string name="slider_decrease">Decrease</string>
+    <string name="slider_increase">Increase</string>
+    <string name="slider_reset">Reset to <xliff:g id="value">%1$s</xliff:g></string>
+    <string name="search_apps">Search apps</string>
+    <string name="search_clear">Clear search</string>
+    <string name="search_no_results">No apps match your search</string>
+
+    <!-- Dashboard -->
+    <string name="section_display">Display</string>
+    <string name="section_performance">Performance</string>
+    <string name="section_battery_memory">Battery and memory</string>
+    <string name="section_audio">Audio</string>
+    <string name="section_extras">Extras</string>
+    <string name="section_about">About</string>
+    <string name="quick_dc_dimming">DC dim</string>
+    <string name="quick_hbm">HBM</string>
+    <string name="quick_fps">FPS</string>
+    <string name="quick_dirac">Dirac</string>
+    <string name="refresh_card_summary">Per-app 60 / 120 Hz</string>
+    <string name="resolution_card_summary">Per-app scaling</string>
+    <string name="thermal_card_summary">Per-app profiles</string>
+    <string name="core_card_summary"><xliff:g id="online">%1$d</xliff:g> of <xliff:g id="total">%2$d</xliff:g> online</string>
+    <string name="zram_card_summary"><xliff:g id="algorithm">%1$s</xliff:g>, swappiness <xliff:g id="swappiness">%2$d</xliff:g></string>
+    <string name="hbm_card_auto">Auto HBM on</string>
+    <string name="clear_speaker_card_summary">Water and dust ejection</string>
+    <string name="appearance_card_summary">Theme and language</string>
+    <string name="credits_card_summary">The people behind it</string>
+
+    <!-- Refresh rate -->
+    <string name="refresh_title">Refresh rate</string>
+    <string name="refresh_note">Pick a refresh rate for each app. It switches automatically when the app opens.</string>
+    <string name="refresh_default">Default</string>
+    <string name="refresh_standard">60 Hz</string>
+    <string name="refresh_extreme">120 Hz</string>
+    <string name="refresh_land">60 Hz in landscape</string>
+
+    <!-- Resolution -->
+    <string name="resolution_title">Resolution</string>
+    <string name="resolution_note">Pick a resolution for each app. It applies when the app comes to the foreground.</string>
+    <string name="resolution_default">Default</string>
+    <string name="resolution_480p">480p</string>
+    <string name="resolution_540p">540p</string>
+    <string name="resolution_720p">720p</string>
+    <string name="system_resolution_title">System resolution</string>
+    <string name="system_resolution_current">Current resolution</string>
+    <string name="system_resolution_mode">Resolution</string>
+    <string name="system_resolution_note">Applies to the whole system. Apps set to their own resolution keep it. Lower resolutions save power.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Saturation</string>
+    <string name="saturation_note">Adjusts color saturation across the whole display. It\'s restored after every reboot.</string>
+    <string name="image_preview_content_description">Saturation preview image</string>
+    <string name="preview_previous">Previous image</string>
+    <string name="preview_next">Next image</string>
+    <string name="tile_add">Add to quick settings</string>
+    <string name="tile_added">Tile added</string>
+    <string name="tile_not_added">Tile not added</string>
+    <string name="tile_already_added">Tile already added</string>
+
+    <!-- DC dimming -->
+    <string name="dc_dimming_title">DC dimming</string>
+    <string name="dc_dimming_switch">Use DC dimming</string>
+    <string name="dc_dimming_note">Reduces flicker and eye strain at low brightness. High brightness mode is turned off while it\'s on.</string>
+    <string name="dc_dimming_not_supported">DC dimming isn\'t supported by the running kernel.</string>
+
+    <!-- High brightness -->
+    <string name="hbm_title">High brightness</string>
+    <string name="hbm_mode_title">High brightness mode</string>
+    <string name="hbm_switch">High brightness mode</string>
+    <string name="hbm_switch_summary">Maximum panel brightness for direct sunlight</string>
+    <string name="hbm_blocked_by_dc">Turn off DC dimming to use it</string>
+    <string name="hbm_not_supported">Not supported by the running kernel</string>
+    <string name="auto_hbm_switch">Auto HBM</string>
+    <string name="auto_hbm_summary">Turns high brightness on in bright light and off again indoors</string>
+    <string name="auto_hbm_threshold">Light threshold</string>
+    <string name="auto_hbm_disable_time">Turn off after</string>
+    <string name="hbm_warning">Using high brightness mode for a long time can damage the display.</string>
+
+    <!-- Thermal -->
+    <string name="thermal_title">Thermal engine</string>
+    <string name="thermal_note">Pick a thermal profile for each app. It switches automatically when the app opens.</string>
     <string name="thermal_default">No optimization</string>
     <string name="thermal_benchmark">Performance</string>
     <string name="thermal_browser">Browser</string>
@@ -29,42 +133,187 @@
     <string name="thermal_streaming">Streaming</string>
     <string name="thermal_video">Video</string>
 
-    <!-- Per-app refresh rate -->
-    <string name="refresh_title">Per-app refresh rate</string>
-    <string name="refresh_summary">Set the maximum refresh rate for a specific application</string>
-    <string name="refresh_default">Default</string>
-    <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
-    <string name="refresh_land">60Hz on Landscape</string>    
+    <!-- Kernel manager -->
+    <string name="kernel_manager_title">Kernel manager</string>
+    <string name="cpu_governor">CPU governor</string>
+    <string name="efficiency_cluster">Efficiency cores</string>
+    <string name="performance_cluster">Performance cores</string>
+    <string name="min_frequency">Minimum frequency</string>
+    <string name="max_frequency">Maximum frequency</string>
+    <string name="frequencies_unavailable">CPU frequencies can\'t be read on this kernel.</string>
+    <string name="kernel_manager_note">Changes apply when you tap Apply and last until the next reboot.</string>
 
-    <!-- Doze Strings -->
-    <string name="doze_brightness_low">Low brightness</string>
-    <string name="doze_brightness_high">High brightness</string>
-    <string name="doze_brightness_adaptive">Adaptive brightness</string>
-    <string name="doze_brightness_title">Doze brightness level</string>
-    <string name="doze_brightness_summary">Brightness level of doze pulse screen (% of max allowed brightness)</string>
+    <!-- GPU manager -->
+    <string name="gpu_manager_title">GPU manager</string>
+    <string name="gpu_model">GPU</string>
+    <string name="gpu_current_freq">Frequency</string>
+    <string name="gpu_busy">Load</string>
+    <string name="gpu_temperature">Temperature</string>
+    <string name="gpu_thermal_level">Thermal level</string>
+    <string name="gpu_level_value">Level <xliff:g id="level">%1$s</xliff:g></string>
+    <string name="gpu_governor">GPU governor</string>
+    <string name="gpu_power">Power</string>
+    <string name="gpu_force_clk_on">Force clock on</string>
+    <string name="gpu_force_clk_on_summary">Keep the GPU clock running when idle</string>
+    <string name="gpu_force_bus_on">Force bus on</string>
+    <string name="gpu_force_bus_on_summary">Keep the GPU memory bus active</string>
+    <string name="gpu_force_rail_on">Force rail on</string>
+    <string name="gpu_force_rail_on_summary">Keep the GPU power rail on</string>
+    <string name="gpu_force_no_nap">No nap</string>
+    <string name="gpu_force_no_nap_summary">Prevent the GPU from napping between frames</string>
+    <string name="gpu_bus_split">Bus split</string>
+    <string name="gpu_bus_split_summary">Scale the memory bus separately from the GPU clock</string>
+    <string name="gpu_manager_note">Power switches apply right away. Governor and frequencies apply when you tap Apply. Everything resets after a reboot.</string>
 
-    <!-- Clear Speaker -->
-   <string name="clear_speaker_title">Clear speaker</string>
-   <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
-   <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.</string>
-   
-    <!-- HBM settings -->
-    <string name="hbm_fragment_title">High brightness mode</string>
-    <string name="hbm_fragment_summary">Settings for HBM</string>
-    <string name="hbm_mode_title">HBM</string>
-    <string name="hbm_mode_summary">Enable peak luminance</string>
-    <string name="auto_hbm_title">Automatic HBM</string>
-    <string name="auto_hbm_summary">Enable peak luminance based on sunlight</string>
-    <string name="auto_hbm_threshold_title"></string>
-    <string name="auto_hbm_threshold_summary">threshold (lux)</string>
-    <string name="hbm_disable_time_title"></string>
-    <string name="hbm_disable_time_summary">disable delay (seconds)</string>
-    <string name="hbm_mode_warning">Long time usage of High brightness mode may damage your display</string>
-    
-    <!-- DC dimming settings -->
-    <string name="dc_dimming_enable_title">DC Dimming</string>
-    <string name="dc_dimming_enable_summary">Reduces eye strain in low light conditions</string>
-    <string name="dc_dimming_enable_summary_not_supported">DC Dimming is currently not supported by the kernel</string>
+    <!-- Core control -->
+    <string name="core_control_title">Core control</string>
+    <string name="core_label">CPU <xliff:g id="core">%1$d</xliff:g></string>
+    <string name="core_control_min_online">At least two efficiency cores must stay online</string>
+    <string name="core_control_note">Tap a core to take it offline or bring it back. At least two of cores 0 to 5 always stay online. Cores come back after a reboot.</string>
 
+    <!-- Fast charge -->
+    <string name="fastcharge_title">Fast charge</string>
+    <string name="fastcharge_mode_title">Charging power</string>
+    <string name="fastcharge_mode_normal">Normal</string>
+    <string name="fastcharge_mode_18w">18W</string>
+    <string name="fastcharge_mode_33w">33W</string>
+    <string name="fastcharge_mode_67w">67W</string>
+    <string name="fastcharge_mode_note">Normal keeps the charge pump off (5V, up to 15W). 18W and 33W limit the charging current. 67W is the stock behavior. Thermal protection always applies.</string>
+    <string name="fastcharge_mode_unavailable">Not supported by the running kernel.</string>
+    <string name="fastcharge_usb_title">USB fast charging</string>
+    <string name="fastcharge_usb_summary">Charge at 900 mA instead of 500 mA from computer USB ports</string>
+    <string name="fastcharge_usb_unavailable">Not supported by the running kernel</string>
+
+    <!-- ZRAM -->
+    <string name="zram_title">ZRAM</string>
+    <string name="zram_size_title">Size</string>
+    <string name="zram_disabled">Off</string>
+    <string name="zram_size_2gb">2 GB</string>
+    <string name="zram_size_4gb">4 GB</string>
+    <string name="zram_size_8gb">8 GB</string>
+    <string name="zram_size_dynamic">Auto</string>
+    <string name="zram_compression_title">Compression</string>
+    <string name="swappiness_title">Swappiness</string>
+    <string name="zram_note">Size and compression apply after a reboot. Swappiness applies right away.</string>
+    <string name="zram_change_applied">ZRAM setting saved</string>
+    <string name="zram_reboot_recommended">Reboot your device for this change to take effect.</string>
+
+    <!-- Dirac -->
+    <string name="dirac_title">Dirac sound</string>
+    <string name="dirac_enable">Use Dirac</string>
+    <string name="dirac_scenario">Scenario</string>
+    <string name="dirac_headset_title">Headphone type</string>
+    <string name="dirac_preset_title">Preset</string>
+    <string name="dirac_eq_enable_title">Equalizer</string>
+    <string name="dirac_eq_enable_summary">Apply the selected preset; when off, all bands are flat</string>
+    <string name="dirac_pause_calls_title">Pause during calls</string>
+    <string name="dirac_pause_calls_summary">Bypass the effect during phone and VoIP calls</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_enable_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Less noise and distortion for higher audio quality</string>
+    <string name="music_headset_scenario_intelligent">Smart</string>
+    <string name="music_headset_scenario_music">Music</string>
+    <string name="music_headset_scenario_video">Video</string>
+    <string name="music_headset_scenario_vocal">Voice</string>
+    <string name="dirac_preset_default">Default</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Classical</string>
+    <string name="dirac_preset_hiphop">Hip hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Electronic</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dance</string>
+    <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_bass_booster">Bass booster</string>
+    <string name="dirac_preset_balanced">Balanced</string>
+    <string name="dirac_preset_live">Live</string>
+    <string name="dirac_preset_bass_reduction">Bass reduction</string>
+    <string name="dirac_preset_treble_reduction">Treble reduction</string>
+    <string name="dirac_preset_soft_bass">Soft bass</string>
+    <string name="dirac_preset_soft_treble">Soft treble</string>
+    <!-- Headphone model names stay in English. -->
+    <string name="dirac_headset_earbuds" translatable="false">Mi Earbuds</string>
+    <string name="dirac_headset_in_ear_2013" translatable="false">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1" translatable="false">Mi Piston-1</string>
+    <string name="dirac_headset_piston_basic" translatable="false">Mi Piston Basic Edition</string>
+    <string name="dirac_headset_piston_2" translatable="false">Mi Piston-2</string>
+    <string name="dirac_headset_piston_standard" translatable="false">Mi Piston Standard Edition</string>
+    <string name="dirac_headset_general_inear" translatable="false">General In-Ear</string>
+    <string name="dirac_headset_piston_youth" translatable="false">Mi Piston Youth Edition</string>
+    <string name="dirac_headset_piston_color" translatable="false">Mi Piston Color Edition</string>
+    <string name="dirac_headset_in_ear" translatable="false">Mi In-Ear</string>
+    <string name="dirac_headset_capsule" translatable="false">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro" translatable="false">Mi In-Ear Pro</string>
+    <string name="dirac_headset_comfort" translatable="false">Mi Comfort</string>
+    <string name="dirac_headset_reduction_noise" translatable="false">Mi Noise Cancelling Type-C</string>
+    <string name="dirac_headset_cancelling" translatable="false">Mi Noise Cancelling 3.5mm</string>
+    <string name="dirac_headset_half_in_ear" translatable="false">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2" translatable="false">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic" translatable="false">Mi Earphones Basic</string>
+    <string name="dirac_headset_earphone" translatable="false">Mi Earphones</string>
+    <string name="dirac_headset_ear_four" translatable="false">Mi Quadruple Driver Earphones</string>
+    <string name="dirac_headset_piston_typec" translatable="false">Mi In-Ear Headphones (Type-C)</string>
+    <string name="dirac_headset_bluetooth_collar" translatable="false">Mi Bluetooth Neckband</string>
+    <string name="dirac_headset_bluetooth_linefree" translatable="false">Mi Bluetooth Earphones</string>
+    <string name="dirac_headset_redmi_earphones" translatable="false">Redmi Earphones</string>
+    <string name="dirac_headset_dual_driver_in_ear" translatable="false">Mi Dual Driver In-ear Earphones</string>
+
+    <!-- Clear speaker -->
+    <string name="clear_speaker_title">Clear speaker</string>
+    <string name="clear_speaker_start">Start cleaning</string>
+    <string name="clear_speaker_running">Cleaning, <xliff:g id="seconds">%1$d</xliff:g> s left</string>
+    <string name="clear_speaker_description">Plays a low tone for 30 seconds to push water and dust out of the speaker. Set media volume to maximum and remove headphones first. If the speaker is heavily blocked, run it 2 to 5 times with the speaker facing down.</string>
+
+    <!-- FPS overlay -->
+    <string name="fps_overlay_title">FPS overlay</string>
+    <string name="fps_info_tile_label">FPS overlay</string>
+    <string name="fps_overlay_switch">Show frame rate</string>
+    <string name="fps_overlay_note">Shows the display frame rate in the top corner, updated every second. Also available as a quick settings tile.</string>
+    <string name="fps_overlay_not_supported">The frame counter isn\'t available on the running kernel.</string>
+
+    <!-- Useless mode -->
+    <string name="useless_mode_title">Useless mode</string>
+    <string name="useless_mode_switch">Enable useless mode</string>
+    <string name="useless_mode_enabled_summary">Useless mode is on. Expect random buzzing and flickering.</string>
+    <string name="useless_mode_disabled_summary">Useless mode is off. Your device stays boringly normal.</string>
+    <string name="useless_mode_warning">Random vibrations, screen flicker, and sounds. It does nothing useful, as promised.</string>
+    <string name="useless_mode_warning_title">Useless mode warning</string>
+    <string name="useless_mode_status_title">Useless mode status</string>
+    <string name="useless_mode_accept">I accept the uselessness</string>
+    <string name="useless_mode_cancel">Cancel</string>
+    <string name="useless_mode_amazing">Amazing</string>
+
+    <!-- Appearance -->
+    <string name="appearance_title">Appearance</string>
+    <string name="appearance_colors">Colors</string>
+    <string name="colors_material_you">Material You</string>
+    <string name="colors_signature">Signature</string>
+    <string name="colors_material_you_summary">Colors follow your wallpaper.</string>
+    <string name="colors_signature_summary">Graphite with an amber accent, the same on every wallpaper.</string>
+    <string name="appearance_language">Language</string>
+    <string name="language_system">System default</string>
+
+    <!-- Credits -->
+    <string name="credits_title">Credits</string>
+    <string name="credits_developed_by">Developed and maintained by</string>
+    <string name="credits_developer_summary">veux developer. Built this dashboard and reworked most of XiaomiParts for veux.</string>
+    <string name="credits_github" translatable="false">GitHub</string>
+    <string name="credits_telegram" translatable="false">Telegram</string>
+    <string name="credits_built_by">Built and reworked by acerhizmq</string>
+    <string name="credits_work_dashboard">XiaomiParts dashboard, design, and all 13 translations</string>
+    <string name="credits_work_fastcharge">Fast charge for veux: 67W power profiles and USB charging in the kernel</string>
+    <string name="credits_work_dirac">Dirac rework: call pause, equalizer, audio server recovery, and EQ fix</string>
+    <string name="credits_work_fps">FPS overlay port with veux display paths and SELinux rules</string>
+    <string name="credits_work_hbm">Auto HBM hardening and HBM / DC dimming fixes</string>
+    <string name="credits_work_fixes">GPU manager fixes, ZRAM tuning, and memory leak fixes across parts</string>
+    <string name="credits_work_integration">KamisStuff integration and every feature adapted to veux</string>
+    <string name="credits_original_code">Original code from</string>
+    <string name="credits_source_kami">KamisStuff: core control, ZRAM, kernel and GPU manager, resolution, fast charge, and useless mode</string>
+    <string name="credits_source_pocof3">MiSound recovery logic and seek bar preference</string>
+    <string name="credits_source_guidixx">FPS overlay source</string>
+    <string name="credits_source_fastcharge">Fast charge kernel interface</string>
+    <string name="credits_projects">Projects</string>
+    <string name="credits_contributors">Contributors</string>
 </resources>

@@ -63,7 +63,7 @@ public final class ThermalUtils {
 
     private SharedPreferences mSharedPrefs;
 
-    protected ThermalUtils(Context context) {
+    public ThermalUtils(Context context) {
         mSharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
     }
 
@@ -88,7 +88,7 @@ public final class ThermalUtils {
         return value;
     }
 
-    protected void writePackage(String packageName, int mode) {
+    public void writePackage(String packageName, int mode) {
         String value = getValue();
         value = value.replace(packageName + ",", "");
         String[] modes = value.split(":");
@@ -130,7 +130,7 @@ public final class ThermalUtils {
         writeValue(finalString);
     }
 
-    protected int getStateForPackage(String packageName) {
+    public int getStateForPackage(String packageName) {
         String value = getValue();
         String[] modes = value.split(":");
         int state = STATE_DEFAULT;

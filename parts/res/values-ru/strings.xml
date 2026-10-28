@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 acerhizmq
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_title">Настройки Xiaomi</string>
+    <string name="settings_entry_summary">Настройки экрана, производительности, батареи и звука</string>
+    <string name="device_details">устройство: <xliff:g id="codename">%1$s</xliff:g> · Android <xliff:g id="android">%2$s</xliff:g> · ядро <xliff:g id="kernel">%3$s</xliff:g></string>
+    <string name="made_for_veux">Сделано для veux пользователем acerhizmq</string>
+    <string name="navigate_up">Назад</string>
+
+    <string name="state_on">Вкл.</string>
+    <string name="state_off">Выкл.</string>
+    <string name="state_not_supported">Не поддерживается</string>
+    <string name="value_unknown">Неизвестно</string>
+    <string name="action_apply">Применить</string>
+    <string name="action_reset">Сбросить</string>
+    <string name="settings_applied">Настройки применены</string>
+    <string name="settings_reset">Настройки сброшены по умолчанию</string>
+    <string name="write_failed">Не удалось применить настройку</string>
+    <string name="percent_value"><xliff:g id="value">%1$d</xliff:g>%%</string>
+    <string name="lux_value"><xliff:g id="value">%1$s</xliff:g> лк</string>
+    <string name="seconds_value"><xliff:g id="value">%1$d</xliff:g> с</string>
+    <string name="celsius_value"><xliff:g id="value">%1$s</xliff:g> °C</string>
+    <string name="slider_decrease">Уменьшить</string>
+    <string name="slider_increase">Увеличить</string>
+    <string name="slider_reset">Сбросить до <xliff:g id="value">%1$s</xliff:g></string>
+    <string name="search_apps">Поиск приложений</string>
+    <string name="search_clear">Очистить поиск</string>
+    <string name="search_no_results">Нет приложений, подходящих под запрос</string>
+
+    <string name="section_display">Экран</string>
+    <string name="section_performance">Производительность</string>
+    <string name="section_battery_memory">Батарея и память</string>
+    <string name="section_audio">Звук</string>
+    <string name="section_extras">Дополнительно</string>
+    <string name="section_about">О приложении</string>
+    <string name="quick_dc_dimming">DC dimming</string>
+    <string name="quick_hbm">HBM</string>
+    <string name="quick_fps">FPS</string>
+    <string name="quick_dirac">Dirac</string>
+    <string name="refresh_card_summary">60 / 120 Гц для каждого приложения</string>
+    <string name="resolution_card_summary">Масштаб для каждого приложения</string>
+    <string name="thermal_card_summary">Профили для каждого приложения</string>
+    <string name="core_card_summary">Включено <xliff:g id="online">%1$d</xliff:g> из <xliff:g id="total">%2$d</xliff:g></string>
+    <string name="zram_card_summary"><xliff:g id="algorithm">%1$s</xliff:g>, swappiness <xliff:g id="swappiness">%2$d</xliff:g></string>
+    <string name="hbm_card_auto">Авто-HBM включён</string>
+    <string name="clear_speaker_card_summary">Удаление воды и пыли</string>
+    <string name="appearance_card_summary">Тема и язык</string>
+    <string name="credits_card_summary">Люди, которые это сделали</string>
+
+    <string name="refresh_title">Частота обновления</string>
+    <string name="refresh_note">Выберите частоту обновления для каждого приложения. Она переключается автоматически при открытии приложения.</string>
+    <string name="refresh_default">По умолчанию</string>
+    <string name="refresh_standard">60 Гц</string>
+    <string name="refresh_extreme">120 Гц</string>
+    <string name="refresh_land">60 Гц в альбомной ориентации</string>
+
+    <string name="resolution_title">Разрешение</string>
+    <string name="resolution_note">Выберите разрешение для каждого приложения. Оно применяется, когда приложение выходит на передний план.</string>
+    <string name="resolution_default">По умолчанию</string>
+    <string name="resolution_480p">480p</string>
+    <string name="resolution_540p">540p</string>
+    <string name="resolution_720p">720p</string>
+    <string name="system_resolution_title">Системное разрешение</string>
+    <string name="system_resolution_current">Текущее разрешение</string>
+    <string name="system_resolution_mode">Разрешение</string>
+    <string name="system_resolution_note">Применяется ко всей системе. Приложения со своим разрешением сохраняют его. Низкое разрешение экономит энергию.</string>
+
+    <string name="saturation_title">Насыщенность</string>
+    <string name="saturation_note">Регулирует насыщенность цветов всего экрана. Восстанавливается после каждой перезагрузки.</string>
+    <string name="image_preview_content_description">Изображение для предпросмотра насыщенности</string>
+    <string name="preview_previous">Предыдущее изображение</string>
+    <string name="preview_next">Следующее изображение</string>
+    <string name="tile_add">Добавить в быстрые настройки</string>
+    <string name="tile_added">Плитка добавлена</string>
+    <string name="tile_not_added">Плитка не добавлена</string>
+    <string name="tile_already_added">Плитка уже добавлена</string>
+
+    <string name="dc_dimming_title">DC dimming</string>
+    <string name="dc_dimming_switch">Использовать DC dimming</string>
+    <string name="dc_dimming_note">Уменьшает мерцание и нагрузку на глаза при низкой яркости. Режим высокой яркости при этом отключается.</string>
+    <string name="dc_dimming_not_supported">Текущее ядро не поддерживает DC dimming.</string>
+
+    <string name="hbm_title">Высокая яркость</string>
+    <string name="hbm_mode_title">Режим высокой яркости</string>
+    <string name="hbm_switch">Режим высокой яркости</string>
+    <string name="hbm_switch_summary">Максимальная яркость панели для прямого солнечного света</string>
+    <string name="hbm_blocked_by_dc">Отключите DC dimming, чтобы использовать</string>
+    <string name="hbm_not_supported">Не поддерживается текущим ядром</string>
+    <string name="auto_hbm_switch">Авто-HBM</string>
+    <string name="auto_hbm_summary">Включает высокую яркость при ярком свете и выключает в помещении</string>
+    <string name="auto_hbm_threshold">Порог освещённости</string>
+    <string name="auto_hbm_disable_time">Выключать через</string>
+    <string name="hbm_warning">Длительное использование режима высокой яркости может повредить экран.</string>
+
+    <string name="thermal_title">Тепловой режим</string>
+    <string name="thermal_note">Выберите тепловой профиль для каждого приложения. Он переключается автоматически при открытии приложения.</string>
+    <string name="thermal_default">Без оптимизации</string>
+    <string name="thermal_benchmark">Производительность</string>
+    <string name="thermal_browser">Браузер</string>
+    <string name="thermal_camera">Камера</string>
+    <string name="thermal_dialer">Телефон</string>
+    <string name="thermal_gaming">Игры</string>
+    <string name="thermal_navigation">Навигация</string>
+    <string name="thermal_streaming">Стриминг</string>
+    <string name="thermal_video">Видео</string>
+
+    <string name="kernel_manager_title">Менеджер ядра</string>
+    <string name="cpu_governor">Регулятор CPU</string>
+    <string name="efficiency_cluster">Энергоэффективные ядра</string>
+    <string name="performance_cluster">Производительные ядра</string>
+    <string name="min_frequency">Минимальная частота</string>
+    <string name="max_frequency">Максимальная частота</string>
+    <string name="frequencies_unavailable">Частоты CPU невозможно прочитать на этом ядре.</string>
+    <string name="kernel_manager_note">Изменения применяются при нажатии «Применить» и действуют до следующей перезагрузки.</string>
+
+    <string name="gpu_manager_title">Менеджер GPU</string>
+    <string name="gpu_model">GPU</string>
+    <string name="gpu_current_freq">Частота</string>
+    <string name="gpu_busy">Нагрузка</string>
+    <string name="gpu_temperature">Температура</string>
+    <string name="gpu_thermal_level">Тепловой уровень</string>
+    <string name="gpu_level_value">Уровень <xliff:g id="level">%1$s</xliff:g></string>
+    <string name="gpu_governor">Регулятор GPU</string>
+    <string name="gpu_power">Питание</string>
+    <string name="gpu_force_clk_on">Принудительная частота</string>
+    <string name="gpu_force_clk_on_summary">Не останавливать тактирование GPU в простое</string>
+    <string name="gpu_force_bus_on">Принудительная шина</string>
+    <string name="gpu_force_bus_on_summary">Держать шину памяти GPU активной</string>
+    <string name="gpu_force_rail_on">Принудительное питание</string>
+    <string name="gpu_force_rail_on_summary">Держать линию питания GPU включённой</string>
+    <string name="gpu_force_no_nap">Без дремоты</string>
+    <string name="gpu_force_no_nap_summary">Не давать GPU дремать между кадрами</string>
+    <string name="gpu_bus_split">Разделение шины</string>
+    <string name="gpu_bus_split_summary">Масштабировать шину памяти отдельно от частоты GPU</string>
+    <string name="gpu_manager_note">Переключатели питания применяются сразу. Регулятор и частоты применяются при нажатии «Применить». После перезагрузки всё сбрасывается.</string>
+
+    <string name="core_control_title">Управление ядрами</string>
+    <string name="core_label">CPU <xliff:g id="core">%1$d</xliff:g></string>
+    <string name="core_control_min_online">Должны оставаться включёнными минимум два энергоэффективных ядра</string>
+    <string name="core_control_note">Нажмите на ядро, чтобы отключить или снова включить его. Минимум два из ядер 0–5 всегда остаются включёнными. После перезагрузки ядра включаются снова.</string>
+
+    <string name="fastcharge_title">Быстрая зарядка</string>
+    <string name="fastcharge_mode_title">Мощность зарядки</string>
+    <string name="fastcharge_mode_normal">Обычная</string>
+    <string name="fastcharge_mode_18w">18 Вт</string>
+    <string name="fastcharge_mode_33w">33 Вт</string>
+    <string name="fastcharge_mode_67w">67 Вт</string>
+    <string name="fastcharge_mode_note">В обычном режиме зарядный насос выключен (5 В, до 15 Вт). 18 Вт и 33 Вт ограничивают ток зарядки. 67 Вт — стандартное поведение. Тепловая защита работает всегда.</string>
+    <string name="fastcharge_mode_unavailable">Не поддерживается текущим ядром.</string>
+    <string name="fastcharge_usb_title">Быстрая зарядка по USB</string>
+    <string name="fastcharge_usb_summary">Заряжать током 900 мА вместо 500 мА от USB-портов компьютера</string>
+    <string name="fastcharge_usb_unavailable">Не поддерживается текущим ядром</string>
+
+    <string name="zram_title">ZRAM</string>
+    <string name="zram_size_title">Размер</string>
+    <string name="zram_disabled">Выкл.</string>
+    <string name="zram_size_2gb">2 ГБ</string>
+    <string name="zram_size_4gb">4 ГБ</string>
+    <string name="zram_size_8gb">8 ГБ</string>
+    <string name="zram_size_dynamic">Авто</string>
+    <string name="zram_compression_title">Сжатие</string>
+    <string name="swappiness_title">Swappiness</string>
+    <string name="zram_note">Размер и сжатие применяются после перезагрузки. Swappiness применяется сразу.</string>
+    <string name="zram_change_applied">Настройка ZRAM сохранена</string>
+    <string name="zram_reboot_recommended">Перезагрузите устройство, чтобы изменение вступило в силу.</string>
+
+    <string name="dirac_title">Звук Dirac</string>
+    <string name="dirac_enable">Использовать Dirac</string>
+    <string name="dirac_scenario">Сценарий</string>
+    <string name="dirac_headset_title">Тип наушников</string>
+    <string name="dirac_preset_title">Пресет</string>
+    <string name="dirac_eq_enable_title">Эквалайзер</string>
+    <string name="dirac_eq_enable_summary">Применять выбранный пресет; если выключено, все полосы ровные</string>
+    <string name="dirac_pause_calls_title">Пауза во время звонков</string>
+    <string name="dirac_pause_calls_summary">Отключать эффект во время телефонных и VoIP-звонков</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_enable_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Меньше шума и искажений для лучшего качества звука</string>
+    <string name="music_headset_scenario_intelligent">Умный</string>
+    <string name="music_headset_scenario_music">Музыка</string>
+    <string name="music_headset_scenario_video">Видео</string>
+    <string name="music_headset_scenario_vocal">Голос</string>
+    <string name="dirac_preset_default">По умолчанию</string>
+    <string name="dirac_preset_rock">Рок</string>
+    <string name="dirac_preset_jazz">Джаз</string>
+    <string name="dirac_preset_pop">Поп</string>
+    <string name="dirac_preset_classical">Классика</string>
+    <string name="dirac_preset_hiphop">Хип-хоп</string>
+    <string name="dirac_preset_blues">Блюз</string>
+    <string name="dirac_preset_electronic">Электроника</string>
+    <string name="dirac_preset_country">Кантри</string>
+    <string name="dirac_preset_dance">Танцевальная</string>
+    <string name="dirac_preset_metal">Метал</string>
+    <string name="dirac_preset_bass_booster">Усиление басов</string>
+    <string name="dirac_preset_balanced">Сбалансированный</string>
+    <string name="dirac_preset_live">Концерт</string>
+    <string name="dirac_preset_bass_reduction">Ослабление басов</string>
+    <string name="dirac_preset_treble_reduction">Ослабление высоких</string>
+    <string name="dirac_preset_soft_bass">Мягкие басы</string>
+    <string name="dirac_preset_soft_treble">Мягкие высокие</string>
+
+    <string name="clear_speaker_title">Очистка динамика</string>
+    <string name="clear_speaker_start">Начать очистку</string>
+    <string name="clear_speaker_running">Очистка, осталось <xliff:g id="seconds">%1$d</xliff:g> с</string>
+    <string name="clear_speaker_description">Воспроизводит низкий тон в течение 30 секунд, чтобы вытолкнуть воду и пыль из динамика. Сначала выставьте громкость мультимедиа на максимум и отключите наушники. Если динамик сильно засорён, повторите 2–5 раз, направив динамик вниз.</string>
+
+    <string name="fps_overlay_title">Счётчик FPS</string>
+    <string name="fps_info_tile_label">Счётчик FPS</string>
+    <string name="fps_overlay_switch">Показывать частоту кадров</string>
+    <string name="fps_overlay_note">Показывает частоту кадров экрана в верхнем углу, обновляется каждую секунду. Также доступно как плитка быстрых настроек.</string>
+    <string name="fps_overlay_not_supported">Счётчик кадров недоступен на текущем ядре.</string>
+
+    <string name="useless_mode_title">Бесполезный режим</string>
+    <string name="useless_mode_switch">Включить бесполезный режим</string>
+    <string name="useless_mode_enabled_summary">Бесполезный режим включён. Ждите случайных вибраций и мерцания.</string>
+    <string name="useless_mode_disabled_summary">Бесполезный режим выключен. Ваше устройство остаётся скучно нормальным.</string>
+    <string name="useless_mode_warning">Случайные вибрации, мерцание экрана и звуки. Как и обещано, никакой пользы.</string>
+    <string name="useless_mode_warning_title">Предупреждение о бесполезном режиме</string>
+    <string name="useless_mode_status_title">Статус бесполезного режима</string>
+    <string name="useless_mode_accept">Я принимаю бесполезность</string>
+    <string name="useless_mode_cancel">Отмена</string>
+    <string name="useless_mode_amazing">Потрясающе</string>
+
+    <string name="appearance_title">Оформление</string>
+    <string name="appearance_colors">Цвета</string>
+    <string name="colors_material_you">Material You</string>
+    <string name="colors_signature">Signature</string>
+    <string name="colors_material_you_summary">Цвета подстраиваются под обои.</string>
+    <string name="colors_signature_summary">Графит с янтарным акцентом, одинаковый на любых обоях.</string>
+    <string name="appearance_language">Язык</string>
+    <string name="language_system">Как в системе</string>
+
+    <string name="credits_title">Благодарности</string>
+    <string name="credits_developed_by">Разработка и поддержка</string>
+    <string name="credits_developer_summary">Разработчик veux. Создал эту панель и переработал большую часть XiaomiParts для veux.</string>
+    <string name="credits_built_by">Создано и переработано acerhizmq</string>
+    <string name="credits_work_dashboard">Панель XiaomiParts, дизайн и все 13 переводов</string>
+    <string name="credits_work_fastcharge">Быстрая зарядка для veux: профили мощности 67 Вт и зарядка по USB в ядре</string>
+    <string name="credits_work_dirac">Переработка Dirac: пауза во время звонков, эквалайзер, восстановление аудиосервера и исправление EQ</string>
+    <string name="credits_work_fps">Порт счётчика FPS с путями экрана veux и правилами SELinux</string>
+    <string name="credits_work_hbm">Более надёжный авто-HBM и исправления HBM и DC dimming</string>
+    <string name="credits_work_fixes">Исправления менеджера GPU, настройка ZRAM и устранение утечек памяти во всём parts</string>
+    <string name="credits_work_integration">Интеграция KamisStuff и адаптация каждой функции под veux</string>
+    <string name="credits_original_code">Исходный код</string>
+    <string name="credits_source_kami">KamisStuff: управление ядрами, ZRAM, менеджеры ядра и GPU, разрешение, быстрая зарядка и бесполезный режим</string>
+    <string name="credits_source_pocof3">Логика восстановления MiSound и настройка с ползунком</string>
+    <string name="credits_source_guidixx">Исходник счётчика FPS</string>
+    <string name="credits_source_fastcharge">Интерфейс ядра для быстрой зарядки</string>
+    <string name="credits_projects">Проекты</string>
+    <string name="credits_contributors">Участники</string>
+
+    <string-array name="useless_warnings">
+        <item>Вы уверены, что хотите включить эту совершенно бесполезную функцию?</item>
+        <item>Внимание: это действие никак не повлияет на ваше устройство.</item>
+        <item>Осторожно: если продолжить, ровным счётом ничего не произойдёт.</item>
+        <item>Предупреждение: этот переключатель существует исключительно для развлечения.</item>
+        <item>Примечание: при создании этого переключателя ни один электрон не пострадал.</item>
+        <item>Отказ от ответственности: эксперты признали эту настройку на 100% бесполезной.</item>
+        <item>Внимание: может вызвать внезапное желание включать другие бесполезные настройки.</item>
+        <item>Предупреждение: может вызывать случайные вибрации и мерцание экрана.</item>
+        <item>Осторожно: побочные эффекты включают бессмысленное жужжание и мигание.</item>
+    </string-array>
+
+    <string-array name="useless_messages">
+        <item>Поздравляем! Вы успешно добились абсолютно ничего.</item>
+        <item>Этот переключатель полезен, как шоколадный чайник.</item>
+        <item>Вы только что потратили 0,003 секунды своей жизни. Оно того стоило?</item>
+        <item>Интересный факт: эту кнопку нажали 42 раза растерянные пользователи.</item>
+        <item>Внимание: частое использование переключателя может вызвать лёгкое замешательство.</item>
+        <item>Эта настройка предоставлена Отделом Отдела Избыточности.</item>
+        <item>Достижение получено: Мастер бессмысленных действий.</item>
+        <item>Ошибка 404: функциональность не найдена.</item>
+        <item>Переключатель работает именно так, как задумано, то есть никак.</item>
+        <item>Бип-буп! Звуки роботов делают всё важнее.</item>
+        <item>Достижение получено: Профессиональный убийца времени.</item>
+        <item>Эта функция так же полезна, как кричать на облака.</item>
+        <item>Поздравляем! Ваш уровень бесполезности вырос на 0%.</item>
+        <item>БЗЗЗТ! Ваш телефон теперь вибрирует без причины.</item>
+        <item>Мерцание экрана включено, почему бы и нет?</item>
+        <item>Ваше устройство переживает лёгкий экзистенциальный кризис.</item>
+    </string-array>
+</resources>

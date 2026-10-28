@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 acerhizmq
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_title">小米设置</string>
+    <string name="settings_entry_summary">显示、性能、电池和音频调节</string>
+    <string name="device_details">设备：<xliff:g id="codename">%1$s</xliff:g> · Android <xliff:g id="android">%2$s</xliff:g> · 内核 <xliff:g id="kernel">%3$s</xliff:g></string>
+    <string name="made_for_veux">由 acerhizmq 为 veux 打造</string>
+    <string name="navigate_up">返回</string>
+
+    <string name="state_on">已开启</string>
+    <string name="state_off">已关闭</string>
+    <string name="state_not_supported">不支持</string>
+    <string name="value_unknown">未知</string>
+    <string name="action_apply">应用</string>
+    <string name="action_reset">重置</string>
+    <string name="settings_applied">设置已应用</string>
+    <string name="settings_reset">设置已恢复默认</string>
+    <string name="write_failed">无法应用该设置</string>
+    <string name="percent_value"><xliff:g id="value">%1$d</xliff:g>%%</string>
+    <string name="lux_value"><xliff:g id="value">%1$s</xliff:g> 勒克斯</string>
+    <string name="seconds_value"><xliff:g id="value">%1$d</xliff:g> 秒</string>
+    <string name="celsius_value"><xliff:g id="value">%1$s</xliff:g> °C</string>
+    <string name="slider_decrease">减少</string>
+    <string name="slider_increase">增加</string>
+    <string name="slider_reset">重置为 <xliff:g id="value">%1$s</xliff:g></string>
+    <string name="search_apps">搜索应用</string>
+    <string name="search_clear">清除搜索</string>
+    <string name="search_no_results">没有符合搜索条件的应用</string>
+
+    <string name="section_display">显示</string>
+    <string name="section_performance">性能</string>
+    <string name="section_battery_memory">电池与内存</string>
+    <string name="section_audio">音频</string>
+    <string name="section_extras">其他</string>
+    <string name="section_about">关于</string>
+    <string name="quick_dc_dimming">DC 调光</string>
+    <string name="quick_hbm">HBM</string>
+    <string name="quick_fps">FPS</string>
+    <string name="quick_dirac">Dirac</string>
+    <string name="refresh_card_summary">按应用 60 / 120 Hz</string>
+    <string name="resolution_card_summary">按应用缩放</string>
+    <string name="thermal_card_summary">按应用设置配置</string>
+    <string name="core_card_summary"><xliff:g id="online">%1$d</xliff:g> / <xliff:g id="total">%2$d</xliff:g> 个核心在线</string>
+    <string name="zram_card_summary"><xliff:g id="algorithm">%1$s</xliff:g>，swappiness <xliff:g id="swappiness">%2$d</xliff:g></string>
+    <string name="hbm_card_auto">自动 HBM 已开启</string>
+    <string name="clear_speaker_card_summary">排出水分和灰尘</string>
+    <string name="appearance_card_summary">主题和语言</string>
+    <string name="credits_card_summary">幕后人员</string>
+
+    <string name="refresh_title">刷新率</string>
+    <string name="refresh_note">为每个应用选择刷新率。打开应用时会自动切换。</string>
+    <string name="refresh_default">默认</string>
+    <string name="refresh_standard">60 Hz</string>
+    <string name="refresh_extreme">120 Hz</string>
+    <string name="refresh_land">横屏 60 Hz</string>
+
+    <string name="resolution_title">分辨率</string>
+    <string name="resolution_note">为每个应用选择分辨率。应用切换到前台时生效。</string>
+    <string name="resolution_default">默认</string>
+    <string name="resolution_480p">480p</string>
+    <string name="resolution_540p">540p</string>
+    <string name="resolution_720p">720p</string>
+    <string name="system_resolution_title">系统分辨率</string>
+    <string name="system_resolution_current">当前分辨率</string>
+    <string name="system_resolution_mode">分辨率</string>
+    <string name="system_resolution_note">应用于整个系统。已单独设置分辨率的应用会保持其设置。较低的分辨率更省电。</string>
+
+    <string name="saturation_title">饱和度</string>
+    <string name="saturation_note">调整整个屏幕的色彩饱和度。每次重启后都会恢复。</string>
+    <string name="image_preview_content_description">饱和度预览图片</string>
+    <string name="preview_previous">上一张图片</string>
+    <string name="preview_next">下一张图片</string>
+    <string name="tile_add">添加到快捷设置</string>
+    <string name="tile_added">已添加图块</string>
+    <string name="tile_not_added">未添加图块</string>
+    <string name="tile_already_added">图块已添加</string>
+
+    <string name="dc_dimming_title">DC 调光</string>
+    <string name="dc_dimming_switch">使用 DC 调光</string>
+    <string name="dc_dimming_note">在低亮度下减少闪烁和眼睛疲劳。开启期间会关闭高亮度模式。</string>
+    <string name="dc_dimming_not_supported">当前内核不支持 DC 调光。</string>
+
+    <string name="hbm_title">高亮度</string>
+    <string name="hbm_mode_title">高亮度模式</string>
+    <string name="hbm_switch">高亮度模式</string>
+    <string name="hbm_switch_summary">在阳光直射下使用屏幕最高亮度</string>
+    <string name="hbm_blocked_by_dc">请先关闭 DC 调光</string>
+    <string name="hbm_not_supported">当前内核不支持</string>
+    <string name="auto_hbm_switch">自动 HBM</string>
+    <string name="auto_hbm_summary">在强光下开启高亮度，回到室内后再次关闭</string>
+    <string name="auto_hbm_threshold">光照阈值</string>
+    <string name="auto_hbm_disable_time">关闭延迟</string>
+    <string name="hbm_warning">长时间使用高亮度模式可能会损坏屏幕。</string>
+
+    <string name="thermal_title">温控引擎</string>
+    <string name="thermal_note">为每个应用选择温控配置。打开应用时会自动切换。</string>
+    <string name="thermal_default">不优化</string>
+    <string name="thermal_benchmark">性能</string>
+    <string name="thermal_browser">浏览器</string>
+    <string name="thermal_camera">相机</string>
+    <string name="thermal_dialer">电话</string>
+    <string name="thermal_gaming">游戏</string>
+    <string name="thermal_navigation">导航</string>
+    <string name="thermal_streaming">流媒体</string>
+    <string name="thermal_video">视频</string>
+
+    <string name="kernel_manager_title">内核管理</string>
+    <string name="cpu_governor">CPU 调速器</string>
+    <string name="efficiency_cluster">能效核心</string>
+    <string name="performance_cluster">性能核心</string>
+    <string name="min_frequency">最低频率</string>
+    <string name="max_frequency">最高频率</string>
+    <string name="frequencies_unavailable">无法在此内核上读取 CPU 频率。</string>
+    <string name="kernel_manager_note">点按“应用”后更改生效，并保持到下次重启。</string>
+
+    <string name="gpu_manager_title">GPU 管理</string>
+    <string name="gpu_model">GPU</string>
+    <string name="gpu_current_freq">频率</string>
+    <string name="gpu_busy">负载</string>
+    <string name="gpu_temperature">温度</string>
+    <string name="gpu_thermal_level">温控等级</string>
+    <string name="gpu_level_value">等级 <xliff:g id="level">%1$s</xliff:g></string>
+    <string name="gpu_governor">GPU 调速器</string>
+    <string name="gpu_power">电源</string>
+    <string name="gpu_force_clk_on">强制时钟开启</string>
+    <string name="gpu_force_clk_on_summary">空闲时保持 GPU 时钟运行</string>
+    <string name="gpu_force_bus_on">强制总线开启</string>
+    <string name="gpu_force_bus_on_summary">保持 GPU 内存总线活动</string>
+    <string name="gpu_force_rail_on">强制供电开启</string>
+    <string name="gpu_force_rail_on_summary">保持 GPU 供电轨开启</string>
+    <string name="gpu_force_no_nap">禁止小睡</string>
+    <string name="gpu_force_no_nap_summary">防止 GPU 在帧之间进入小睡状态</string>
+    <string name="gpu_bus_split">总线分离</string>
+    <string name="gpu_bus_split_summary">将内存总线与 GPU 时钟分开调节</string>
+    <string name="gpu_manager_note">电源开关立即生效。调速器和频率在点按“应用”后生效。重启后全部恢复。</string>
+
+    <string name="core_control_title">核心控制</string>
+    <string name="core_label">CPU <xliff:g id="core">%1$d</xliff:g></string>
+    <string name="core_control_min_online">至少需要保留两个能效核心在线</string>
+    <string name="core_control_note">点按核心可将其下线或重新上线。核心 0 至 5 中至少两个始终保持在线。重启后核心会恢复在线。</string>
+
+    <string name="fastcharge_title">快速充电</string>
+    <string name="fastcharge_mode_title">充电功率</string>
+    <string name="fastcharge_mode_normal">普通</string>
+    <string name="fastcharge_mode_18w">18W</string>
+    <string name="fastcharge_mode_33w">33W</string>
+    <string name="fastcharge_mode_67w">67W</string>
+    <string name="fastcharge_mode_note">普通模式下电荷泵保持关闭（5V，最高 15W）。18W 和 33W 会限制充电电流。67W 为原厂行为。温度保护始终生效。</string>
+    <string name="fastcharge_mode_unavailable">当前内核不支持。</string>
+    <string name="fastcharge_usb_title">USB 快速充电</string>
+    <string name="fastcharge_usb_summary">通过电脑 USB 端口以 900 mA 而非 500 mA 充电</string>
+    <string name="fastcharge_usb_unavailable">当前内核不支持</string>
+
+    <string name="zram_title">ZRAM</string>
+    <string name="zram_size_title">大小</string>
+    <string name="zram_disabled">关闭</string>
+    <string name="zram_size_2gb">2 GB</string>
+    <string name="zram_size_4gb">4 GB</string>
+    <string name="zram_size_8gb">8 GB</string>
+    <string name="zram_size_dynamic">自动</string>
+    <string name="zram_compression_title">压缩算法</string>
+    <string name="swappiness_title">Swappiness</string>
+    <string name="zram_note">大小和压缩算法在重启后生效。Swappiness 立即生效。</string>
+    <string name="zram_change_applied">ZRAM 设置已保存</string>
+    <string name="zram_reboot_recommended">请重启设备以使此更改生效。</string>
+
+    <string name="dirac_title">Dirac 音效</string>
+    <string name="dirac_enable">使用 Dirac</string>
+    <string name="dirac_scenario">场景</string>
+    <string name="dirac_headset_title">耳机类型</string>
+    <string name="dirac_preset_title">预设</string>
+    <string name="dirac_eq_enable_title">均衡器</string>
+    <string name="dirac_eq_enable_summary">应用所选预设；关闭时所有频段保持平直</string>
+    <string name="dirac_pause_calls_title">通话时暂停</string>
+    <string name="dirac_pause_calls_summary">在电话和网络通话期间绕过音效</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_enable_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">更低的噪声和失真，带来更高音质</string>
+    <string name="music_headset_scenario_intelligent">智能</string>
+    <string name="music_headset_scenario_music">音乐</string>
+    <string name="music_headset_scenario_video">视频</string>
+    <string name="music_headset_scenario_vocal">人声</string>
+    <string name="dirac_preset_default">默认</string>
+    <string name="dirac_preset_rock">摇滚</string>
+    <string name="dirac_preset_jazz">爵士</string>
+    <string name="dirac_preset_pop">流行</string>
+    <string name="dirac_preset_classical">古典</string>
+    <string name="dirac_preset_hiphop">嘻哈</string>
+    <string name="dirac_preset_blues">蓝调</string>
+    <string name="dirac_preset_electronic">电子</string>
+    <string name="dirac_preset_country">乡村</string>
+    <string name="dirac_preset_dance">舞曲</string>
+    <string name="dirac_preset_metal">金属</string>
+    <string name="dirac_preset_bass_booster">低音增强</string>
+    <string name="dirac_preset_balanced">均衡</string>
+    <string name="dirac_preset_live">现场</string>
+    <string name="dirac_preset_bass_reduction">低音削减</string>
+    <string name="dirac_preset_treble_reduction">高音削减</string>
+    <string name="dirac_preset_soft_bass">柔和低音</string>
+    <string name="dirac_preset_soft_treble">柔和高音</string>
+
+    <string name="clear_speaker_title">扬声器清理</string>
+    <string name="clear_speaker_start">开始清理</string>
+    <string name="clear_speaker_running">正在清理，剩余 <xliff:g id="seconds">%1$d</xliff:g> 秒</string>
+    <string name="clear_speaker_description">播放 30 秒低频音调，将水和灰尘推出扬声器。请先将媒体音量调到最大并拔下耳机。如果扬声器堵塞严重，请让扬声器朝下运行 2 到 5 次。</string>
+
+    <string name="fps_overlay_title">FPS 悬浮窗</string>
+    <string name="fps_info_tile_label">FPS 悬浮窗</string>
+    <string name="fps_overlay_switch">显示帧率</string>
+    <string name="fps_overlay_note">在屏幕顶部角落显示帧率，每秒更新一次。也可作为快捷设置图块使用。</string>
+    <string name="fps_overlay_not_supported">当前内核没有可用的帧计数器。</string>
+
+    <string name="useless_mode_title">无用模式</string>
+    <string name="useless_mode_switch">开启无用模式</string>
+    <string name="useless_mode_enabled_summary">无用模式已开启。请准备好迎接随机振动和闪烁。</string>
+    <string name="useless_mode_disabled_summary">无用模式已关闭。你的设备依旧无聊地正常。</string>
+    <string name="useless_mode_warning">随机振动、屏幕闪烁和声音。正如承诺的那样，毫无用处。</string>
+    <string name="useless_mode_warning_title">无用模式警告</string>
+    <string name="useless_mode_status_title">无用模式状态</string>
+    <string name="useless_mode_accept">我接受这份无用</string>
+    <string name="useless_mode_cancel">取消</string>
+    <string name="useless_mode_amazing">太棒了</string>
+
+    <string name="appearance_title">外观</string>
+    <string name="appearance_colors">颜色</string>
+    <string name="colors_material_you">Material You</string>
+    <string name="colors_signature">Signature</string>
+    <string name="colors_material_you_summary">颜色随壁纸变化。</string>
+    <string name="colors_signature_summary">石墨配琥珀色点缀，在任何壁纸下都保持一致。</string>
+    <string name="appearance_language">语言</string>
+    <string name="language_system">跟随系统</string>
+
+    <string name="credits_title">致谢</string>
+    <string name="credits_developed_by">开发与维护</string>
+    <string name="credits_developer_summary">veux 开发者。打造了这个面板，并为 veux 重做了 XiaomiParts 的大部分内容。</string>
+    <string name="credits_built_by">由 acerhizmq 打造和重做</string>
+    <string name="credits_work_dashboard">XiaomiParts 面板、设计以及全部 13 种语言的翻译</string>
+    <string name="credits_work_fastcharge">veux 快速充电：内核中的 67W 功率配置和 USB 充电</string>
+    <string name="credits_work_dirac">Dirac 重做：通话暂停、均衡器、音频服务恢复和 EQ 修复</string>
+    <string name="credits_work_fps">移植 FPS 悬浮窗，适配 veux 显示路径和 SELinux 规则</string>
+    <string name="credits_work_hbm">更可靠的自动 HBM，以及 HBM / DC 调光修复</string>
+    <string name="credits_work_fixes">GPU 管理修复、ZRAM 调校以及全部 parts 的内存泄漏修复</string>
+    <string name="credits_work_integration">整合 KamisStuff 并让每项功能适配 veux</string>
+    <string name="credits_original_code">原始代码来自</string>
+    <string name="credits_source_kami">KamisStuff：核心控制、ZRAM、内核与 GPU 管理、分辨率、快速充电和无用模式</string>
+    <string name="credits_source_pocof3">MiSound 恢复逻辑和滑块偏好设置</string>
+    <string name="credits_source_guidixx">FPS 悬浮窗源码</string>
+    <string name="credits_source_fastcharge">快速充电内核接口</string>
+    <string name="credits_projects">项目</string>
+    <string name="credits_contributors">贡献者</string>
+
+    <string-array name="useless_warnings">
+        <item>你确定要开启这个毫无用处的功能吗？</item>
+        <item>警告：此操作对你的设备完全没有任何影响。</item>
+        <item>注意：继续操作将什么也不会发生。</item>
+        <item>提示：此开关纯粹用于娱乐。</item>
+        <item>说明：制作此开关的过程中没有任何电子受到伤害。</item>
+        <item>免责声明：专家认证此设置 100% 无用。</item>
+        <item>警告：可能会让你突然想开启更多无用的设置。</item>
+        <item>提示：可能导致随机振动和屏幕闪烁。</item>
+        <item>注意：副作用包括毫无意义的嗡嗡声和闪烁。</item>
+    </string-array>
+
+    <string-array name="useless_messages">
+        <item>恭喜！你成功地完成了一件毫无意义的事。</item>
+        <item>这个开关就像巧克力做的茶壶一样有用。</item>
+        <item>你刚刚浪费了 0.003 秒的人生。值得吗？</item>
+        <item>趣闻：困惑的用户已经按了这个按钮 42 次。</item>
+        <item>警告：过度使用此开关可能导致轻微困惑。</item>
+        <item>此设置由冗余部门部门为你呈现。</item>
+        <item>成就解锁：无意义操作大师。</item>
+        <item>错误 404：未找到功能。</item>
+        <item>此开关完全按设计运行，也就是说，完全不起作用。</item>
+        <item>哔啵！机器人的声音让一切都显得更重要。</item>
+        <item>成就解锁：专业浪费时间者。</item>
+        <item>这个功能的效果和对着云朵大喊一样。</item>
+        <item>恭喜！你的无用等级提高了 0%。</item>
+        <item>嗡嗡嗡！你的手机正在无缘无故地振动。</item>
+        <item>屏幕闪烁已开启，为什么不呢？</item>
+        <item>你的设备正在经历一场轻微的存在危机。</item>
+    </string-array>
+</resources>

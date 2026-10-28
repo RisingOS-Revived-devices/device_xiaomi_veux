@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 acerhizmq
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_title">Cài đặt Xiaomi</string>
+    <string name="settings_entry_summary">Tinh chỉnh màn hình, hiệu năng, pin và âm thanh</string>
+    <string name="device_details">thiết bị: <xliff:g id="codename">%1$s</xliff:g> · Android <xliff:g id="android">%2$s</xliff:g> · kernel <xliff:g id="kernel">%3$s</xliff:g></string>
+    <string name="made_for_veux">Dành cho veux, thực hiện bởi acerhizmq</string>
+    <string name="navigate_up">Quay lại</string>
+
+    <string name="state_on">Bật</string>
+    <string name="state_off">Tắt</string>
+    <string name="state_not_supported">Không hỗ trợ</string>
+    <string name="value_unknown">Không xác định</string>
+    <string name="action_apply">Áp dụng</string>
+    <string name="action_reset">Đặt lại</string>
+    <string name="settings_applied">Đã áp dụng cài đặt</string>
+    <string name="settings_reset">Đã đặt lại cài đặt về mặc định</string>
+    <string name="write_failed">Không thể áp dụng cài đặt</string>
+    <string name="percent_value"><xliff:g id="value">%1$d</xliff:g>%%</string>
+    <string name="lux_value"><xliff:g id="value">%1$s</xliff:g> lux</string>
+    <string name="seconds_value"><xliff:g id="value">%1$d</xliff:g> giây</string>
+    <string name="celsius_value"><xliff:g id="value">%1$s</xliff:g> °C</string>
+    <string name="slider_decrease">Giảm</string>
+    <string name="slider_increase">Tăng</string>
+    <string name="slider_reset">Đặt lại về <xliff:g id="value">%1$s</xliff:g></string>
+    <string name="search_apps">Tìm ứng dụng</string>
+    <string name="search_clear">Xóa tìm kiếm</string>
+    <string name="search_no_results">Không có ứng dụng nào khớp với tìm kiếm</string>
+
+    <string name="section_display">Màn hình</string>
+    <string name="section_performance">Hiệu năng</string>
+    <string name="section_battery_memory">Pin và bộ nhớ</string>
+    <string name="section_audio">Âm thanh</string>
+    <string name="section_extras">Tiện ích thêm</string>
+    <string name="section_about">Giới thiệu</string>
+    <string name="quick_dc_dimming">DC dimming</string>
+    <string name="quick_hbm">HBM</string>
+    <string name="quick_fps">FPS</string>
+    <string name="quick_dirac">Dirac</string>
+    <string name="refresh_card_summary">60 / 120 Hz theo ứng dụng</string>
+    <string name="resolution_card_summary">Tỉ lệ theo ứng dụng</string>
+    <string name="thermal_card_summary">Hồ sơ theo ứng dụng</string>
+    <string name="core_card_summary"><xliff:g id="online">%1$d</xliff:g> / <xliff:g id="total">%2$d</xliff:g> nhân đang bật</string>
+    <string name="zram_card_summary"><xliff:g id="algorithm">%1$s</xliff:g>, swappiness <xliff:g id="swappiness">%2$d</xliff:g></string>
+    <string name="hbm_card_auto">HBM tự động đang bật</string>
+    <string name="clear_speaker_card_summary">Đẩy nước và bụi ra ngoài</string>
+    <string name="appearance_card_summary">Giao diện và ngôn ngữ</string>
+    <string name="credits_card_summary">Những người đứng sau</string>
+
+    <string name="refresh_title">Tần số quét</string>
+    <string name="refresh_note">Chọn tần số quét cho từng ứng dụng. Tần số sẽ tự chuyển khi ứng dụng được mở.</string>
+    <string name="refresh_default">Mặc định</string>
+    <string name="refresh_standard">60 Hz</string>
+    <string name="refresh_extreme">120 Hz</string>
+    <string name="refresh_land">60 Hz khi xoay ngang</string>
+
+    <string name="resolution_title">Độ phân giải</string>
+    <string name="resolution_note">Chọn độ phân giải cho từng ứng dụng. Độ phân giải được áp dụng khi ứng dụng ở nền trước.</string>
+    <string name="resolution_default">Mặc định</string>
+    <string name="resolution_480p">480p</string>
+    <string name="resolution_540p">540p</string>
+    <string name="resolution_720p">720p</string>
+    <string name="system_resolution_title">Độ phân giải hệ thống</string>
+    <string name="system_resolution_current">Độ phân giải hiện tại</string>
+    <string name="system_resolution_mode">Độ phân giải</string>
+    <string name="system_resolution_note">Áp dụng cho toàn hệ thống. Ứng dụng có độ phân giải riêng vẫn giữ nguyên. Độ phân giải thấp hơn giúp tiết kiệm pin.</string>
+
+    <string name="saturation_title">Độ bão hòa</string>
+    <string name="saturation_note">Điều chỉnh độ bão hòa màu của toàn bộ màn hình. Được khôi phục sau mỗi lần khởi động lại.</string>
+    <string name="image_preview_content_description">Ảnh xem trước độ bão hòa</string>
+    <string name="preview_previous">Ảnh trước</string>
+    <string name="preview_next">Ảnh tiếp theo</string>
+    <string name="tile_add">Thêm vào cài đặt nhanh</string>
+    <string name="tile_added">Đã thêm ô</string>
+    <string name="tile_not_added">Chưa thêm ô</string>
+    <string name="tile_already_added">Ô đã được thêm</string>
+
+    <string name="dc_dimming_title">DC dimming</string>
+    <string name="dc_dimming_switch">Dùng DC dimming</string>
+    <string name="dc_dimming_note">Giảm nhấp nháy và mỏi mắt ở độ sáng thấp. Chế độ độ sáng cao sẽ tắt khi tính năng này bật.</string>
+    <string name="dc_dimming_not_supported">Kernel đang chạy không hỗ trợ DC dimming.</string>
+
+    <string name="hbm_title">Độ sáng cao</string>
+    <string name="hbm_mode_title">Chế độ độ sáng cao</string>
+    <string name="hbm_switch">Chế độ độ sáng cao</string>
+    <string name="hbm_switch_summary">Độ sáng tối đa của màn hình dưới nắng trực tiếp</string>
+    <string name="hbm_blocked_by_dc">Tắt DC dimming để sử dụng</string>
+    <string name="hbm_not_supported">Kernel đang chạy không hỗ trợ</string>
+    <string name="auto_hbm_switch">HBM tự động</string>
+    <string name="auto_hbm_summary">Bật độ sáng cao khi ánh sáng mạnh và tắt lại khi ở trong nhà</string>
+    <string name="auto_hbm_threshold">Ngưỡng ánh sáng</string>
+    <string name="auto_hbm_disable_time">Tắt sau</string>
+    <string name="hbm_warning">Dùng chế độ độ sáng cao trong thời gian dài có thể làm hỏng màn hình.</string>
+
+    <string name="thermal_title">Bộ điều nhiệt</string>
+    <string name="thermal_note">Chọn hồ sơ nhiệt cho từng ứng dụng. Hồ sơ sẽ tự chuyển khi ứng dụng được mở.</string>
+    <string name="thermal_default">Không tối ưu</string>
+    <string name="thermal_benchmark">Hiệu năng</string>
+    <string name="thermal_browser">Trình duyệt</string>
+    <string name="thermal_camera">Máy ảnh</string>
+    <string name="thermal_dialer">Điện thoại</string>
+    <string name="thermal_gaming">Chơi game</string>
+    <string name="thermal_navigation">Dẫn đường</string>
+    <string name="thermal_streaming">Phát trực tuyến</string>
+    <string name="thermal_video">Video</string>
+
+    <string name="kernel_manager_title">Quản lý kernel</string>
+    <string name="cpu_governor">Governor CPU</string>
+    <string name="efficiency_cluster">Nhân tiết kiệm</string>
+    <string name="performance_cluster">Nhân hiệu năng</string>
+    <string name="min_frequency">Tần số tối thiểu</string>
+    <string name="max_frequency">Tần số tối đa</string>
+    <string name="frequencies_unavailable">Không thể đọc tần số CPU trên kernel này.</string>
+    <string name="kernel_manager_note">Thay đổi được áp dụng khi bạn nhấn Áp dụng và giữ đến lần khởi động lại tiếp theo.</string>
+
+    <string name="gpu_manager_title">Quản lý GPU</string>
+    <string name="gpu_model">GPU</string>
+    <string name="gpu_current_freq">Tần số</string>
+    <string name="gpu_busy">Tải</string>
+    <string name="gpu_temperature">Nhiệt độ</string>
+    <string name="gpu_thermal_level">Mức nhiệt</string>
+    <string name="gpu_level_value">Mức <xliff:g id="level">%1$s</xliff:g></string>
+    <string name="gpu_governor">Governor GPU</string>
+    <string name="gpu_power">Nguồn</string>
+    <string name="gpu_force_clk_on">Buộc bật xung nhịp</string>
+    <string name="gpu_force_clk_on_summary">Giữ xung nhịp GPU chạy khi rảnh</string>
+    <string name="gpu_force_bus_on">Buộc bật bus</string>
+    <string name="gpu_force_bus_on_summary">Giữ bus bộ nhớ GPU hoạt động</string>
+    <string name="gpu_force_rail_on">Buộc bật nguồn</string>
+    <string name="gpu_force_rail_on_summary">Giữ đường nguồn GPU luôn bật</string>
+    <string name="gpu_force_no_nap">Không ngủ ngắn</string>
+    <string name="gpu_force_no_nap_summary">Ngăn GPU ngủ ngắn giữa các khung hình</string>
+    <string name="gpu_bus_split">Tách bus</string>
+    <string name="gpu_bus_split_summary">Điều chỉnh bus bộ nhớ tách biệt với xung nhịp GPU</string>
+    <string name="gpu_manager_note">Công tắc nguồn áp dụng ngay. Governor và tần số áp dụng khi bạn nhấn Áp dụng. Mọi thứ đặt lại sau khi khởi động lại.</string>
+
+    <string name="core_control_title">Điều khiển nhân</string>
+    <string name="core_label">CPU <xliff:g id="core">%1$d</xliff:g></string>
+    <string name="core_control_min_online">Phải giữ ít nhất hai nhân tiết kiệm hoạt động</string>
+    <string name="core_control_note">Nhấn vào một nhân để tắt hoặc bật lại. Ít nhất hai trong các nhân 0 đến 5 luôn hoạt động. Các nhân sẽ bật lại sau khi khởi động lại.</string>
+
+    <string name="fastcharge_title">Sạc nhanh</string>
+    <string name="fastcharge_mode_title">Công suất sạc</string>
+    <string name="fastcharge_mode_normal">Thường</string>
+    <string name="fastcharge_mode_18w">18W</string>
+    <string name="fastcharge_mode_33w">33W</string>
+    <string name="fastcharge_mode_67w">67W</string>
+    <string name="fastcharge_mode_note">Chế độ thường giữ charge pump tắt (5V, tối đa 15W). 18W và 33W giới hạn dòng sạc. 67W là hoạt động gốc. Bảo vệ nhiệt luôn được áp dụng.</string>
+    <string name="fastcharge_mode_unavailable">Kernel đang chạy không hỗ trợ.</string>
+    <string name="fastcharge_usb_title">Sạc nhanh qua USB</string>
+    <string name="fastcharge_usb_summary">Sạc 900 mA thay vì 500 mA từ cổng USB máy tính</string>
+    <string name="fastcharge_usb_unavailable">Kernel đang chạy không hỗ trợ</string>
+
+    <string name="zram_title">ZRAM</string>
+    <string name="zram_size_title">Dung lượng</string>
+    <string name="zram_disabled">Tắt</string>
+    <string name="zram_size_2gb">2 GB</string>
+    <string name="zram_size_4gb">4 GB</string>
+    <string name="zram_size_8gb">8 GB</string>
+    <string name="zram_size_dynamic">Tự động</string>
+    <string name="zram_compression_title">Nén</string>
+    <string name="swappiness_title">Swappiness</string>
+    <string name="zram_note">Dung lượng và kiểu nén áp dụng sau khi khởi động lại. Swappiness áp dụng ngay.</string>
+    <string name="zram_change_applied">Đã lưu cài đặt ZRAM</string>
+    <string name="zram_reboot_recommended">Hãy khởi động lại thiết bị để thay đổi này có hiệu lực.</string>
+
+    <string name="dirac_title">Âm thanh Dirac</string>
+    <string name="dirac_enable">Dùng Dirac</string>
+    <string name="dirac_scenario">Kịch bản</string>
+    <string name="dirac_headset_title">Loại tai nghe</string>
+    <string name="dirac_preset_title">Cài đặt sẵn</string>
+    <string name="dirac_eq_enable_title">Bộ cân bằng</string>
+    <string name="dirac_eq_enable_summary">Áp dụng cài đặt sẵn đã chọn; khi tắt, mọi dải đều phẳng</string>
+    <string name="dirac_pause_calls_title">Tạm dừng khi gọi</string>
+    <string name="dirac_pause_calls_summary">Bỏ qua hiệu ứng khi gọi điện thoại và VoIP</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_enable_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Ít nhiễu và méo hơn cho chất lượng âm thanh cao hơn</string>
+    <string name="music_headset_scenario_intelligent">Thông minh</string>
+    <string name="music_headset_scenario_music">Nhạc</string>
+    <string name="music_headset_scenario_video">Video</string>
+    <string name="music_headset_scenario_vocal">Giọng nói</string>
+    <string name="dirac_preset_default">Mặc định</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Cổ điển</string>
+    <string name="dirac_preset_hiphop">Hip hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Điện tử</string>
+    <string name="dirac_preset_country">Đồng quê</string>
+    <string name="dirac_preset_dance">Dance</string>
+    <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_bass_booster">Tăng bass</string>
+    <string name="dirac_preset_balanced">Cân bằng</string>
+    <string name="dirac_preset_live">Trực tiếp</string>
+    <string name="dirac_preset_bass_reduction">Giảm bass</string>
+    <string name="dirac_preset_treble_reduction">Giảm treble</string>
+    <string name="dirac_preset_soft_bass">Bass nhẹ</string>
+    <string name="dirac_preset_soft_treble">Treble nhẹ</string>
+
+    <string name="clear_speaker_title">Làm sạch loa</string>
+    <string name="clear_speaker_start">Bắt đầu làm sạch</string>
+    <string name="clear_speaker_running">Đang làm sạch, còn <xliff:g id="seconds">%1$d</xliff:g> giây</string>
+    <string name="clear_speaker_description">Phát âm trầm trong 30 giây để đẩy nước và bụi ra khỏi loa. Trước tiên, hãy tăng âm lượng phương tiện lên tối đa và tháo tai nghe. Nếu loa bị tắc nặng, hãy chạy 2 đến 5 lần với loa hướng xuống dưới.</string>
+
+    <string name="fps_overlay_title">Lớp phủ FPS</string>
+    <string name="fps_info_tile_label">Lớp phủ FPS</string>
+    <string name="fps_overlay_switch">Hiện tốc độ khung hình</string>
+    <string name="fps_overlay_note">Hiển thị tốc độ khung hình của màn hình ở góc trên, cập nhật mỗi giây. Cũng có dạng ô cài đặt nhanh.</string>
+    <string name="fps_overlay_not_supported">Bộ đếm khung hình không có trên kernel đang chạy.</string>
+
+    <string name="useless_mode_title">Chế độ vô dụng</string>
+    <string name="useless_mode_switch">Bật chế độ vô dụng</string>
+    <string name="useless_mode_enabled_summary">Chế độ vô dụng đang bật. Hãy chờ đợi những lần rung và nhấp nháy ngẫu nhiên.</string>
+    <string name="useless_mode_disabled_summary">Chế độ vô dụng đang tắt. Thiết bị của bạn vẫn bình thường một cách nhàm chán.</string>
+    <string name="useless_mode_warning">Rung ngẫu nhiên, màn hình nhấp nháy và âm thanh. Đúng như đã hứa, hoàn toàn vô dụng.</string>
+    <string name="useless_mode_warning_title">Cảnh báo chế độ vô dụng</string>
+    <string name="useless_mode_status_title">Trạng thái chế độ vô dụng</string>
+    <string name="useless_mode_accept">Tôi chấp nhận sự vô dụng</string>
+    <string name="useless_mode_cancel">Hủy</string>
+    <string name="useless_mode_amazing">Tuyệt vời</string>
+
+    <string name="appearance_title">Giao diện</string>
+    <string name="appearance_colors">Màu sắc</string>
+    <string name="colors_material_you">Material You</string>
+    <string name="colors_signature">Signature</string>
+    <string name="colors_material_you_summary">Màu sắc theo hình nền của bạn.</string>
+    <string name="colors_signature_summary">Than chì với điểm nhấn hổ phách, giống nhau trên mọi hình nền.</string>
+    <string name="appearance_language">Ngôn ngữ</string>
+    <string name="language_system">Mặc định hệ thống</string>
+
+    <string name="credits_title">Ghi công</string>
+    <string name="credits_developed_by">Phát triển và duy trì bởi</string>
+    <string name="credits_developer_summary">Nhà phát triển veux. Đã tạo bảng điều khiển này và làm lại phần lớn XiaomiParts cho veux.</string>
+    <string name="credits_built_by">Do acerhizmq xây dựng và làm lại</string>
+    <string name="credits_work_dashboard">Bảng điều khiển XiaomiParts, thiết kế và cả 13 bản dịch</string>
+    <string name="credits_work_fastcharge">Sạc nhanh cho veux: hồ sơ công suất 67W và sạc USB trong kernel</string>
+    <string name="credits_work_dirac">Làm lại Dirac: tạm dừng khi gọi, bộ cân bằng, khôi phục máy chủ âm thanh và sửa EQ</string>
+    <string name="credits_work_fps">Chuyển lớp phủ FPS với đường dẫn màn hình của veux và quy tắc SELinux</string>
+    <string name="credits_work_hbm">HBM tự động ổn định hơn và các bản sửa cho HBM / DC dimming</string>
+    <string name="credits_work_fixes">Sửa quản lý GPU, tinh chỉnh ZRAM và sửa rò rỉ bộ nhớ trong toàn bộ parts</string>
+    <string name="credits_work_integration">Tích hợp KamisStuff và điều chỉnh mọi tính năng cho veux</string>
+    <string name="credits_original_code">Mã gốc từ</string>
+    <string name="credits_source_kami">KamisStuff: điều khiển nhân, ZRAM, quản lý kernel và GPU, độ phân giải, sạc nhanh và chế độ vô dụng</string>
+    <string name="credits_source_pocof3">Logic khôi phục MiSound và tùy chọn thanh trượt</string>
+    <string name="credits_source_guidixx">Nguồn của lớp phủ FPS</string>
+    <string name="credits_source_fastcharge">Giao diện kernel cho sạc nhanh</string>
+    <string name="credits_projects">Dự án</string>
+    <string name="credits_contributors">Người đóng góp</string>
+
+    <string-array name="useless_warnings">
+        <item>Bạn có chắc muốn bật tính năng hoàn toàn vô dụng này không?</item>
+        <item>Cảnh báo: thao tác này hoàn toàn không ảnh hưởng gì đến thiết bị của bạn.</item>
+        <item>Chú ý: tiếp tục sẽ không có gì xảy ra cả.</item>
+        <item>Lưu ý: công tắc này chỉ để giải trí.</item>
+        <item>Ghi chú: không có electron nào bị tổn hại khi tạo ra công tắc này.</item>
+        <item>Miễn trừ: các chuyên gia chứng nhận cài đặt này vô dụng 100%.</item>
+        <item>Cảnh báo: có thể khiến bạn đột nhiên muốn bật thêm các cài đặt vô dụng khác.</item>
+        <item>Lưu ý: có thể gây rung ngẫu nhiên và nhấp nháy màn hình.</item>
+        <item>Chú ý: tác dụng phụ gồm tiếng rè và nhấp nháy vô nghĩa.</item>
+    </string-array>
+
+    <string-array name="useless_messages">
+        <item>Chúc mừng! Bạn đã hoàn thành xuất sắc việc chẳng làm được gì.</item>
+        <item>Công tắc này hữu ích như một chiếc ấm trà bằng sô-cô-la.</item>
+        <item>Bạn vừa lãng phí 0,003 giây cuộc đời. Có đáng không?</item>
+        <item>Sự thật thú vị: người dùng bối rối đã nhấn nút này 42 lần.</item>
+        <item>Cảnh báo: dùng công tắc này quá nhiều có thể gây bối rối nhẹ.</item>
+        <item>Cài đặt này do Phòng Phòng Dư Thừa mang đến cho bạn.</item>
+        <item>Đã mở khóa thành tựu: Bậc thầy của những hành động vô nghĩa.</item>
+        <item>Lỗi 404: không tìm thấy chức năng.</item>
+        <item>Công tắc này hoạt động đúng như thiết kế, tức là chẳng hoạt động gì.</item>
+        <item>Bíp bốp! Âm thanh robot khiến mọi thứ có vẻ quan trọng hơn.</item>
+        <item>Đã mở khóa thành tựu: Chuyên gia lãng phí thời gian.</item>
+        <item>Tính năng này có tác dụng giống như hét vào mây.</item>
+        <item>Chúc mừng! Mức độ vô dụng của bạn đã tăng 0%.</item>
+        <item>BZZZT! Điện thoại của bạn đang rung mà chẳng có lý do gì.</item>
+        <item>Đã bật nhấp nháy màn hình, sao lại không chứ?</item>
+        <item>Thiết bị của bạn đang trải qua một cuộc khủng hoảng hiện sinh nhẹ.</item>
+    </string-array>
+</resources>

@@ -41,6 +41,9 @@
 
     <!-- Whether usage of the proximity sensor during doze is supported -->
     <bool name="doze_proximity_sensor_supported">false</bool>
+
+    <!-- Durum çubuğundaki FPS sayacı için veri yolu -->
+    <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
     
     <!-- Needed for custom rom CPU temp paths -->
     <string name="config_cpuTempSensor">/sys/class/thermal/thermal_zone28/temp</string>

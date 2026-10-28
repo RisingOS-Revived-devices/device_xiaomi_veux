@@ -7,7 +7,10 @@
 android_app {
     name: "XiaomiParts",
 
-    srcs: ["src/**/*.java"],
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+    ],
 
     certificate: "platform",
     platform_apis: true,
@@ -16,5 +19,31 @@ android_app {
 
     static_libs: [
         "org.lineageos.settings.resources",
+        "androidx.activity_activity-compose",
+        "androidx.core_core-ktx",
+        "androidx.lifecycle_lifecycle-runtime-compose",
+        "androidx.compose.animation_animation",
+        "androidx.compose.foundation_foundation",
+        "androidx.compose.material3_material3",
+        "androidx.compose.material_material-icons-core",
+        "androidx.compose.material_material-icons-extended",
+        "androidx.compose.runtime_runtime",
+        "androidx.compose.ui_ui",
     ],
+
+    kotlincflags: [
+        "-Xjvm-default=all",
+        "-Xopt-in=kotlin.RequiresOptIn",
+    ],
+
+    required: [
+        "privapp_whitelist_org.lineageos.settings.xml",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_org.lineageos.settings.xml",
+    src: "permissions/privapp_whitelist_org.lineageos.settings.xml",
+    sub_dir: "permissions",
+    system_ext_specific: true,
 }

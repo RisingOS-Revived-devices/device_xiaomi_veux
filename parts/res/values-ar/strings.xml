@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 acerhizmq
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_title">إعدادات Xiaomi</string>
+    <string name="settings_entry_summary">ضبط الشاشة والأداء والبطارية والصوت</string>
+    <string name="device_details">الجهاز: <xliff:g id="codename">%1$s</xliff:g> · Android <xliff:g id="android">%2$s</xliff:g> · النواة <xliff:g id="kernel">%3$s</xliff:g></string>
+    <string name="made_for_veux">صُنع لجهاز veux بواسطة acerhizmq</string>
+    <string name="navigate_up">رجوع</string>
+
+    <string name="state_on">مفعّل</string>
+    <string name="state_off">متوقف</string>
+    <string name="state_not_supported">غير مدعوم</string>
+    <string name="value_unknown">غير معروف</string>
+    <string name="action_apply">تطبيق</string>
+    <string name="action_reset">إعادة الضبط</string>
+    <string name="settings_applied">تم تطبيق الإعدادات</string>
+    <string name="settings_reset">تمت إعادة الإعدادات إلى الافتراضي</string>
+    <string name="write_failed">تعذّر تطبيق الإعداد</string>
+    <string name="percent_value"><xliff:g id="value">%1$d</xliff:g>%%</string>
+    <string name="lux_value"><xliff:g id="value">%1$s</xliff:g> لوكس</string>
+    <string name="seconds_value"><xliff:g id="value">%1$d</xliff:g> ث</string>
+    <string name="celsius_value"><xliff:g id="value">%1$s</xliff:g> °م</string>
+    <string name="slider_decrease">تقليل</string>
+    <string name="slider_increase">زيادة</string>
+    <string name="slider_reset">إعادة الضبط إلى <xliff:g id="value">%1$s</xliff:g></string>
+    <string name="search_apps">البحث عن التطبيقات</string>
+    <string name="search_clear">مسح البحث</string>
+    <string name="search_no_results">لا توجد تطبيقات تطابق بحثك</string>
+
+    <string name="section_display">الشاشة</string>
+    <string name="section_performance">الأداء</string>
+    <string name="section_battery_memory">البطارية والذاكرة</string>
+    <string name="section_audio">الصوت</string>
+    <string name="section_extras">إضافات</string>
+    <string name="section_about">حول</string>
+    <string name="quick_dc_dimming">تعتيم DC</string>
+    <string name="quick_hbm">HBM</string>
+    <string name="quick_fps">FPS</string>
+    <string name="quick_dirac">Dirac</string>
+    <string name="refresh_card_summary">60 / 120 هرتز لكل تطبيق</string>
+    <string name="resolution_card_summary">تحجيم لكل تطبيق</string>
+    <string name="thermal_card_summary">ملفات تعريف لكل تطبيق</string>
+    <string name="core_card_summary"><xliff:g id="online">%1$d</xliff:g> من <xliff:g id="total">%2$d</xliff:g> يعمل</string>
+    <string name="zram_card_summary"><xliff:g id="algorithm">%1$s</xliff:g>، swappiness <xliff:g id="swappiness">%2$d</xliff:g></string>
+    <string name="hbm_card_auto">HBM التلقائي مفعّل</string>
+    <string name="clear_speaker_card_summary">إخراج الماء والغبار</string>
+    <string name="appearance_card_summary">المظهر واللغة</string>
+    <string name="credits_card_summary">الأشخاص الذين يقفون وراءه</string>
+
+    <string name="refresh_title">معدل التحديث</string>
+    <string name="refresh_note">اختر معدل تحديث لكل تطبيق. يتغيّر تلقائيًا عند فتح التطبيق.</string>
+    <string name="refresh_default">افتراضي</string>
+    <string name="refresh_standard">60 هرتز</string>
+    <string name="refresh_extreme">120 هرتز</string>
+    <string name="refresh_land">60 هرتز في الوضع الأفقي</string>
+
+    <string name="resolution_title">الدقة</string>
+    <string name="resolution_note">اختر دقة لكل تطبيق. تُطبَّق عندما يظهر التطبيق في المقدمة.</string>
+    <string name="resolution_default">افتراضية</string>
+    <string name="resolution_480p">480p</string>
+    <string name="resolution_540p">540p</string>
+    <string name="resolution_720p">720p</string>
+    <string name="system_resolution_title">دقة النظام</string>
+    <string name="system_resolution_current">الدقة الحالية</string>
+    <string name="system_resolution_mode">الدقة</string>
+    <string name="system_resolution_note">تُطبَّق على النظام بالكامل. تحتفظ التطبيقات ذات الدقة الخاصة بدقتها. الدقة الأقل توفّر الطاقة.</string>
+
+    <string name="saturation_title">التشبّع</string>
+    <string name="saturation_note">يضبط تشبّع الألوان على الشاشة بالكامل. تتم استعادته بعد كل إعادة تشغيل.</string>
+    <string name="image_preview_content_description">صورة معاينة التشبّع</string>
+    <string name="preview_previous">الصورة السابقة</string>
+    <string name="preview_next">الصورة التالية</string>
+    <string name="tile_add">إضافة إلى الإعدادات السريعة</string>
+    <string name="tile_added">تمت إضافة المربع</string>
+    <string name="tile_not_added">لم تتم إضافة المربع</string>
+    <string name="tile_already_added">المربع مُضاف بالفعل</string>
+
+    <string name="dc_dimming_title">تعتيم DC</string>
+    <string name="dc_dimming_switch">استخدام تعتيم DC</string>
+    <string name="dc_dimming_note">يقلّل الوميض وإجهاد العين عند السطوع المنخفض. يتم إيقاف وضع السطوع العالي أثناء تفعيله.</string>
+    <string name="dc_dimming_not_supported">النواة الحالية لا تدعم تعتيم DC.</string>
+
+    <string name="hbm_title">السطوع العالي</string>
+    <string name="hbm_mode_title">وضع السطوع العالي</string>
+    <string name="hbm_switch">وضع السطوع العالي</string>
+    <string name="hbm_switch_summary">أقصى سطوع للشاشة تحت أشعة الشمس المباشرة</string>
+    <string name="hbm_blocked_by_dc">أوقف تعتيم DC لاستخدامه</string>
+    <string name="hbm_not_supported">غير مدعوم في النواة الحالية</string>
+    <string name="auto_hbm_switch">HBM التلقائي</string>
+    <string name="auto_hbm_summary">يفعّل السطوع العالي في الضوء الساطع ويوقفه داخل الأماكن المغلقة</string>
+    <string name="auto_hbm_threshold">حد الإضاءة</string>
+    <string name="auto_hbm_disable_time">الإيقاف بعد</string>
+    <string name="hbm_warning">قد يؤدي استخدام وضع السطوع العالي لفترة طويلة إلى تلف الشاشة.</string>
+
+    <string name="thermal_title">المحرك الحراري</string>
+    <string name="thermal_note">اختر ملف تعريف حراريًا لكل تطبيق. يتغيّر تلقائيًا عند فتح التطبيق.</string>
+    <string name="thermal_default">بدون تحسين</string>
+    <string name="thermal_benchmark">الأداء</string>
+    <string name="thermal_browser">المتصفح</string>
+    <string name="thermal_camera">الكاميرا</string>
+    <string name="thermal_dialer">الهاتف</string>
+    <string name="thermal_gaming">الألعاب</string>
+    <string name="thermal_navigation">الملاحة</string>
+    <string name="thermal_streaming">البث</string>
+    <string name="thermal_video">الفيديو</string>
+
+    <string name="kernel_manager_title">مدير النواة</string>
+    <string name="cpu_governor">حاكم المعالج</string>
+    <string name="efficiency_cluster">أنوية الكفاءة</string>
+    <string name="performance_cluster">أنوية الأداء</string>
+    <string name="min_frequency">أدنى تردد</string>
+    <string name="max_frequency">أقصى تردد</string>
+    <string name="frequencies_unavailable">لا يمكن قراءة ترددات المعالج في هذه النواة.</string>
+    <string name="kernel_manager_note">تُطبَّق التغييرات عند النقر على تطبيق وتستمر حتى إعادة التشغيل التالية.</string>
+
+    <string name="gpu_manager_title">مدير معالج الرسومات</string>
+    <string name="gpu_model">معالج الرسومات</string>
+    <string name="gpu_current_freq">التردد</string>
+    <string name="gpu_busy">الحِمل</string>
+    <string name="gpu_temperature">الحرارة</string>
+    <string name="gpu_thermal_level">المستوى الحراري</string>
+    <string name="gpu_level_value">المستوى <xliff:g id="level">%1$s</xliff:g></string>
+    <string name="gpu_governor">حاكم معالج الرسومات</string>
+    <string name="gpu_power">الطاقة</string>
+    <string name="gpu_force_clk_on">فرض تشغيل الساعة</string>
+    <string name="gpu_force_clk_on_summary">إبقاء ساعة معالج الرسومات تعمل في وضع الخمول</string>
+    <string name="gpu_force_bus_on">فرض تشغيل الناقل</string>
+    <string name="gpu_force_bus_on_summary">إبقاء ناقل ذاكرة معالج الرسومات نشطًا</string>
+    <string name="gpu_force_rail_on">فرض تشغيل خط الطاقة</string>
+    <string name="gpu_force_rail_on_summary">إبقاء خط طاقة معالج الرسومات مفعّلًا</string>
+    <string name="gpu_force_no_nap">بدون غفوة</string>
+    <string name="gpu_force_no_nap_summary">منع معالج الرسومات من الغفو بين الإطارات</string>
+    <string name="gpu_bus_split">فصل الناقل</string>
+    <string name="gpu_bus_split_summary">ضبط ناقل الذاكرة بشكل منفصل عن ساعة معالج الرسومات</string>
+    <string name="gpu_manager_note">تُطبَّق مفاتيح الطاقة فورًا. يُطبَّق الحاكم والترددات عند النقر على تطبيق. تتم إعادة ضبط كل شيء بعد إعادة التشغيل.</string>
+
+    <string name="core_control_title">التحكم في الأنوية</string>
+    <string name="core_label">المعالج <xliff:g id="core">%1$d</xliff:g></string>
+    <string name="core_control_min_online">يجب أن تبقى نواتان للكفاءة على الأقل قيد التشغيل</string>
+    <string name="core_control_note">انقر على نواة لإيقافها أو إعادة تشغيلها. تبقى نواتان على الأقل من الأنوية 0 إلى 5 قيد التشغيل دائمًا. تعود الأنوية بعد إعادة التشغيل.</string>
+
+    <string name="fastcharge_title">الشحن السريع</string>
+    <string name="fastcharge_mode_title">قدرة الشحن</string>
+    <string name="fastcharge_mode_normal">عادي</string>
+    <string name="fastcharge_mode_18w">18 واط</string>
+    <string name="fastcharge_mode_33w">33 واط</string>
+    <string name="fastcharge_mode_67w">67 واط</string>
+    <string name="fastcharge_mode_note">الوضع العادي يُبقي مضخة الشحن متوقفة (5 فولت، حتى 15 واط). يحدّ وضعا 18 و33 واط من تيار الشحن. 67 واط هو السلوك الأصلي. الحماية الحرارية مفعّلة دائمًا.</string>
+    <string name="fastcharge_mode_unavailable">غير مدعوم في النواة الحالية.</string>
+    <string name="fastcharge_usb_title">الشحن السريع عبر USB</string>
+    <string name="fastcharge_usb_summary">الشحن بتيار 900 مللي أمبير بدلًا من 500 من منافذ USB في الكمبيوتر</string>
+    <string name="fastcharge_usb_unavailable">غير مدعوم في النواة الحالية</string>
+
+    <string name="zram_title">ZRAM</string>
+    <string name="zram_size_title">الحجم</string>
+    <string name="zram_disabled">متوقف</string>
+    <string name="zram_size_2gb">2 غيغابايت</string>
+    <string name="zram_size_4gb">4 غيغابايت</string>
+    <string name="zram_size_8gb">8 غيغابايت</string>
+    <string name="zram_size_dynamic">تلقائي</string>
+    <string name="zram_compression_title">الضغط</string>
+    <string name="swappiness_title">Swappiness</string>
+    <string name="zram_note">يُطبَّق الحجم والضغط بعد إعادة التشغيل. تُطبَّق قيمة swappiness فورًا.</string>
+    <string name="zram_change_applied">تم حفظ إعداد ZRAM</string>
+    <string name="zram_reboot_recommended">أعد تشغيل جهازك لتطبيق هذا التغيير.</string>
+
+    <string name="dirac_title">صوت Dirac</string>
+    <string name="dirac_enable">استخدام Dirac</string>
+    <string name="dirac_scenario">السيناريو</string>
+    <string name="dirac_headset_title">نوع سماعة الرأس</string>
+    <string name="dirac_preset_title">الإعداد المسبق</string>
+    <string name="dirac_eq_enable_title">المعادل</string>
+    <string name="dirac_eq_enable_summary">تطبيق الإعداد المسبق المحدد؛ عند الإيقاف تكون جميع النطاقات مستوية</string>
+    <string name="dirac_pause_calls_title">الإيقاف المؤقت أثناء المكالمات</string>
+    <string name="dirac_pause_calls_summary">تجاوز التأثير أثناء المكالمات الهاتفية ومكالمات VoIP</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_enable_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">ضوضاء وتشويه أقل لجودة صوت أعلى</string>
+    <string name="music_headset_scenario_intelligent">ذكي</string>
+    <string name="music_headset_scenario_music">موسيقى</string>
+    <string name="music_headset_scenario_video">فيديو</string>
+    <string name="music_headset_scenario_vocal">صوت</string>
+    <string name="dirac_preset_default">افتراضي</string>
+    <string name="dirac_preset_rock">روك</string>
+    <string name="dirac_preset_jazz">جاز</string>
+    <string name="dirac_preset_pop">بوب</string>
+    <string name="dirac_preset_classical">كلاسيكي</string>
+    <string name="dirac_preset_hiphop">هيب هوب</string>
+    <string name="dirac_preset_blues">بلوز</string>
+    <string name="dirac_preset_electronic">إلكتروني</string>
+    <string name="dirac_preset_country">كانتري</string>
+    <string name="dirac_preset_dance">رقص</string>
+    <string name="dirac_preset_metal">ميتال</string>
+    <string name="dirac_preset_bass_booster">معزز الجهير</string>
+    <string name="dirac_preset_balanced">متوازن</string>
+    <string name="dirac_preset_live">مباشر</string>
+    <string name="dirac_preset_bass_reduction">خفض الجهير</string>
+    <string name="dirac_preset_treble_reduction">خفض الحدة</string>
+    <string name="dirac_preset_soft_bass">جهير ناعم</string>
+    <string name="dirac_preset_soft_treble">حدة ناعمة</string>
+
+    <string name="clear_speaker_title">تنظيف السماعة</string>
+    <string name="clear_speaker_start">بدء التنظيف</string>
+    <string name="clear_speaker_running">جارٍ التنظيف، متبقٍ <xliff:g id="seconds">%1$d</xliff:g> ث</string>
+    <string name="clear_speaker_description">يشغّل نغمة منخفضة لمدة 30 ثانية لدفع الماء والغبار خارج السماعة. ارفع مستوى صوت الوسائط إلى الحد الأقصى وافصل سماعات الرأس أولًا. إذا كانت السماعة مسدودة بشدة، شغّله من 2 إلى 5 مرات مع توجيه السماعة للأسفل.</string>
+
+    <string name="fps_overlay_title">عدّاد FPS</string>
+    <string name="fps_info_tile_label">عدّاد FPS</string>
+    <string name="fps_overlay_switch">عرض معدل الإطارات</string>
+    <string name="fps_overlay_note">يعرض معدل إطارات الشاشة في الزاوية العلوية، ويتحدّث كل ثانية. متاح أيضًا كمربع في الإعدادات السريعة.</string>
+    <string name="fps_overlay_not_supported">عدّاد الإطارات غير متاح في النواة الحالية.</string>
+
+    <string name="useless_mode_title">الوضع عديم الفائدة</string>
+    <string name="useless_mode_switch">تفعيل الوضع عديم الفائدة</string>
+    <string name="useless_mode_enabled_summary">الوضع عديم الفائدة مفعّل. توقّع اهتزازات ووميضًا عشوائيًا.</string>
+    <string name="useless_mode_disabled_summary">الوضع عديم الفائدة متوقف. يبقى جهازك عاديًا بشكل ممل.</string>
+    <string name="useless_mode_warning">اهتزازات عشوائية ووميض في الشاشة وأصوات. لا فائدة منه إطلاقًا، كما وعدنا.</string>
+    <string name="useless_mode_warning_title">تحذير الوضع عديم الفائدة</string>
+    <string name="useless_mode_status_title">حالة الوضع عديم الفائدة</string>
+    <string name="useless_mode_accept">أقبل بانعدام الفائدة</string>
+    <string name="useless_mode_cancel">إلغاء</string>
+    <string name="useless_mode_amazing">رائع</string>
+
+    <string name="appearance_title">المظهر</string>
+    <string name="appearance_colors">الألوان</string>
+    <string name="colors_material_you">Material You</string>
+    <string name="colors_signature">Signature</string>
+    <string name="colors_material_you_summary">تتبع الألوان خلفية الشاشة.</string>
+    <string name="colors_signature_summary">رمادي داكن مع لمسة كهرمانية، ثابت مع أي خلفية.</string>
+    <string name="appearance_language">اللغة</string>
+    <string name="language_system">لغة النظام</string>
+
+    <string name="credits_title">شكر وتقدير</string>
+    <string name="credits_developed_by">تطوير وصيانة</string>
+    <string name="credits_developer_summary">مطور veux. أنشأ هذه اللوحة وأعاد بناء معظم XiaomiParts لجهاز veux.</string>
+    <string name="credits_built_by">ما أنشأه وأعاد بناءه acerhizmq</string>
+    <string name="credits_work_dashboard">لوحة XiaomiParts وتصميمها والترجمات الثلاث عشرة كاملة</string>
+    <string name="credits_work_fastcharge">الشحن السريع لجهاز veux: ملفات قدرة 67 واط والشحن عبر USB في النواة</string>
+    <string name="credits_work_dirac">إعادة بناء Dirac: الإيقاف أثناء المكالمات والمعادل واستعادة خادم الصوت وإصلاح المعادل</string>
+    <string name="credits_work_fps">نقل عدّاد FPS مع مسارات شاشة veux وقواعد SELinux</string>
+    <string name="credits_work_hbm">HBM تلقائي أكثر متانة وإصلاحات HBM وتعتيم DC</string>
+    <string name="credits_work_fixes">إصلاحات مدير معالج الرسومات وضبط ZRAM وإصلاح تسرب الذاكرة في كل parts</string>
+    <string name="credits_work_integration">دمج KamisStuff وتكييف كل ميزة مع veux</string>
+    <string name="credits_original_code">الكود الأصلي من</string>
+    <string name="credits_source_kami">KamisStuff: التحكم في الأنوية وZRAM ومدير النواة ومعالج الرسومات والدقة والشحن السريع والوضع عديم الفائدة</string>
+    <string name="credits_source_pocof3">منطق استعادة MiSound وإعداد شريط التمرير</string>
+    <string name="credits_source_guidixx">مصدر عدّاد FPS</string>
+    <string name="credits_source_fastcharge">واجهة النواة للشحن السريع</string>
+    <string name="credits_projects">المشاريع</string>
+    <string name="credits_contributors">المساهمون</string>
+
+    <string-array name="useless_warnings">
+        <item>هل تريد حقًا تفعيل هذه الميزة عديمة الفائدة تمامًا؟</item>
+        <item>تحذير: لن يكون لهذا الإجراء أي تأثير على جهازك على الإطلاق.</item>
+        <item>انتبه: المتابعة لن تؤدي إلى حدوث أي شيء.</item>
+        <item>تنبيه: هذا المفتاح موجود للتسلية فقط.</item>
+        <item>ملاحظة: لم يتضرر أي إلكترون أثناء صنع هذا المفتاح.</item>
+        <item>إخلاء مسؤولية: يؤكد الخبراء أن هذا الإعداد عديم الفائدة بنسبة 100%.</item>
+        <item>تحذير: قد يسبب رغبة مفاجئة في تفعيل المزيد من الإعدادات عديمة الفائدة.</item>
+        <item>تنبيه: قد يسبب اهتزازات عشوائية ووميضًا في الشاشة.</item>
+        <item>انتبه: من الآثار الجانبية طنين ووميض بلا معنى.</item>
+    </string-array>
+
+    <string-array name="useless_messages">
+        <item>تهانينا! لقد نجحت في تحقيق لا شيء على الإطلاق.</item>
+        <item>هذا المفتاح مفيد بقدر إبريق شاي من الشوكولاتة.</item>
+        <item>لقد أهدرت للتو 0.003 ثانية من حياتك. هل كان الأمر يستحق؟</item>
+        <item>معلومة طريفة: ضغط المستخدمون الحائرون على هذا الزر 42 مرة.</item>
+        <item>تحذير: الإفراط في استخدام هذا المفتاح قد يسبب ارتباكًا خفيفًا.</item>
+        <item>هذا الإعداد مقدَّم من قسم قسم التكرار.</item>
+        <item>تم فتح إنجاز: سيد الأفعال عديمة الجدوى.</item>
+        <item>خطأ 404: الوظيفة غير موجودة.</item>
+        <item>هذا المفتاح يعمل تمامًا كما هو مقصود، أي أنه لا يعمل إطلاقًا.</item>
+        <item>بيب بوب! أصوات الروبوت تجعل كل شيء يبدو أكثر أهمية.</item>
+        <item>تم فتح إنجاز: مُضيِّع وقت محترف.</item>
+        <item>لهذه الميزة نفس تأثير الصراخ على الغيوم.</item>
+        <item>تهانينا! ارتفع مستوى انعدام الفائدة لديك بنسبة 0%.</item>
+        <item>بززززت! هاتفك يهتز الآن بلا سبب.</item>
+        <item>تم تفعيل وميض الشاشة، ولمَ لا؟</item>
+        <item>جهازك يمر الآن بأزمة وجودية خفيفة.</item>
+    </string-array>
+</resources>

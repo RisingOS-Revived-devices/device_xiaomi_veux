@@ -39,6 +39,9 @@
 # DC Dimming & HBM
 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure       u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm      u:object_r:vendor_sysfs_graphics:s0
+# Fast charge
+/sys/kernel/fastchgtoggle/mode                                                  u:object_r:vendor_sysfs_fastcharge:s0
+/sys/kernel/fast_charge/force_fast_charge                                       u:object_r:vendor_sysfs_fastcharge:s0
 # Fingerprint
 /dev/goodix_fp                                                                 u:object_r:vendor_fingerprint_device:s0
 /dev/silead_fp                                                                 u:object_r:vendor_fingerprint_device:s0
@@ -62,3 +65,13 @@
 
 # Xiaomi MAC
 /data/vendor/mac_addr(/.*)?                                                    u:object_r:vendor_wifi_vendor_data_file:s0
+
+# ZRAM
+/sys/block/zram0/comp_algorithm                                                u:object_r:sysfs_zram:s0
+
+# Core Control
+/sys/devices/system/cpu/cpu[0-7]/online					       u:object_r:vendor_sysfs_corecontrol:s0
+
+
+# Backlight
+/sys/class/backlight/panel0-backlight/brightness                                                    u:object_r:sysfs_leds_devicesettings:s0

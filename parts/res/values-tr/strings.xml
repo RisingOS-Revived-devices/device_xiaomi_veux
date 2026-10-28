@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 acerhizmq
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_title">Xiaomi Ayarları</string>
+    <string name="settings_entry_summary">Ekran, performans, pil ve ses ayarları</string>
+    <string name="device_details">cihaz: <xliff:g id="codename">%1$s</xliff:g> · Android <xliff:g id="android">%2$s</xliff:g> · kernel <xliff:g id="kernel">%3$s</xliff:g></string>
+    <string name="made_for_veux">acerhizmq tarafından veux için yapıldı</string>
+    <string name="navigate_up">Geri</string>
+
+    <string name="state_on">Açık</string>
+    <string name="state_off">Kapalı</string>
+    <string name="state_not_supported">Desteklenmiyor</string>
+    <string name="value_unknown">Bilinmiyor</string>
+    <string name="action_apply">Uygula</string>
+    <string name="action_reset">Sıfırla</string>
+    <string name="settings_applied">Ayarlar uygulandı</string>
+    <string name="settings_reset">Ayarlar varsayılana döndürüldü</string>
+    <string name="write_failed">Ayar uygulanamadı</string>
+    <string name="percent_value">%%<xliff:g id="value">%1$d</xliff:g></string>
+    <string name="lux_value"><xliff:g id="value">%1$s</xliff:g> lüks</string>
+    <string name="seconds_value"><xliff:g id="value">%1$d</xliff:g> sn</string>
+    <string name="celsius_value"><xliff:g id="value">%1$s</xliff:g> °C</string>
+    <string name="slider_decrease">Azalt</string>
+    <string name="slider_increase">Artır</string>
+    <string name="slider_reset"><xliff:g id="value">%1$s</xliff:g> değerine sıfırla</string>
+    <string name="search_apps">Uygulama ara</string>
+    <string name="search_clear">Aramayı temizle</string>
+    <string name="search_no_results">Aramanızla eşleşen uygulama yok</string>
+
+    <string name="section_display">Ekran</string>
+    <string name="section_performance">Performans</string>
+    <string name="section_battery_memory">Pil ve bellek</string>
+    <string name="section_audio">Ses</string>
+    <string name="section_extras">Ekstralar</string>
+    <string name="section_about">Hakkında</string>
+    <string name="quick_dc_dimming">DC karartma</string>
+    <string name="quick_hbm">HBM</string>
+    <string name="quick_fps">FPS</string>
+    <string name="quick_dirac">Dirac</string>
+    <string name="refresh_card_summary">Uygulama başına 60 / 120 Hz</string>
+    <string name="resolution_card_summary">Uygulama başına ölçekleme</string>
+    <string name="thermal_card_summary">Uygulama başına profiller</string>
+    <string name="core_card_summary"><xliff:g id="total">%2$d</xliff:g> çekirdekten <xliff:g id="online">%1$d</xliff:g> tanesi açık</string>
+    <string name="zram_card_summary"><xliff:g id="algorithm">%1$s</xliff:g>, swappiness <xliff:g id="swappiness">%2$d</xliff:g></string>
+    <string name="hbm_card_auto">Otomatik HBM açık</string>
+    <string name="clear_speaker_card_summary">Su ve toz tahliyesi</string>
+    <string name="appearance_card_summary">Tema ve dil</string>
+    <string name="credits_card_summary">Emeği geçenler</string>
+
+    <string name="refresh_title">Yenileme hızı</string>
+    <string name="refresh_note">Her uygulama için bir yenileme hızı seçin. Uygulama açıldığında otomatik olarak geçiş yapılır.</string>
+    <string name="refresh_default">Varsayılan</string>
+    <string name="refresh_standard">60 Hz</string>
+    <string name="refresh_extreme">120 Hz</string>
+    <string name="refresh_land">Yatayda 60 Hz</string>
+
+    <string name="resolution_title">Çözünürlük</string>
+    <string name="resolution_note">Her uygulama için bir çözünürlük seçin. Uygulama ön plana geldiğinde uygulanır.</string>
+    <string name="resolution_default">Varsayılan</string>
+    <string name="resolution_480p">480p</string>
+    <string name="resolution_540p">540p</string>
+    <string name="resolution_720p">720p</string>
+    <string name="system_resolution_title">Sistem çözünürlüğü</string>
+    <string name="system_resolution_current">Geçerli çözünürlük</string>
+    <string name="system_resolution_mode">Çözünürlük</string>
+    <string name="system_resolution_note">Tüm sisteme uygulanır. Kendi çözünürlüğü ayarlanan uygulamalar onu korur. Düşük çözünürlükler güç tasarrufu sağlar.</string>
+
+    <string name="saturation_title">Doygunluk</string>
+    <string name="saturation_note">Tüm ekranın renk doygunluğunu ayarlar. Her yeniden başlatmadan sonra geri yüklenir.</string>
+    <string name="image_preview_content_description">Doygunluk önizleme görseli</string>
+    <string name="preview_previous">Önceki görsel</string>
+    <string name="preview_next">Sonraki görsel</string>
+    <string name="tile_add">Hızlı ayarlara ekle</string>
+    <string name="tile_added">Kutucuk eklendi</string>
+    <string name="tile_not_added">Kutucuk eklenmedi</string>
+    <string name="tile_already_added">Kutucuk zaten ekli</string>
+
+    <string name="dc_dimming_title">DC karartma</string>
+    <string name="dc_dimming_switch">DC karartmayı kullan</string>
+    <string name="dc_dimming_note">Düşük parlaklıkta titremeyi ve göz yorgunluğunu azaltır. Açıkken yüksek parlaklık modu kapatılır.</string>
+    <string name="dc_dimming_not_supported">Çalışan kernel DC karartmayı desteklemiyor.</string>
+
+    <string name="hbm_title">Yüksek parlaklık</string>
+    <string name="hbm_mode_title">Yüksek parlaklık modu</string>
+    <string name="hbm_switch">Yüksek parlaklık modu</string>
+    <string name="hbm_switch_summary">Doğrudan güneş ışığı için en yüksek panel parlaklığı</string>
+    <string name="hbm_blocked_by_dc">Kullanmak için DC karartmayı kapatın</string>
+    <string name="hbm_not_supported">Çalışan kernel desteklemiyor</string>
+    <string name="auto_hbm_switch">Otomatik HBM</string>
+    <string name="auto_hbm_summary">Parlak ışıkta yüksek parlaklığı açar, kapalı alanda yeniden kapatır</string>
+    <string name="auto_hbm_threshold">Işık eşiği</string>
+    <string name="auto_hbm_disable_time">Kapatma süresi</string>
+    <string name="hbm_warning">Yüksek parlaklık modunu uzun süre kullanmak ekrana zarar verebilir.</string>
+
+    <string name="thermal_title">Termal motor</string>
+    <string name="thermal_note">Her uygulama için bir termal profil seçin. Uygulama açıldığında otomatik olarak geçiş yapılır.</string>
+    <string name="thermal_default">Optimizasyon yok</string>
+    <string name="thermal_benchmark">Performans</string>
+    <string name="thermal_browser">Tarayıcı</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Telefon</string>
+    <string name="thermal_gaming">Oyun</string>
+    <string name="thermal_navigation">Navigasyon</string>
+    <string name="thermal_streaming">Yayın</string>
+    <string name="thermal_video">Video</string>
+
+    <string name="kernel_manager_title">Kernel yöneticisi</string>
+    <string name="cpu_governor">CPU yöneticisi</string>
+    <string name="efficiency_cluster">Verimlilik çekirdekleri</string>
+    <string name="performance_cluster">Performans çekirdekleri</string>
+    <string name="min_frequency">En düşük frekans</string>
+    <string name="max_frequency">En yüksek frekans</string>
+    <string name="frequencies_unavailable">Bu kernelde CPU frekansları okunamıyor.</string>
+    <string name="kernel_manager_note">Değişiklikler Uygula\'ya dokunduğunuzda uygulanır ve bir sonraki yeniden başlatmaya kadar geçerlidir.</string>
+
+    <string name="gpu_manager_title">GPU yöneticisi</string>
+    <string name="gpu_model">GPU</string>
+    <string name="gpu_current_freq">Frekans</string>
+    <string name="gpu_busy">Yük</string>
+    <string name="gpu_temperature">Sıcaklık</string>
+    <string name="gpu_thermal_level">Termal seviye</string>
+    <string name="gpu_level_value">Seviye <xliff:g id="level">%1$s</xliff:g></string>
+    <string name="gpu_governor">GPU yöneticisi</string>
+    <string name="gpu_power">Güç</string>
+    <string name="gpu_force_clk_on">Saati açık tut</string>
+    <string name="gpu_force_clk_on_summary">GPU saati boştayken de çalışsın</string>
+    <string name="gpu_force_bus_on">Veri yolunu açık tut</string>
+    <string name="gpu_force_bus_on_summary">GPU bellek veri yolu etkin kalsın</string>
+    <string name="gpu_force_rail_on">Güç hattını açık tut</string>
+    <string name="gpu_force_rail_on_summary">GPU güç hattı açık kalsın</string>
+    <string name="gpu_force_no_nap">Uyuklama yok</string>
+    <string name="gpu_force_no_nap_summary">GPU\'nun kareler arasında uyuklamasını engelle</string>
+    <string name="gpu_bus_split">Veri yolu ayırma</string>
+    <string name="gpu_bus_split_summary">Bellek veri yolunu GPU saatinden ayrı ölçekle</string>
+    <string name="gpu_manager_note">Güç anahtarları hemen uygulanır. Yönetici ve frekanslar Uygula\'ya dokunduğunuzda uygulanır. Yeniden başlatmadan sonra hepsi sıfırlanır.</string>
+
+    <string name="core_control_title">Çekirdek kontrolü</string>
+    <string name="core_label">CPU <xliff:g id="core">%1$d</xliff:g></string>
+    <string name="core_control_min_online">En az iki verimlilik çekirdeği açık kalmalı</string>
+    <string name="core_control_note">Bir çekirdeği kapatmak veya yeniden açmak için ona dokunun. 0-5 arasındaki çekirdeklerden en az ikisi her zaman açık kalır. Yeniden başlatmadan sonra çekirdekler geri gelir.</string>
+
+    <string name="fastcharge_title">Hızlı şarj</string>
+    <string name="fastcharge_mode_title">Şarj gücü</string>
+    <string name="fastcharge_mode_normal">Normal</string>
+    <string name="fastcharge_mode_18w">18W</string>
+    <string name="fastcharge_mode_33w">33W</string>
+    <string name="fastcharge_mode_67w">67W</string>
+    <string name="fastcharge_mode_note">Normal modda charge pump kapalı kalır (5V, en fazla 15W). 18W ve 33W şarj akımını sınırlar. 67W stok davranıştır. Termal koruma her zaman geçerlidir.</string>
+    <string name="fastcharge_mode_unavailable">Çalışan kernel desteklemiyor.</string>
+    <string name="fastcharge_usb_title">USB hızlı şarj</string>
+    <string name="fastcharge_usb_summary">Bilgisayar USB portlarından 500 mA yerine 900 mA ile şarj et</string>
+    <string name="fastcharge_usb_unavailable">Çalışan kernel desteklemiyor</string>
+
+    <string name="zram_title">ZRAM</string>
+    <string name="zram_size_title">Boyut</string>
+    <string name="zram_disabled">Kapalı</string>
+    <string name="zram_size_2gb">2 GB</string>
+    <string name="zram_size_4gb">4 GB</string>
+    <string name="zram_size_8gb">8 GB</string>
+    <string name="zram_size_dynamic">Otomatik</string>
+    <string name="zram_compression_title">Sıkıştırma</string>
+    <string name="swappiness_title">Swappiness</string>
+    <string name="zram_note">Boyut ve sıkıştırma yeniden başlatmadan sonra uygulanır. Swappiness hemen uygulanır.</string>
+    <string name="zram_change_applied">ZRAM ayarı kaydedildi</string>
+    <string name="zram_reboot_recommended">Bu değişikliğin geçerli olması için cihazınızı yeniden başlatın.</string>
+
+    <string name="dirac_title">Dirac ses</string>
+    <string name="dirac_enable">Dirac\'ı kullan</string>
+    <string name="dirac_scenario">Senaryo</string>
+    <string name="dirac_headset_title">Kulaklık türü</string>
+    <string name="dirac_preset_title">Ön ayar</string>
+    <string name="dirac_eq_enable_title">Ekolayzır</string>
+    <string name="dirac_eq_enable_summary">Seçili ön ayarı uygula; kapalıyken tüm bantlar düz kalır</string>
+    <string name="dirac_pause_calls_title">Aramalarda duraklat</string>
+    <string name="dirac_pause_calls_summary">Telefon ve VoIP aramalarında efekti devre dışı bırak</string>
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_enable_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Daha az gürültü ve bozulma, daha yüksek ses kalitesi</string>
+    <string name="music_headset_scenario_intelligent">Akıllı</string>
+    <string name="music_headset_scenario_music">Müzik</string>
+    <string name="music_headset_scenario_video">Video</string>
+    <string name="music_headset_scenario_vocal">Ses</string>
+    <string name="dirac_preset_default">Varsayılan</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Caz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Klasik</string>
+    <string name="dirac_preset_hiphop">Hip hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Elektronik</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dans</string>
+    <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_bass_booster">Bas güçlendirici</string>
+    <string name="dirac_preset_balanced">Dengeli</string>
+    <string name="dirac_preset_live">Canlı</string>
+    <string name="dirac_preset_bass_reduction">Bas azaltma</string>
+    <string name="dirac_preset_treble_reduction">Tiz azaltma</string>
+    <string name="dirac_preset_soft_bass">Yumuşak bas</string>
+    <string name="dirac_preset_soft_treble">Yumuşak tiz</string>
+
+    <string name="clear_speaker_title">Hoparlör temizleme</string>
+    <string name="clear_speaker_start">Temizlemeyi başlat</string>
+    <string name="clear_speaker_running">Temizleniyor, <xliff:g id="seconds">%1$d</xliff:g> sn kaldı</string>
+    <string name="clear_speaker_description">Hoparlördeki su ve tozu dışarı itmek için 30 saniye boyunca düşük bir ton çalar. Önce medya sesini en yükseğe getirin ve kulaklığı çıkarın. Hoparlör çok tıkalıysa hoparlör aşağı bakacak şekilde 2-5 kez çalıştırın.</string>
+
+    <string name="fps_overlay_title">FPS göstergesi</string>
+    <string name="fps_info_tile_label">FPS göstergesi</string>
+    <string name="fps_overlay_switch">Kare hızını göster</string>
+    <string name="fps_overlay_note">Ekranın kare hızını üst köşede gösterir, her saniye güncellenir. Hızlı ayarlar kutucuğu olarak da kullanılabilir.</string>
+    <string name="fps_overlay_not_supported">Çalışan kernelde kare sayacı yok.</string>
+
+    <string name="useless_mode_title">Gereksiz mod</string>
+    <string name="useless_mode_switch">Gereksiz modu aç</string>
+    <string name="useless_mode_enabled_summary">Gereksiz mod açık. Rastgele titreşim ve titremeye hazır olun.</string>
+    <string name="useless_mode_disabled_summary">Gereksiz mod kapalı. Cihazınız sıkıcı derecede normal kalıyor.</string>
+    <string name="useless_mode_warning">Rastgele titreşimler, ekran titremesi ve sesler. Söz verdiğimiz gibi hiçbir işe yaramaz.</string>
+    <string name="useless_mode_warning_title">Gereksiz mod uyarısı</string>
+    <string name="useless_mode_status_title">Gereksiz mod durumu</string>
+    <string name="useless_mode_accept">Gereksizliği kabul ediyorum</string>
+    <string name="useless_mode_cancel">İptal</string>
+    <string name="useless_mode_amazing">Harika</string>
+
+    <string name="appearance_title">Görünüm</string>
+    <string name="appearance_colors">Renkler</string>
+    <string name="colors_material_you">Material You</string>
+    <string name="colors_signature">Signature</string>
+    <string name="colors_material_you_summary">Renkler duvar kâğıdınıza uyar.</string>
+    <string name="colors_signature_summary">Amber vurgulu grafit; her duvar kâğıdında aynı.</string>
+    <string name="appearance_language">Dil</string>
+    <string name="language_system">Sistem varsayılanı</string>
+
+    <string name="credits_title">Emeği geçenler</string>
+    <string name="credits_developed_by">Geliştiren ve bakımını yapan</string>
+    <string name="credits_developer_summary">veux geliştiricisi. Bu dashboard\'u yaptı ve XiaomiParts\'ın büyük bölümünü veux için yeniden yazdı.</string>
+    <string name="credits_built_by">acerhizmq tarafından yapılan ve yeniden yazılanlar</string>
+    <string name="credits_work_dashboard">XiaomiParts dashboard\'u, tasarımı ve 13 dilin tamamı</string>
+    <string name="credits_work_fastcharge">veux için hızlı şarj: kernelde 67W güç profilleri ve USB şarjı</string>
+    <string name="credits_work_dirac">Dirac\'ın yeniden işlenmesi: aramada duraklatma, ekolayzır, ses sunucusu kurtarma ve EQ düzeltmesi</string>
+    <string name="credits_work_fps">veux ekran yolları ve SELinux kurallarıyla FPS göstergesi portu</string>
+    <string name="credits_work_hbm">Otomatik HBM\'nin sağlamlaştırılması, HBM ve DC karartma düzeltmeleri</string>
+    <string name="credits_work_fixes">GPU yöneticisi düzeltmeleri, ZRAM ayarları ve tüm parçalarda bellek sızıntısı düzeltmeleri</string>
+    <string name="credits_work_integration">KamisStuff entegrasyonu ve tüm özelliklerin veux\'a uyarlanması</string>
+    <string name="credits_original_code">Orijinal kod</string>
+    <string name="credits_source_kami">KamisStuff: çekirdek kontrolü, ZRAM, kernel ve GPU yöneticisi, çözünürlük, hızlı şarj ve gereksiz mod</string>
+    <string name="credits_source_pocof3">MiSound kurtarma mantığı ve kaydırma çubuğu tercihi</string>
+    <string name="credits_source_guidixx">FPS göstergesi kaynağı</string>
+    <string name="credits_source_fastcharge">Hızlı şarj kernel arayüzü</string>
+    <string name="credits_projects">Projeler</string>
+    <string name="credits_contributors">Katkıda bulunanlar</string>
+
+    <string-array name="useless_warnings">
+        <item>Bu tamamen gereksiz özelliği açmak istediğinizden emin misiniz?</item>
+        <item>Uyarı: Bu işlemin cihazınız üzerinde kesinlikle hiçbir etkisi olmayacak.</item>
+        <item>Dikkat: Devam ederseniz hiçbir şey olmayacak.</item>
+        <item>Bilgi: Bu anahtar yalnızca eğlence amaçlıdır.</item>
+        <item>Not: Bu anahtar yapılırken hiçbir elektrona zarar verilmedi.</item>
+        <item>Feragatname: Bu ayar uzmanlarca %100 gereksiz olarak onaylanmıştır.</item>
+        <item>Uyarı: Daha fazla gereksiz ayarı açma isteği uyandırabilir.</item>
+        <item>Bilgi: Rastgele titreşimlere ve ekran titremesine neden olabilir.</item>
+        <item>Dikkat: Yan etkiler arasında anlamsız vızıldama ve yanıp sönme vardır.</item>
+    </string-array>
+
+    <string-array name="useless_messages">
+        <item>Tebrikler! Kesinlikle hiçbir şey başarmadınız.</item>
+        <item>Bu anahtar çikolatadan çaydanlık kadar işe yarar.</item>
+        <item>Hayatınızın 0,003 saniyesini boşa harcadınız. Değdi mi?</item>
+        <item>İlginç bilgi: Bu düğmeye kafası karışık kullanıcılar tarafından 42 kez basıldı.</item>
+        <item>Uyarı: Bu anahtarın aşırı kullanımı hafif kafa karışıklığına yol açabilir.</item>
+        <item>Bu ayar size Gereksiz Tekrarlar Dairesi Dairesi tarafından sunuldu.</item>
+        <item>Başarım açıldı: Anlamsız Eylemler Ustası.</item>
+        <item>Hata 404: İşlev bulunamadı.</item>
+        <item>Bu anahtar tam olarak amaçlandığı gibi çalışıyor, yani hiç çalışmıyor.</item>
+        <item>Bip bop! Robot sesleri her şeyi daha önemli gösterir.</item>
+        <item>Başarım açıldı: Profesyonel Zaman Kaybettirici.</item>
+        <item>Bu özellik bulutlara bağırmakla aynı etkiye sahip.</item>
+        <item>Tebrikler! Gereksizlik seviyeniz %0 arttı.</item>
+        <item>VIZZZT! Telefonunuz şimdi sebepsiz yere titriyor.</item>
+        <item>Ekran titremesi etkinleştirildi, neden olmasın?</item>
+        <item>Cihazınız şu anda hafif bir varoluş krizi yaşıyor.</item>
+    </string-array>
+</resources>

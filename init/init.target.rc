@@ -67,6 +67,10 @@ on init
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
     chown system system /sys/class/qcom-battery/input_suspend
+    chown system system /sys/kernel/fastchgtoggle/mode
+    chmod 0664 /sys/kernel/fastchgtoggle/mode
+    chown system system /sys/kernel/fast_charge/force_fast_charge
+    chmod 0664 /sys/kernel/fast_charge/force_fast_charge
     chown system system /sys/class/qcom-battery/charging_call_state
     chmod 0660 /sys/class/qcom-battery/charging_call_state
 
@@ -160,6 +164,10 @@ on boot
     # Dolby
     mkdir /data/vendor/dolby 0770 media media
     mkdir /data/vendor/multimedia 0775 system system
+
+# High Brightness Mode (HBM) / Sunlight Enhancement permissions
+    chown system system /sys/class/drm/card0-DSI-1/hbm
+    chmod 0666 /sys/class/drm/card0-DSI-1/hbm
 
 #add perm for calib
     chmod 0777 /data/vendor/camera
