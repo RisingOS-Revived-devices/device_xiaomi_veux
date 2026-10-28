@@ -81,7 +81,15 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64
 
+# Lunaris camxoverridesettings: log masks off; MCTF/EIS/multi-cam sync unchanged (configs/camera/).
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
+    vendor/xiaomi/veux/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 $(call soong_config_set_bool,camera,override_format_from_reserved,true)
+$(call soong_config_set,libcameraservice,ext_lib,libcameraservice_extension.veux)
+# Pass every camera client's package name to the Xiaomi HAL as a session parameter.
+$(call soong_config_set,camera,package_name,com.xiaomi.sessionparams.clientName)
 
 # CameraX extensions
 PRODUCT_COPY_FILES += \
@@ -200,10 +208,7 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,livedisplay_sdm,enable_dm,false)
 
-# MiuiCamera
-$(call inherit-product, vendor/xiaomi/miuicamera-veux/MiuiCamera-veux.mk)
-
-# Media
+# Permissions & Media
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -434,7 +439,8 @@ PRODUCT_COPY_FILES += \
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml
+    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
+    device/xiaomi/veux/vintf/framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
     device/xiaomi/veux/vintf/manifest.xml

@@ -35,6 +35,9 @@ on early-init
     start vendor.audioadsprpcd_audiopd
 
 on init
+    # CamX MCTF/EIS gyro direct report (MIUI Camera video black tiles / Gyro disabled).
+    setprop persist.vendor.sensors.support_direct_channel true
+
     # Scheduler uclamp
     mkdir /dev/cpuctl/foreground
     mkdir /dev/cpuctl/background
@@ -80,6 +83,8 @@ on late-fs
     mount_all --late
 
 on post-fs-data
+    # The camera HAL rewrites this on every session; drop the last app from before reboot.
+    setprop persist.vendor.camera.pkgname ""
     mkdir /vendor/data/tombstones 0771 system system
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
@@ -120,6 +125,28 @@ on boot
     mkdir /mnt/vendor/persist/camera 0777 system system
     chmod 0666 /mnt/vendor/persist/camera/rear_dc_cal_wu.bin
     chmod 0666 /data/vendor/camera/com.xiaomi.dcal.wu.data
+
+    # Add permissions for torch strength (Framework Redirection)
+    chown system system /sys/class/leds/led:torch_0/brightness
+    chown system system /sys/class/leds/led:torch_0/max_brightness
+    chown system system /sys/class/leds/led:torch_1/brightness
+    chown system system /sys/class/leds/led:switch_0/brightness
+    chown system system /sys/class/leds/led:switch_1/brightness
+    chown system system /sys/class/leds/led:switch_2/brightness
+    chmod 0664 /sys/class/leds/led:torch_0/brightness
+    chmod 0664 /sys/class/leds/led:torch_0/max_brightness
+    chmod 0664 /sys/class/leds/led:torch_1/brightness
+    chmod 0664 /sys/class/leds/led:switch_0/brightness
+    chmod 0664 /sys/class/leds/led:switch_1/brightness
+    chmod 0664 /sys/class/leds/led:switch_2/brightness
+
+    # Camera Flash Interceptor Permissions (Direct Access for SystemUI)
+    chown system system /sys/devices/platform/soc/5c1b000.qcom,cci0/5c1b000.qcom,cci0:qcom,camera-flash@0/torch_strength
+    chown system system /sys/devices/platform/soc/5c1b000.qcom,cci0/5c1b000.qcom,cci0:qcom,camera-flash@1/torch_strength
+    chown system system /sys/devices/platform/soc/5c1b000.qcom,cci0/5c1b000.qcom,cci0:qcom,camera-flash@3/torch_strength
+    chmod 0666 /sys/devices/platform/soc/5c1b000.qcom,cci0/5c1b000.qcom,cci0:qcom,camera-flash@0/torch_strength
+    chmod 0666 /sys/devices/platform/soc/5c1b000.qcom,cci0/5c1b000.qcom,cci0:qcom,camera-flash@1/torch_strength
+    chmod 0666 /sys/devices/platform/soc/5c1b000.qcom,cci0/5c1b000.qcom,cci0:qcom,camera-flash@3/torch_strength
 
     #zhangxiaodan To realize the communication between framework and thermal, we need to implement sys node in kernel
     chown system system /sys/class/thermal/thermal_message/sconfig
