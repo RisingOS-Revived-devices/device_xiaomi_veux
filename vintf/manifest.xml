@@ -2,7 +2,7 @@
      Copyright (C) 2019-2020 The Linux Foundation
      SPDX-License-Identifier: BSD-3-Clause
 -->
-<manifest version="1.0" type="device" target-level="6">
+<manifest version="1.0" type="device" target-level="7">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -146,11 +146,6 @@
         <name>vendor.qti.hardware.camera.postproc</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IPostProcService/camerapostprocservice</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.capabilityconfigstore</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::ICapabilityConfigStore/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.data.connection</name>

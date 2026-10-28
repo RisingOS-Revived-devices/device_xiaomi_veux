@@ -15,6 +15,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
+
+
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -41,9 +43,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    audio.primary.default \
+    audio.primary.holi \
     audio.r_submix.default \
-    audio.usbv2.default
+    audio.usb.default
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
@@ -117,17 +119,9 @@ PRODUCT_COPY_FILES += \
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
 
-# DSPVolumeSynchronizer
-PRODUCT_PACKAGES += \
-    DSPVolumeSynchronizer
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
-
-# Fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -178,6 +172,9 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
@@ -190,9 +187,6 @@ PRODUCT_PACKAGES += \
 # IRQ
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
-
-# Kernel
-PRODUCT_ENABLE_UFFD_GC := true
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -273,7 +267,7 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlay2201116SR \
     SettingsProviderOverlay2201116PG \
     SettingsProviderOverlay2201116PI \
-    SettingsOverlay2201116SR  
+    SettingsOverlay2201116SR
 
 PRODUCT_PACKAGES += \
     EuiccOverlay2201116SR
@@ -285,11 +279,7 @@ PRODUCT_COPY_FILES += \
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
-
-# RIL
-PRODUCT_PACKAGES += \
-    android.hardware.radio-service.compat
-
+    
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
@@ -360,9 +350,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# QTI fwk-detect
+# RIL
 PRODUCT_PACKAGES += \
-    libvndfwk_detect_jni.qti.vendor # Needed by CNE app
+    android.hardware.radio-service.compat
 
 # Sensors
 PRODUCT_PACKAGES += \

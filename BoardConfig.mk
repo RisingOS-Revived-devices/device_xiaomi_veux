@@ -5,6 +5,15 @@
 
 DEVICE_PATH := device/xiaomi/veux
 
+# Force inclusion of Lineage SEPolicy
+LINEAGE_BUILD := true
+
+# Allow vendor binaries to be copied via PRODUCT_COPY_FILES without triggering ELF check errors
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
+# Allow non-vendor-prefixed properties in vendor property_contexts
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+
 # A/B
 AB_OTA_PARTITIONS := \
     boot \
@@ -38,7 +47,6 @@ AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
-TARGET_PROVIDES_AUDIO_EXTNS := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := veux
@@ -77,15 +85,15 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.usbcontroller=4e00000.dwc3 \
     swiotlb=0 \
     loop.max_part=7 \
-    cgroup.memory=nokmem,nosocket \
     iptable_raw.raw_before_defrag=1 \
     ip6table_raw.raw_before_defrag=1 \
     kpti=off \
     firmware_class.path=/vendor/firmware
 
 TARGET_KERNEL_CONFIG := vendor/veux-qgki_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6375
-TARGET_KERNEL_NO_GCC := true
+TARGET_KERNEL_SOURCE := kernel/xiaomi/veux
+TARGET_KERNEL_CLANG_VERSION := r563880c
+
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := peux,veux
@@ -144,6 +152,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/lineage/sepolicy/libion/sepolicy.mk
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include vendor/xiaomi/miuicamera-veux/SEPolicy-veux.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
