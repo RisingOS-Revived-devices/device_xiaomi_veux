@@ -44,7 +44,6 @@ public class AutoHBMService extends Service {
 
     // Histerezis: kapatma eşiği açma eşiğinin bu oranı kadar düşük olmalı.
     private static final float HBM_OFF_THRESHOLD_RATIO = 0.65f;
-    private static final int LUX_AVG_SAMPLES = 12;
     private static final long MIN_TOGGLE_INTERVAL_MS = 4500L;
     private static final int BRIGHTNESS_RAMP_STEPS = 24;
     private static final long BRIGHTNESS_RAMP_STEP_MS = 70L;
@@ -59,10 +58,6 @@ public class AutoHBMService extends Service {
     private SharedPreferences mSharedPrefs;
 
     private int mStoredBrightness = -1;
-
-    private final float[] mLuxSamples = new float[LUX_AVG_SAMPLES];
-    private int mLuxSampleIndex = 0;
-    private int mLuxSampleCount = 0;
 
     // Sensor thread'in en son okuduğu lux; worker thread sleep sonrası burayı okur (stale closure değil).
     private volatile float mLastLux = 0f;
@@ -266,26 +261,6 @@ public class AutoHBMService extends Service {
         }
     }
 
-    private void recordLuxSample(float lux) {
-        mLastLux = lux;
-        mLuxSamples[mLuxSampleIndex] = lux;
-        mLuxSampleIndex = (mLuxSampleIndex + 1) % LUX_AVG_SAMPLES;
-        if (mLuxSampleCount < LUX_AVG_SAMPLES) {
-            mLuxSampleCount++;
-        }
-    }
-
-    private float getSmoothedLux() {
-        if (mLuxSampleCount == 0) {
-            return mLastLux;
-        }
-        float sum = 0f;
-        for (int i = 0; i < mLuxSampleCount; i++) {
-            sum += mLuxSamples[i];
-        }
-        return sum / mLuxSampleCount;
-    }
-
     private float getOffThreshold(float onThreshold) {
         return onThreshold * HBM_OFF_THRESHOLD_RATIO;
     }
@@ -310,8 +285,11 @@ public class AutoHBMService extends Service {
                 if (event == null || event.values == null || event.values.length == 0) {
                     return;
                 }
-                recordLuxSample(event.values[0]);
-                final float avgLux = getSmoothedLux();
+                // The light sensor is on-change: a steady light sends few events, so an
+                // average over the last N events stays stuck on old readings. The enable and
+                // disable delays below already require the new level to hold.
+                mLastLux = event.values[0];
+                final float lux = mLastLux;
 
                 final KeyguardManager km = mKeyguardManager;
                 final boolean keyguardShowing = km != null && km.isKeyguardLocked();
@@ -327,7 +305,7 @@ public class AutoHBMService extends Service {
                     return;
                 }
 
-                if (avgLux > luxThreshold) {
+                if (lux > luxThreshold) {
                     cancelPendingDisable();
                     if ((!mAutoHBMActive || !isCurrentlyEnabled())
                             && !keyguardShowing && !isDcDimmingEnabled()
@@ -343,7 +321,7 @@ public class AutoHBMService extends Service {
                                         return;
                                     }
                                 }
-                                if (getSmoothedLux() > enableLuxThreshold
+                                if (mLastLux > enableLuxThreshold
                                         && !mAutoHBMActive && canToggleState()
                                         && !isDcDimmingEnabled()) {
                                     enableHBM(true);
@@ -355,7 +333,7 @@ public class AutoHBMService extends Service {
                             });
                         }
                     }
-                } else if (avgLux < offThreshold) {
+                } else if (lux < offThreshold) {
                     cancelPendingEnable();
                     final Future<?> pending = mPendingDisable;
                     if (mAutoHBMActive && (pending == null || pending.isDone())) {
@@ -368,7 +346,7 @@ public class AutoHBMService extends Service {
                                     return;
                                 }
                             }
-                            if (getSmoothedLux() < disableLuxThreshold && mAutoHBMActive
+                            if (mLastLux < disableLuxThreshold && mAutoHBMActive
                                     && canToggleState()) {
                                 enableHBM(false);
                                 if (!isCurrentlyEnabled()) {
